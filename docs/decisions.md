@@ -9,6 +9,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Floors grow linearly: 3 x (3, 5, 7, 9, 11, 13) = **9, 15, 21, 27, 33, 39 rooms**. "3x larger" is not exponential.
 - A **story** is a promise that a certain special event will happen in one room **of the next round**. Not a storyline or an extra floor.
 - Dungeon **rooms are bigger and polygon-shaped**, **corridors longer**. Walls use **PBR materials**, **never intersect**, and **vary in shape** (pillars, trim) instead of plain boxes.
+- Cob approved the Studio rework: rooms **36 to 60 studs** across with **16-stud ceilings**, octagon, hexagon, cut-corner or slanted shapes, and corridors up to about **4x longer** with their own lamps. Each round's map should **feel big, with a lot to explore**.
 - Every map has **shopkeepers**, **mini events** and **hostage rescues**; rescues increase the next round's loot.
 - The finale has a **boss that scales with player count and the party's total dungeon level**.
 - The game is **persistent**. Surviving carries you into the next match. **Level = dungeon runs survived.**
