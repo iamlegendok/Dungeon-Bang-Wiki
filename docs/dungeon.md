@@ -17,9 +17,21 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 !!! success "How floors grow (Cob, 2026-10-01)"
     "3x larger" means a linear base of 3, 5, 7, 9, 11, 13 rooms, multiplied by 3. It is **not** exponential growth.
 
+## Rooms, corridors and walls <span class="tag decided">Decided</span> { #rooms-and-walls }
+
+From Cob, 2026-10-01, while building the Roblox Studio prototype:
+
+- **Rooms are bigger and polygon-shaped**, not plain rectangles.
+- **Corridors are longer.**
+- **Walls use PBR materials** (proper surface textures, not flat colours).
+- **Walls never intersect** each other.
+- **Walls vary in shape**, with pillars and trim, rather than being plain boxes.
+
+Exact room sizes and corridor lengths aren't set yet. The pacing numbers below come from the earlier blockout and will change once rooms and corridors grow.
+
 ## Building blocks <span class="tag draft">Draft</span>
 
-- Tile grid of 4 studs per tile, 12-stud walls, 8-stud corridors.
+- Tile grid of 4 studs per tile, 12-stud walls, 8-stud-wide corridors (blockout values, before the bigger rooms and longer corridors above).
 - Rooms sit in a slot grid joined by a random tree; deeper floors add extra loops.
 - Enemy tier rises from 1 to 3 with depth, and chest rarity odds improve.
 - If a floor's nearest stairs is more than 75 s of walking away, extra stairs are added (`MULTI_EXIT`). At the current sizes it never triggers.
