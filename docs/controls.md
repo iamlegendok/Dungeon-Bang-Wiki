@@ -10,15 +10,15 @@ What each input does. The **In prototype** tag means it already works in the Rob
 
 ## Desktop
 
-### Fighting <span class="tag decided">In prototype</span>
+### Fighting <span class="tag decided">In prototype</span> { #fighting }
 
 | Input | Action |
 |-|-|
-| Flick the mouse **down**, then click | Overhead: targets the head or chest |
+| Flick the mouse **down**, then click | Low sweep: targets the legs and feet |
 | Flick **right** or **left**, then click | Slash to that side: targets that side's arm, hand or torso |
-| Flick **up**, then click | Low sweep: targets the legs and feet |
+| Flick **up**, then click | No overhead from a flick. It falls back to the nearest slash, or a thrust if there's no sideways movement |
 | Click with the mouse **barely moving** | Thrust (pierce): hits whatever is under the crosshair |
-| Q | Toggle **high guard**. While it's on, every swing is an overhead whichever way you flick, and "▲ HIGH (Q)" shows in gold under the crosshair. Saves looking at the ceiling to swing high (Cob, 2026-10-01) |
+| Q | Toggle **high guard**, the only way to swing overhead. While it's on, every swing is an overhead (targets the head or chest) whichever way you flick, and "▲ HIGH (Q)" shows in gold under the crosshair (Cob, 2026-10-01) |
 | Click and release quickly | Light hit |
 | **Hold** left click, then **release** | Heavy attack: it charges while you hold (the charge pose lasts as long as the button is down) and strikes on release. +60% damage, double injury, staggers the enemy |
 | Hold right mouse | Block |
@@ -36,7 +36,11 @@ What each input does. The **In prototype** tag means it already works in the Rob
 - A flick under **8 px** counts as barely moving, so you thrust.
 - Release within **0.35 s** for a light hit. Hold longer to charge a heavy, which strikes on release.
 
-These numbers come from the Studio prototype's code and may change. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
+These numbers come from the Studio prototype's code and may change.
+
+#### Swing guide <span class="tag decided">In prototype</span>
+
+Five markers sit around the crosshair: low sweep at the bottom, slashes left and right, thrust in the centre, and overhead at the top (only while Q is on). The marker for the attack you'd get lights up. A line underneath reads "next: …", then LIGHT or HEAVY while you hold, then what you actually swung. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
 ### Inventory and loot <span class="tag decided">In prototype</span>
 

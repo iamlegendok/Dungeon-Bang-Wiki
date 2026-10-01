@@ -40,6 +40,8 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 
+**Swing guide** <span class="tag decided">In prototype</span>: five markers around the crosshair (overhead on top only while the Q high guard is on, low sweep at the bottom, slashes left and right, thrust in the centre). The attack you'd get lights up, and a line underneath reads "next: …", then LIGHT or HEAVY while you hold, then what you actually swung. See [Controls](controls.md#fighting).
+
 **Mobile** (landscape): body doll top left, timer top centre, minimap top right with a companion pill beside it (tap cycles orders, hold opens a 4-way wheel), hotbar low between the thumbs, and the combat cluster (attack pad, block, dodge) from [Combat](combat.md#fighting-skill).
 
 **Timer colour:** parchment normally, amber under 30 s, red under 10 s.
