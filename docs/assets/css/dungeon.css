@@ -189,3 +189,12 @@ body { background: var(--db-bg-base); }
 @media (max-width: 600px) {
   .md-typeset h1 { font-size: 1.5rem; }
 }
+
+/* Material scales the whole page up to 137.5% and 150% on wide screens,
+   which made the wiki look zoomed in. Keep it at a normal reading size. */
+html { font-size: 112.5%; }
+@media screen and (min-width: 100em) { html { font-size: 112.5%; } }
+@media screen and (min-width: 125em) { html { font-size: 118.75%; } }
+.md-grid { max-width: 76rem; }
+.hero img { max-width: min(300px, 80%); }
+.hero { padding: 1rem 1rem .8rem; }
