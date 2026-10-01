@@ -57,6 +57,7 @@ nav:
       - Boss and finale: boss.md
       - Lobby, queue and shop: lobby.md
   - Systems:
+      - Controls: controls.md
       - Combat and injuries: combat.md
       - Inventory: inventory.md
       - Companions: companions.md

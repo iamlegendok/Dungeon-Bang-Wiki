@@ -34,7 +34,7 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Desktop HUD](assets/img/ui/hud_desktop.jpg)
 
-**Desktop:** pickup feed top left, timer top centre, minimap with gold, luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (weapon Q, items 1 to 4, Tab for the pack).
+**Desktop:** pickup feed top left, timer top centre, minimap with gold, luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (weapon Q, items 1 to 4; the pack opens with I, see [Controls](controls.md)).
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 
