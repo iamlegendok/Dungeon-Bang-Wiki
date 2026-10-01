@@ -57,9 +57,9 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 ### Stories <span class="tag decided">Decided</span> { #stories }
 
 !!! success "Cob, 2026-10-01"
-    A floor gets a **story**: a promise that a certain special event will happen in one room. It is not a storyline and not an extra floor.
+    A **story** is a promise that a certain special event will happen in one room **of the next round**. It is not a storyline and not an extra floor.
 
-How the promise is shown to players and which events can be stories is still to be designed.
+How a story is earned, how the promise is shown to players, and which events can be stories are still to be designed.
 
 ## Pacing <span class="tag draft">Draft</span>
 

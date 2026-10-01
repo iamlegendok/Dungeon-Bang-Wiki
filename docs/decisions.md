@@ -7,7 +7,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Game loop and progression
 - Each dungeon round lasts **3 minutes**, and a match has **6 rounds**.
 - Floors grow linearly: 3 x (3, 5, 7, 9, 11, 13) = **9, 15, 21, 27, 33, 39 rooms**. "3x larger" is not exponential.
-- A floor gets a **story**: a promise that a certain special event will happen in one room. Not a storyline or an extra floor.
+- A **story** is a promise that a certain special event will happen in one room **of the next round**. Not a storyline or an extra floor.
 - Every map has **shopkeepers**, **mini events** and **hostage rescues**; rescues increase the next round's loot.
 - The finale has a **boss that scales with player count and the party's total dungeon level**.
 - The game is **persistent**. Surviving carries you into the next match. **Level = dungeon runs survived.**

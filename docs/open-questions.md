@@ -5,7 +5,7 @@ Everything waiting on Cob, grouped by system. Each page also lists its own quest
 ## Game loop
 - **Does the boss replace the PvP finale,** or do players still fight each other too? ([Boss](boss.md))
 - **Depth rule:** reaching the stairs in time takes you one depth deeper and timing out keeps you at the same depth with your loot. Assumed, not confirmed. ([Dungeon](dungeon.md))
-- **Stories:** how a floor shows its promised event, and which events can be stories. ([Dungeon](dungeon.md#stories))
+- **Stories:** how a story is earned, how the promised next-round event is shown, and which events can be stories. ([Dungeon](dungeon.md#stories))
 
 ## Lobby
 - Any other Robux conveniences, like vault space or loadout presets? ([Lobby](lobby.md))
