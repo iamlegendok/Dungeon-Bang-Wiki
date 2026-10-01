@@ -37,6 +37,8 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 | Shopkeeper | About 1 per 15 rooms |
 | Mini event | About 1 per 10 rooms |
 | Hostage | About 1 per 12 rooms, caged and guarded off the fast route |
+| Storyteller | Near the route on floors 1 to 5 <span class="tag draft">Draft</span> |
+| Story room | One per floor, off the fast route, from floor 2 <span class="tag draft">Draft</span> |
 
 ![New room types](assets/img/dungeon/room_types.jpg)
 
@@ -59,7 +61,26 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 !!! success "Cob, 2026-10-01"
     A **story** is a promise that a certain special event will happen in one room **of the next round**. It is not a storyline and not an extra floor.
 
-How a story is earned, how the promise is shown to players, and which events can be stories are still to be designed.
+#### How stories play out <span class="tag draft">Draft</span>
+
+<div class="grid" markdown>
+
+![Storyteller near the route](assets/img/dungeon/storyteller.jpg){ width="49%" }
+![Story room](assets/img/dungeon/story_room.jpg){ width="49%" }
+
+</div>
+
+- Floors 1 to 5 each have a **storyteller** near the route who announces the next round's story.
+- On the next floor, the story plays out in **one special room off the fast route**.
+- Which story comes up is picked from the match seed and round, so everyone in the match gets the same one.
+
+| Story | What happens |
+|-|-|
+| The Fallen Knight | A 1v1 duel for an Epic blade |
+| The Collapsing Vault | 20 s to loot a vault before it caves in |
+| The Prisoner Prince | A VIP hostage worth +3 loot luck |
+| The Lost Caravan | A caravan that sells Legendary gear |
+| The Dragon's Egg | Defend the egg until it hatches into a pet |
 
 ## Pacing <span class="tag draft">Draft</span>
 
