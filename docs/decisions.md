@@ -35,7 +35,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Classes **Nobleman** (2 longswords, larger armor area, smaller 3rd layer) and **Witcher** (large armor, modest separated weapon slots, decent 3rd layer) join Knight, Ranger and Arcanist.
 
 ### Controls
-- The inventory opens with **I**.
+- The bag (inventory) opens and closes with **B**. I stays as a backup key.
 
 ### Combat
 - **Skill based and survival strained**, with per-body-part injuries.

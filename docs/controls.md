@@ -34,7 +34,8 @@ Swing direction picks the body zone you hit. See [Combat](combat.md#fighting-ski
 
 | Input | Action |
 |-|-|
-| I | Open or close the inventory (Cob, 2026-10-01). A "[ I ] Pack" reminder sits in the bottom-left of the HUD |
+| B | Open or close the bag (inventory) (Cob, 2026-10-01). A key reminder sits in the bottom-left of the HUD |
+| I | Backup for B. Roblox Studio catches I before the game sees it, so use B when testing in Studio; I works in a real Roblox client |
 | Drag an item | Move it |
 | R while dragging | Rotate the item |
 | Drag off the panel | Drop the item |
