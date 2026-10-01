@@ -101,6 +101,36 @@ Enemies can raise a guard. The tell is obvious: the weapon comes up across the b
 
 The timings and multiplier are prototype values from the Studio build and may change.
 
+### Parries and disarms <span class="tag decided">In prototype</span> { #disarms }
+
+!!! success "Cob, 2026-10-01"
+    Parried enemies reel, and a parry can randomly knock the weapon out of their hands. It works both ways. A dropped weapon goes back into the same inventory slot when picked up, or the player is told they don't have room.
+
+| You parry | The enemy | Disarm chance |
+|-|-|-|
+| A light attack | Reels for 0.8 s | 10% |
+| A heavy attack | Reels for 1.2 s and takes 1.5x damage while reeling | 35% |
+
+- **It works both ways:** if an enemy's guard parries your light swing, there's a 10% chance you lose your sword.
+- A disarmed weapon flies **4 to 6 studs**. Until you pick it up you can only dodge.
+- **Walk over the weapon** to pick it up. It goes back into the **same pack slot**. If something filled that slot in the meantime, you see "No room" and the weapon stays on the floor.
+- Pickup animations are wanted <span class="tag draft">Planned</span>.
+
+All numbers are prototype values.
+
+### Enemy tells and behaviour <span class="tag decided">In prototype</span>
+
+| Tell | What it means |
+|-|-|
+| Ember glow and a soft growl, about 0.8 s wind-up | **Heavy.** It smashes through a plain block, so parry or dodge it |
+| The glint holds longer than usual | **Delayed swing.** Wait for it before you parry |
+| A quick glint with no gold parry ring | **Feint.** Don't commit your parry |
+
+- Enemies run a small **learning brain** that adapts to each player's habits during a match.
+- **Weaker enemies back off when hurt.**
+
+Timings are prototype values.
+
 ## Open
 
 ??? question "Which human companions can heal?"

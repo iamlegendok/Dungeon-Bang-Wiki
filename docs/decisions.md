@@ -40,6 +40,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead.
 
 ### Combat
+- **Parries can disarm**, both ways. A picked-up weapon returns to its **same inventory slot**, or the player is told there's no room.
 - **Skill based and survival strained**, with per-body-part injuries.
 - **Hunger is a draining meter**; food lives on inventory layer 1.
 - **Broken bones carry into the next round**, not the next match.

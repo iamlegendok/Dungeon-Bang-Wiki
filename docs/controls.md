@@ -29,6 +29,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
 - **Jump is off.**
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
+- **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to the same pack slot, or shows "No room" if that slot was filled. See [Combat](combat.md#disarms).
 
 #### How a swing is picked <span class="tag draft">Prototype values</span>
 
