@@ -38,7 +38,7 @@ Swing direction picks the body zone you hit. See [Combat](combat.md#fighting-ski
 | R while dragging | Rotate the item |
 | Drag off the panel | Drop the item |
 | Click food | Eat it |
-| E | Take from a loot box |
+| Hold E | Take from a loot box |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
 
 Tab does nothing.
