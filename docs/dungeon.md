@@ -78,7 +78,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 
 </div>
 
-- **Shopkeepers** sell food, splints, potions, common and uncommon gear, backpacks, a bonesetter and pets, for Gold.
+- **Shopkeepers** sell food, splints, potions, common and uncommon gear, backpacks, a bonesetter and pets, for silverlings and goldlings.
 - **Mini events**: Ambush, Cursed Altar, Gold Rush, Wandering Merchant, Trap Gauntlet.
 - **Hostages** are caged people or animals. Freeing one gives +1 loot luck next round, or you can ask them to join you as a [companion](companions.md) and give up that bonus.
 

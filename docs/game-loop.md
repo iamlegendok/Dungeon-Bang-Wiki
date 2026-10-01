@@ -6,7 +6,7 @@
 
 | Step | What happens | Status |
 |-|-|-|
-| Lobby | Pick a class, rearrange your pack, move gear and gold between pack and vault, shop. | <span class="tag decided">Decided</span> |
+| Lobby | Pick a class, rearrange your pack, move gear and coin between pack and vault, shop. | <span class="tag decided">Decided</span> |
 | Queue | Auto queue near your level, or launch your own party with a 5-character invite code. Parties of up to 4. | <span class="tag decided">Decided</span> |
 | Depths 1 to 6 | Freshly generated floors, one per depth. A round is one 3:00 clock shared by every depth you reach; the stairs never reset or add time. | <span class="tag decided">Decided</span> |
 | Finale | A boss scaled to player count and the party's total level. | <span class="tag decided">Decided</span> that the boss exists; formula is <span class="tag draft">Draft</span> |
@@ -31,9 +31,9 @@
 - **The game is persistent.** Surviving a match carries you, your gear and your companion into the next match.
 - **Level = dungeon runs survived.** Matchmaking groups players by level and the boss scales with the party's total level.
 - **Hard death.** Dying anywhere means you lose all loot, restart in the basic starter gear, and your level goes back to **zero**. Your companion dies with you, pets included.
-- **Gold in the vault is safe.** Gold you bring out alive is banked in the vault and survives a hard death. Gold still in your pack does not.
+- **Coin in the vault is safe.** Silverlings and goldlings you bring out alive are banked in the vault and survive a hard death. Coin still in your pack does not.
 - **Paid revive.** You can pay with gear to be revived for the next match, and a friend can pay that gear for you.
-- **Leaving early.** Leaving a match early twice in one progression costs a small gold penalty, which can be cleared with Robux.
+- **Leaving early.** Leaving a match early twice in one progression costs a small coin penalty, which can be cleared with Robux.
 
 ### Inside a match
 

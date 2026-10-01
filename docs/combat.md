@@ -57,7 +57,7 @@ Loud footsteps also widen how far enemies hear you.
 | Splint | Broken becomes Splinted (4 s, standing; a companion can apply it) |
 | Potion | HP only |
 | Heal shrine | 5 s channel, full heal, once per player per shrine |
-| Shop bonesetter | Gold, fixes one Broken zone |
+| Shop bonesetter | Silverlings and goldlings, fixes one Broken zone |
 | Stairs | Heal Hurt zones; Broken and Splinted zones carry into the next round |
 | Surviving the match | Heals everything <span class="tag decided">Decided</span> |
 
