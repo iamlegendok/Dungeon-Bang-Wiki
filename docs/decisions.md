@@ -6,6 +6,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 
 ### Game loop and progression
 - Each dungeon round lasts **3 minutes**, and a match has **6 rounds**.
+- A round is **one 3:00 clock**: taking the stairs to a new depth **never resets the timer or adds time**.
 - Floors grow linearly: 3 x (3, 5, 7, 9, 11, 13) = **9, 15, 21, 27, 33, 39 rooms**. "3x larger" is not exponential.
 - A **story** is a promise that a certain special event will happen in one room **of the next round**. Not a storyline or an extra floor.
 - Dungeon **rooms are bigger and polygon-shaped**, **corridors longer**. Walls use **PBR materials**, **never intersect**, and **vary in shape** (pillars, trim) instead of plain boxes.
