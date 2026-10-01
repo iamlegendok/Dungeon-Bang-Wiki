@@ -17,7 +17,7 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 - Islands are generic slots, not body parts: any armor that fits works anywhere on the armor layer.
 - **Backpacks** each add one new island, on a layer you choose. You can own several.
 - A special **pickup** lets you move one island (one move per pickup). If an enchant no longer sits over what it used to boost, its effect silently stops. No warning: you can wreck your own build.
-- You can rearrange your gear in the lobby before a match.
+- You can rearrange your gear in the lobby before a match, during a 3-minute round, and at shopkeepers.
 - Because hunger drains, food competes with armor for layer 1 space.
 
 ## Placement rules <span class="tag draft">Draft</span>
@@ -73,5 +73,3 @@ Cob's direction for the newer classes <span class="tag decided">Decided</span>: 
 ??? question "Is the grid what you wear?"
     Is equipped the same as being in the grid, or is there a separate equipped slot set?
 
-??? question "Rearranging during a round"
-    Allowed in the lobby (decided). During a 3-minute round, only between rounds, or only at shopkeepers?

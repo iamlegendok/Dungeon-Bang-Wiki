@@ -18,6 +18,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Parties of **4**.
 - The lobby shop sells with **Gold or Robux**.
 - Players can **rearrange inventory** and move gear between pack and vault in the lobby before a match.
+- Inventory can also be rearranged **during a 3-minute round** and **at shopkeepers**.
 - Gold brought out alive sits safe in a **vault**.
 - **Auto queue** matched around your level, or **launch a party** with a 5-character uppercase alphanumeric invite code.
 - Leaving a match early **twice in a progression** = small gold penalty, removable with Robux.

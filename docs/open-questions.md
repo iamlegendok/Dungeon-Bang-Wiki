@@ -18,7 +18,6 @@ Everything waiting on Cob, grouped by system. Each page also lists its own quest
 - Does full cover give a stronger effect than partial cover?
 - On hard death, are some enchants bound and kept?
 - Is the grid what you wear, or is there a separate equipped set?
-- Can you rearrange during a round, only between rounds, or only at shopkeepers?
 
 ## Combat
 - Can every human companion heal, or only some (for example a dedicated Medic)?
