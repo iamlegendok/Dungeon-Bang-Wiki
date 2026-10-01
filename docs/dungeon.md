@@ -54,6 +54,13 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 - **Mini events**: Ambush, Cursed Altar, Gold Rush, Wandering Merchant, Trap Gauntlet.
 - **Hostages** are caged people or animals. Freeing one gives +1 loot luck next round, or you can ask them to join you as a [companion](companions.md) and give up that bonus.
 
+### Stories <span class="tag decided">Decided</span> { #stories }
+
+!!! success "Cob, 2026-10-01"
+    A floor gets a **story**: a promise that a certain special event will happen in one room. It is not a storyline and not an extra floor.
+
+How the promise is shown to players and which events can be stories is still to be designed.
+
 ## Pacing <span class="tag draft">Draft</span>
 
 A rush straight to the stairs takes about 13 s on depth 1 and about 1:30 on depth 6, so every floor fits inside 3:00. A full clear (walk the whole tree, every fight, 2 s per chest) is what the timer squeezes.
@@ -72,5 +79,3 @@ In the trail-map test walk on a 21-room floor, a player reached the stairs at 2:
 ??? question "Is the depth rule right?"
     Reaching the stairs in time moves you one depth deeper; timing out keeps you at the same depth with your loot. Assumed, not confirmed.
 
-??? question "Does the dungeon get a storyline?"
-    The prototype thread assumes "add one story" meant a storyline. Unconfirmed.
