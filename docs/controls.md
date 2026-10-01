@@ -44,13 +44,22 @@ Swing direction picks the body zone you hit. See [Combat](combat.md#fighting-ski
 
 Tab does nothing.
 
+### Map <span class="tag decided">In prototype</span>
+
+| Input | Action |
+|-|-|
+| M | Open or close the full map |
+| Click the minimap | Open the full map |
+
+- While the full map is open, the mouse is freed and swings are paused.
+- The minimap sits top right and only shows inside the dungeon.
+
 ### Planned <span class="tag draft">Planned</span>
 
 From the HUD design ([Map and HUD](ui.md#hud-draft)):
 
 | Input | Action |
 |-|-|
-| M | Full map. You can walk but not swing while it's open; the timer stays visible |
 | Q | Weapon on the hotbar |
 | 1 to 4 | Hotbar items |
 | Z, X, C, V | Companion orders: Follow, Hold, Fetch, Attack |
@@ -66,6 +75,6 @@ None of the touch controls are in the prototype yet. From the combat and HUD des
 | Attack pad: hold | Heavy attack |
 | Block button | Block, and parry when timed |
 | Dodge button | Dodge |
-| Tap the minimap | Full map |
+| Tap the minimap | Full map (clicking it already works on desktop) |
 | Companion pill: tap | Cycle companion orders |
 | Companion pill: hold | Open the 4-way order wheel |
