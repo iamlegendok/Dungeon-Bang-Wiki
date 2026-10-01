@@ -18,7 +18,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | Left click while moving the mouse **left or right** | Side cut: hits that side's arm, hand and torso |
 | Left click while moving the mouse **up** | Low sweep: hits legs and feet |
 | Left click with a **still** mouse | Thrust (pierce) at the crosshair |
-| **Hold** left click | Heavy attack: +60% damage, double injury, staggers the enemy |
+| **Hold** left click, then **release** | Heavy attack: it charges while you hold (the charge pose lasts as long as the button is down) and strikes on release. +60% damage, double injury, staggers the enemy |
 | Hold right mouse | Block |
 | Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
@@ -26,7 +26,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
 - **Jump is off.**
-- **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
+- **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
 
 Swing direction picks the body zone you hit. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
