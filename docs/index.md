@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Dungeon Bang
 
 <div class="hero" markdown>
