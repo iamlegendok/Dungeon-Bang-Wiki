@@ -1,0 +1,191 @@
+/* Dungeon Bang wiki theme.
+   Colours are the shared game palette (style/palette.md in the project files):
+   earth is the room, arcane is the magic, gold is the one highlight. */
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("../fonts/CinzelDecorative-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lilita One";
+  src: url("../fonts/LilitaOne-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root,
+[data-md-color-scheme="slate"] {
+  /* palette roles */
+  --db-bg-base: #16130f;
+  --db-bg-panel: #2a241c;
+  --db-bg-raised: #3a3226;
+  --db-line-grid: #4a3f30;
+  --db-line-frame: #6b5a3e;
+  --db-text-primary: #eadcc2;
+  --db-text-muted: #a99877;
+  --db-text-title: #f3c66b;
+  --db-text-inverse: #16130f;
+  --db-arcane-deep: #3a2560;
+  --db-arcane-dim: #5a3f88;
+  --db-arcane-core: #9650e6;
+  --db-arcane-glow: #c88cff;
+  --db-arcane-pale: #e2b8ff;
+  --db-earth-gold: #f3c66b;
+  --db-earth-amber: #e3a02e;
+  --db-earth-copper: #b05c2e;
+  --db-earth-ember: #f0a36a;
+  --db-earth-moss: #7fb08a;
+  --db-earth-steel: #788796;
+  --db-vital-hp-text: #ff7a66;
+
+  /* Material mapping */
+  --md-hue: 35;
+  --md-default-bg-color: var(--db-bg-base);
+  --md-default-fg-color: var(--db-text-primary);
+  --md-default-fg-color--light: var(--db-text-muted);
+  --md-default-fg-color--lighter: #a9987799;
+  --md-default-fg-color--lightest: #a9987733;
+  --md-primary-fg-color: var(--db-bg-panel);
+  --md-primary-fg-color--light: var(--db-bg-raised);
+  --md-primary-fg-color--dark: var(--db-bg-base);
+  --md-primary-bg-color: var(--db-text-title);
+  --md-primary-bg-color--light: var(--db-text-muted);
+  --md-accent-fg-color: var(--db-earth-gold);
+  --md-accent-fg-color--transparent: #f3c66b1a;
+  --md-typeset-color: var(--db-text-primary);
+  --md-typeset-a-color: var(--db-earth-gold);
+  --md-code-bg-color: var(--db-bg-panel);
+  --md-code-fg-color: var(--db-text-primary);
+  --md-footer-bg-color: var(--db-bg-panel);
+  --md-footer-bg-color--dark: var(--db-bg-base);
+  --md-typeset-table-color: var(--db-line-grid);
+  --md-typeset-table-color--light: #4a3f3055;
+  --md-admonition-bg-color: var(--db-bg-panel);
+  --md-admonition-fg-color: var(--db-text-primary);
+}
+
+body { background: var(--db-bg-base); }
+
+.md-header, .md-tabs { border-bottom: 1px solid var(--db-line-frame); }
+.md-header__title { font-family: "Lilita One", sans-serif; letter-spacing: .02em; }
+.md-header__button.md-logo img { height: 1.9rem; }
+.md-search__form { background: var(--db-bg-raised); }
+
+.md-typeset h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  color: var(--db-text-title);
+  letter-spacing: .01em;
+}
+.md-typeset h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  color: var(--db-text-title);
+  border-bottom: 1px solid var(--db-line-grid);
+  padding-bottom: .2em;
+}
+.md-typeset h3 { color: var(--db-earth-ember); font-weight: 700; }
+
+.md-nav__link--active, .md-nav__link:hover { color: var(--db-earth-gold) !important; }
+.md-nav__title { color: var(--db-text-muted); }
+
+/* tables */
+.md-typeset table:not([class]) {
+  background: var(--db-bg-panel);
+  border: 1px solid var(--db-line-frame);
+  font-size: .72rem;
+}
+.md-typeset table:not([class]) th {
+  background: var(--db-bg-raised);
+  color: var(--db-text-title);
+}
+.md-typeset table:not([class]) tr:hover { background: #3a32264d; }
+
+/* images: framed like an inventory panel */
+.md-typeset img:not(.md-logo img) {
+  border: 1px solid var(--db-line-frame);
+  border-radius: 6px;
+  background: var(--db-bg-panel);
+}
+.md-typeset figure { margin: 1.2em auto; }
+.md-typeset figcaption { color: var(--db-text-muted); font-size: .7rem; max-width: 100%; }
+
+/* status tags */
+.tag {
+  display: inline-block;
+  font-size: .62rem;
+  font-weight: 800;
+  line-height: 1.5;
+  padding: 0 .55em;
+  border-radius: 999px;
+  vertical-align: middle;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: var(--md-text-font-family), sans-serif;
+}
+.tag.decided { background: var(--db-earth-moss); color: var(--db-text-inverse); }
+.tag.draft { background: var(--db-earth-amber); color: var(--db-text-inverse); }
+.tag.assumed { background: var(--db-bg-raised); color: var(--db-earth-ember); border: 1px solid var(--db-earth-copper); }
+.tag.open { background: var(--db-arcane-deep); color: var(--db-arcane-pale); border: 1px solid var(--db-arcane-dim); }
+
+/* admonitions in palette colours (never colour alone: each keeps its icon and title) */
+.md-typeset .admonition, .md-typeset details {
+  background: var(--db-bg-panel);
+  border-width: 0 0 0 .25rem;
+  box-shadow: none;
+  font-size: .76rem;
+}
+.md-typeset .admonition.success, .md-typeset details.success { border-color: var(--db-earth-moss); }
+.md-typeset .admonition.success > .admonition-title, .md-typeset .admonition.success > summary { background: #7fb08a22; }
+.md-typeset .admonition.success > .admonition-title::before, .md-typeset .admonition.success > summary::before { background-color: var(--db-earth-moss); }
+.md-typeset .admonition.warning, .md-typeset details.warning { border-color: var(--db-earth-amber); }
+.md-typeset .admonition.warning > .admonition-title, .md-typeset .admonition.warning > summary { background: #e3a02e22; }
+.md-typeset .admonition.warning > .admonition-title::before, .md-typeset .admonition.warning > summary::before { background-color: var(--db-earth-amber); }
+.md-typeset .admonition.question, .md-typeset details.question { border-color: var(--db-arcane-glow); }
+.md-typeset .admonition.question > .admonition-title, .md-typeset .admonition.question > summary { background: #3a256088; }
+.md-typeset .admonition.question > .admonition-title::before, .md-typeset .admonition.question > summary::before { background-color: var(--db-arcane-glow); }
+.md-typeset .admonition.info, .md-typeset .admonition.note, .md-typeset details.info { border-color: var(--db-earth-steel); }
+.md-typeset .admonition.info > .admonition-title, .md-typeset .admonition.note > .admonition-title, .md-typeset details.info > summary { background: #78879622; }
+.md-typeset .admonition.info > .admonition-title::before, .md-typeset .admonition.note > .admonition-title::before, .md-typeset details.info > summary::before { background-color: var(--db-earth-steel); }
+
+/* home page hero and cards */
+.hero {
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  border: 1px solid var(--db-line-frame);
+  border-radius: 10px;
+  background:
+    radial-gradient(ellipse at 50% 120%, #9650e655 0%, transparent 60%),
+    var(--db-bg-panel);
+  margin-bottom: 1.5rem;
+}
+.hero img { border: 0 !important; background: none !important; max-width: min(420px, 90%); }
+.hero p { color: var(--db-text-primary); font-size: .85rem; margin: .6rem auto 0; max-width: 36rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: .7rem;
+  margin: 1rem 0;
+}
+.cards > p { display: contents; }
+.cards a {
+  display: block;
+  padding: .7rem .85rem;
+  border: 1px solid var(--db-line-frame);
+  border-radius: 8px;
+  background: var(--db-bg-panel);
+  color: var(--db-text-primary) !important;
+  transition: border-color .15s, background .15s;
+}
+.cards a:hover { border-color: var(--db-earth-gold); background: var(--db-bg-raised); }
+.cards a strong { display: block; color: var(--db-text-title); font-family: "Lilita One", sans-serif; font-weight: 400; font-size: .9rem; }
+.cards a span { font-size: .68rem; color: var(--db-text-muted); }
+
+.md-footer-meta { background: var(--db-bg-base); }
+
+@media (max-width: 600px) {
+  .md-typeset h1 { font-size: 1.5rem; }
+}

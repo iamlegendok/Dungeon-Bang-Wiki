@@ -1,0 +1,70 @@
+site_name: Dungeon Bang Wiki
+site_description: How Dungeon Bang works, system by system. Decided rules, drafts and open questions.
+site_url: https://theverycob.github.io/Dungeon-Bang-Wiki/
+repo_url: https://github.com/theverycob/Dungeon-Bang-Wiki
+repo_name: Dungeon-Bang-Wiki
+edit_uri: edit/main/docs/
+copyright: Dungeon Bang design wiki. Draft numbers are playtest starting points.
+
+theme:
+  name: material
+  logo: assets/img/logo.png
+  favicon: assets/img/favicon.png
+  font:
+    text: Nunito Sans
+    code: JetBrains Mono
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/css/dungeon.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - The game:
+      - Game loop: game-loop.md
+      - Dungeon floors: dungeon.md
+      - Boss and finale: boss.md
+      - Lobby, queue and shop: lobby.md
+  - Systems:
+      - Combat and injuries: combat.md
+      - Inventory: inventory.md
+      - Companions: companions.md
+      - Enemies: enemies.md
+      - Map and HUD: ui.md
+  - Look and feel:
+      - Classes and characters: characters.md
+      - Art direction and palette: art.md
+  - Records:
+      - Decisions log: decisions.md
+      - Open questions: open-questions.md
+      - About this wiki: about.md
