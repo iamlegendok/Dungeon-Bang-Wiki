@@ -17,9 +17,34 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 !!! success "How floors grow (Cob, 2026-10-01)"
     "3x larger" means a linear base of 3, 5, 7, 9, 11, 13 rooms, multiplied by 3. It is **not** exponential growth.
 
+## Rooms, corridors and walls <span class="tag decided">Decided</span> { #rooms-and-walls }
+
+From Cob, 2026-10-01, while building the Roblox Studio prototype:
+
+- **Rooms are bigger and polygon-shaped**, not plain rectangles.
+- **Corridors are longer.**
+- **Walls use PBR materials** (proper surface textures, not flat colours).
+- **Walls never intersect** each other.
+- **Walls vary in shape**, with pillars and trim, rather than being plain boxes.
+
+!!! success "Cob, 2026-10-01, on the Studio rework"
+    "Now that is a dungeon." The point is that each round's map feels big, with a lot to explore.
+
+### Studio prototype values
+
+These are the values Cob approved in the Roblox Studio prototype.
+
+| Part | Value |
+|-|-|
+| Room size | 36 to 60 studs across (up from 20 to 32 in the blockout) |
+| Ceiling | 16 studs, with lintels over doorways |
+| Room shapes | Each room rolls an octagon, a hexagon, irregular cut corners or a slanted shape, with angled, mitred walls |
+| Corridors | Up to about 4x longer than the blockout, each with its own lamps |
+| Fastest route | About 70 s to the stairs on the biggest floor, out of the 3:00 timer |
+
 ## Building blocks <span class="tag draft">Draft</span>
 
-- Tile grid of 4 studs per tile, 12-stud walls, 8-stud corridors.
+- Tile grid of 4 studs per tile, 12-stud walls, 8-stud-wide corridors. These are the original Blender blockout values; the Studio prototype above has bigger rooms, taller ceilings and longer corridors.
 - Rooms sit in a slot grid joined by a random tree; deeper floors add extra loops.
 - Enemy tier rises from 1 to 3 with depth, and chest rarity odds improve.
 - If a floor's nearest stairs is more than 75 s of walking away, extra stairs are added (`MULTI_EXIT`). At the current sizes it never triggers.
@@ -84,7 +109,7 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 
 ## Pacing <span class="tag draft">Draft</span>
 
-A rush straight to the stairs takes about 13 s on depth 1 and about 1:30 on depth 6, so every floor fits inside 3:00. A full clear (walk the whole tree, every fight, 2 s per chest) is what the timer squeezes.
+In the Studio prototype, the fastest route to the stairs on the biggest floor takes about 70 s of the 3:00. In the earlier Blender blockout, a rush took about 13 s on depth 1 and about 1:30 on depth 6. A full clear (walk the whole tree, every fight, 2 s per chest) is what the timer squeezes.
 
 In the trail-map test walk on a 21-room floor, a player reached the stairs at 2:15 having lit 26% of the floor.
 
