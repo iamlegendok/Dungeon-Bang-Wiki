@@ -195,6 +195,7 @@ body { background: var(--db-bg-base); }
 html { font-size: 112.5%; }
 @media screen and (min-width: 100em) { html { font-size: 112.5%; } }
 @media screen and (min-width: 125em) { html { font-size: 118.75%; } }
-.md-grid { max-width: 76rem; }
+/* Contents sit in the left sidebar (toc.integrate), so one narrower column is enough. */
+.md-grid { max-width: 64rem; }
 .hero img { max-width: min(300px, 80%); }
 .hero { padding: 1rem 1rem .8rem; }

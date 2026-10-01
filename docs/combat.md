@@ -90,6 +90,17 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
 - Enemies and the boss use the same zones.
 
+### Enemy guard <span class="tag decided">In prototype</span> { #enemy-guard }
+
+Enemies can raise a guard. The tell is obvious: the weapon comes up across the body, a steel-white outline appears and a soft clink plays. The guard lasts about 0.7 to 0.9 s.
+
+| You hit the guard with | What happens |
+|-|-|
+| A light swing | You get parried: pushed back, no swings for 0.8 s, and the enemy gets a free counter |
+| A heavy (hold left click) | The guard breaks: the enemy reels and takes 1.5x damage for a moment |
+
+The timings and multiplier are prototype values from the Studio build and may change.
+
 ## Open
 
 ??? question "Which human companions can heal?"

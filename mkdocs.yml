@@ -23,6 +23,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     - toc.follow
+    - toc.integrate
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -56,6 +57,7 @@ nav:
       - Boss and finale: boss.md
       - Lobby, queue and shop: lobby.md
   - Systems:
+      - Controls: controls.md
       - Combat and injuries: combat.md
       - Inventory: inventory.md
       - Companions: companions.md

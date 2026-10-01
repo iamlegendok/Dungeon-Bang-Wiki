@@ -2,6 +2,8 @@
 
 ## Trail map
 
+The trail map and minimap are in the Studio prototype as of 2026-10-01. The minimap sits top right and only shows inside the dungeon. See [Controls](controls.md) for the keys.
+
 ![Trail map over a real floor](assets/img/ui/trail_map.jpg)
 
 !!! success "Cob's brief (2026-10-01)"
@@ -15,7 +17,7 @@
 | Stamps | Chests (rarity colour), shrines, shops, hostages and stairs only once you've been there | <span class="tag draft">Draft</span> |
 | Memory | Trail lasts the round; older thread fades a little; new floor = blank map | <span class="tag draft">Draft</span> |
 | Minimap | Round, heading-up, 18 tiles (72 studs) across, N marker on the rim | <span class="tag draft">Draft</span> |
-| Full map | North-up. M on desktop, tap the minimap on mobile. You can walk but not swing; timer stays visible | <span class="tag draft">Draft</span> |
+| Full map | North-up. M or a click on the minimap opens it; the mouse is freed and swings pause while it's open. Timer stays visible | <span class="tag decided">In prototype</span> |
 | Broken head | Map tears and dims | <span class="tag draft">Draft</span> |
 
 A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defeats the point. In the test walk on a 21-room floor, the player reached the stairs at 2:15 with 26% of the floor lit; rooms they entered averaged 47% seen.
@@ -34,7 +36,7 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Desktop HUD](assets/img/ui/hud_desktop.jpg)
 
-**Desktop:** pickup feed top left, timer top centre, minimap with gold, luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (weapon Q, items 1 to 4, Tab for the pack).
+**Desktop:** pickup feed top left, timer top centre, minimap with gold, luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (weapon Q, items 1 to 4; the pack opens with I, see [Controls](controls.md)).
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 

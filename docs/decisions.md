@@ -33,6 +33,9 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **Special pickups move one island** each. Effects that no longer line up silently stop working.
 - Classes **Nobleman** (2 longswords, larger armor area, smaller 3rd layer) and **Witcher** (large armor, modest separated weapon slots, decent 3rd layer) join Knight, Ranger and Arcanist.
 
+### Controls
+- The inventory opens with **I**.
+
 ### Combat
 - **Skill based and survival strained**, with per-body-part injuries.
 - **Hunger is a draining meter**; food lives on inventory layer 1.
