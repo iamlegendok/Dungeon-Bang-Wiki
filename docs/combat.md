@@ -82,7 +82,7 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ![Fighting skill](assets/img/combat/fighting_skill.jpg)
 
-- **Swing direction picks the zone:** overhead hits head and torso, a side cut hits that side's arm, hand and torso, a low sweep hits legs and feet, a thrust hits exactly the crosshair. Hold to charge a heavy and release to strike (in the prototype the charge pose holds for as long as the button is down): +60% damage, 2x injury, but parryable.
+- **Swing direction picks the zone:** overhead targets the head or chest, a slash targets that side's arm, hand or torso, a low sweep targets the legs and feet, and a thrust hits whatever is under the crosshair. In the prototype the direction is read from the mouse flick in the 0.14 s before the click, under 8 px of movement is a thrust, and a release within 0.35 s is a light hit <span class="tag draft">Prototype values</span>. **Q toggles a high guard** that turns every swing into an overhead, so you don't have to look at the ceiling (Cob, 2026-10-01). Hold to charge a heavy and release to strike (in the prototype the charge pose holds for as long as the button is down): +60% damage, 2x injury, but parryable.
 - **Desktop:** click while moving the mouse to swing that way, click with a still mouse to thrust; hold right mouse to block; Space plus a direction to dodge.
 - **Mobile:** an attack pad. Tap to thrust, swipe off it for a directional swing, hold for a heavy. Block and dodge buttons. Thrusts snap to the nearest zone in a small cone.
 - **Enemy swing timing:** 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is block pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
