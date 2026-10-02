@@ -82,13 +82,29 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ![Fighting skill](assets/img/combat/fighting_skill.jpg)
 
-- **Swing direction picks the zone:** a slash targets that side's arm, hand or torso, a low sweep targets the legs and feet, a thrust hits whatever is under the crosshair, and an overhead targets the head or chest. You pick the direction on the **attack hub** (Cob, 2026-10-02): hold left click and a small ring appears around the crosshair while the view holds still; drag left or right to slash, up for an overhead, down for a low sweep, or don't drag to thrust. Release quickly for a light hit, or keep holding until the arc fills for a heavy: +60% damage, 2x injury, but parryable. The old **Q high guard** is retired (Cob, 2026-10-02).
-- **Desktop:** hold left click and drag on the attack hub to swing (see [Controls](controls.md#fighting)); hold right mouse to block; Space plus a direction to dodge.
-- **Mobile:** an attack pad. Tap to thrust, swipe off it for a directional swing, hold for a heavy. Block and dodge buttons. Thrusts snap to the nearest zone in a small cone.
-- **Enemy swing timing:** 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is block pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
-- Block stops 80% from the front; the rest chips the shield arm. Dodge has 0.25 s of invincibility.
+- **Stances** (Cob, 2026-10-02): you fight from a **high**, **middle** or **low** stance and attack and guard from it. A guard only blocks a blow from the **same** stance, and a red flush on the screen edge shows where an enemy attack comes from (top high, bottom low, left or right for side swings), brightening in the parry window. Fliers and spiders have no stance, so any guard works on them. Click for a light attack or hold for a heavy: +60% damage, 2x injury, but parryable. This replaces the attack hub. See [Controls](controls.md#stances).
+- **Which cut each stance throws** <span class="tag draft">Draft</span>: high is the overhead (head or chest), middle alternates left and right slashes (that side's arm, hand or torso), low is the low sweep (legs and feet). No thrust for now.
+- **Desktop:** scroll up, middle click and scroll down pick the stance; left click attacks; hold right mouse to guard; Space plus a direction to dodge; F to focus.
+- **Mobile:** three stance buttons on the right edge <span class="tag decided">In prototype</span>; attack, guard and dodge buttons are still planned.
+- **Combat tuning** (Cob, 2026-10-02): harder to evade, enemies swing longer and hit harder, parries are easier to read, and the red flush is bolder. <span class="tag draft">Draft</span> numbers: enemy wind-ups x1.5, enemies stop tracking you 0.25 s before the hit, parry window 0.2 s, enemy damage x1.5, chase speed x1.2, dodge cooldown 0.8 s, dodge invincibility 0.15 s.
+- **Enemy swing timing** (before the tuning above): 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is guard pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
+- Block stops 80% from the front; the rest chips the shield arm.
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
 - Enemies and the boss use the same zones.
+
+### Special abilities <span class="tag decided">In prototype</span> { #abilities }
+
+Cob, 2026-10-02: each class has **one powerful ability**, charged by **parrying**, to reward good guarding. Cob approved the cinematic look (an impact frame and a short hitstop when it lands; the camera never moves). Press **X** (Y on a gamepad) when the **Resolve** bar in the HUD is full.
+
+| Class | Ability | What it does <span class="tag draft">Draft</span> numbers |
+|-|-|-|
+| Knight | **Bastion** | Slams the shield: a shockwave and a dome over nearby allies (12 studs, 30% less damage). For 8 s your guard covers all three stances and every blow on it counts as a timed parry. You move at 85% |
+| Nobleman | **Gilded Reprisal** | Both blades flare gold and he dashes 14 studs through the line, untouchable for 0.45 s. A beat after he lands, every cut opens: 2.5x your heavy on each enemy, and they reel 1.2 s |
+| Ranger | **Pinning Shot** | A beam charges on the bow for 0.8 s (aim follows you), then tears down the line: 80 studs long, 4 wide, 3x a heavy shot on each enemy. Each one is pinned for 3 s; fliers are knocked down |
+| Arcanist | **Rune Nova** | The runes spin up over a floor glyph, then a 14-stud dome of force blasts out: 2x your heavy, 10 studs of knockback and a 1.5 s stagger. The runes then orbit as a ward that soaks the next 3 hits (8 s) |
+| Witcher | **Grim Tonic** | Knocks back a tonic (0.7 s), then burns with an ember outline for 10 s: +40% damage, heals 30% of damage dealt, and injuries cause no slowdown or weak swings |
+
+**Resolve** <span class="tag draft">Draft</span>: a timed parry gives +25, parrying a heavy +35, deflecting a projectile +25, a plain block +8. Each parry within 4 s of the last adds +5 more. Attacking gives nothing. About four parries fill it.
 
 ### Enemy injuries <span class="tag decided">Decided</span> { #enemy-injuries }
 
@@ -150,6 +166,9 @@ All numbers are prototype values.
 - Enemies **aim at your broken limbs**: +25% damage on an already-broken limb.
 - Goblins only rarely go for a heavy head swing (8 s heavy cooldown).
 - **Weaker enemies back off when hurt.**
+- **No stacking** (Cob, 2026-10-02): once in fighting range, an enemy blocked by another one strafes around it instead of waiting behind it.
+- **Every enemy has a health bar** and flashes red when hit (Cob, 2026-10-02).
+- **Brain v5** <span class="tag draft">Draft</span>, until Cob plays it: enemies attack the stance you **aren't** guarding, and their own guard covers the stance you're in. They pull hard toward a healer who is reviving someone. Spiders: see [Enemies](enemies.md#spiders).
 
 Timings are prototype values.
 

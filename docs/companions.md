@@ -14,15 +14,58 @@ From Cob, 2026-10-01:
 - **Cave Hound:** widens your trail-map reveal from 1 tile to 2 tiles.
 - **Owl Familiar:** points toward the stairs once per floor.
 
+From Cob, 2026-10-02:
+
+- You have **one companion slot**, and your companion dies with you.
+- **Enemies treat companions like another player.**
+- **"Join me"** on a freed hostage recruits them.
+- **The Dragon's Egg** (a [story](events.md#stories)) hatches a **Dragon Whelp**.
+- **Survive the run and your companion survives too.** It comes back to the lobby, follows you around there and stands beside your character preview, then joins your next match. A hard death still loses it.
+- A **portrait circle** next to your HP and stamina shows its head, with a red ring that drains as it takes damage and pulses while it's down. See [Map and HUD](ui.md#hud-draft).
+- **Cave Hound:** the trail map reveals 2 tiles around you. **Owl:** its pointer to the stairs also shows on the trail map.
+
+## In the prototype <span class="tag decided">In prototype</span> { #prototype }
+
+Built in Studio 2026-10-02 because Cob asked for companions to be prototyped. Cob hasn't played them yet.
+
+| Companion | Kind | What it does |
+|-|-|-|
+| **Squire** | Human, healer | Fights with a spear, starts with 2 bandages, and revives you in 3 s at 25 HP |
+| **Cave Hound** | Pet | Reveals 2 trail-map tiles |
+| **Owl** | Pet | Draws a dashed line toward the stairs each floor |
+| **Dragon Whelp** | Pet | Hatches from the Dragon's Egg |
+| **Goblin Scout** | Goblin, gold finder | A small, friendly goblin who runs around finding gold for you. Your trail map lights up the tiles he runs over, and a copper dot shows where he is (Cob, 2026-10-02) |
+
+**Commands:** Follow, Hold, Fetch and Attack. Attack goes after the enemy you're facing <span class="tag draft">Draft</span>. See [Controls](controls.md#companions) for the keys.
+
+### Prototype defaults <span class="tag draft">Draft</span> { #defaults }
+
+Picked in Studio, not confirmed by Cob:
+
+- Cages hold a **Squire 50%** of the time, a **hound 17%**, an **owl 17%** and a **Goblin Scout 16%**.
+- The **Goblin Scout** picks up floor coins and smashes small breakables (crates, barrels, pots) for silverlings, then brings his purse back to you. He never fights and runs back to you when enemies get close. If he's lost for good, his purse spills on the floor.
+- With a full slot, a freed hostage goes home and you still get the loot luck bonus.
+- A **downed companion** is helped up with hold E for 2 s and comes back at 30% HP. If its health drains to 0 (30 s) it's gone and its pack drops.
+- **While you're downed** you can crawl but not fight, and enemies ignore you. With a pet, no bandage left, or 20 s without help, it's a hard death.
+- A companion that survives a run **levels up** and starts the next match at **full HP**.
+- The egg's whelp goes to the **best defender** who has a free slot; otherwise the egg leaves an Epic chest.
+- Enemies pull hard toward a healer who is reviving someone.
+
+### Health and self-defence { #companion-health }
+
+Cob, 2026-10-02: a companion's health **drains if you don't heal him**, and while he's attacked he **defends himself** instead of following you. The Goblin Scout never fights; he scurries away.
+
+<span class="tag draft">Draft</span>: a downed companion starts at 30% and drains to 0 over 30 s. Standing below 25% HP he bleeds 1% a second. Hold E on him to patch him up, or to revive him to 30%. He fights whoever hit him in the last 5 s, as long as they're within 45 studs of you.
+
 ## How it works <span class="tag draft">Draft</span>
 
 - **One companion slot.** A full slot means dismissing the current companion to take a new one.
 - Drawn in the player style. Humans are 84% of player height so they never read as another player. A violet bond ring under each companion shows whose it is, to enemies in PvP too.
 - **Getting one:** free a caged hostage, then pick "Join me" (takes the slot) or "Go home" (the usual +1 loot luck next round). Keeping one costs you that bonus. Pets can also be bought from shopkeepers <span class="tag assumed">Assumed</span>.
-- **Commands:** Follow, Hold, Fetch (grab nearby loot), Attack (your target). On mobile one button opens a 4-way wheel.
-- Companions have HP and body-zone hits like players. A downed companion gives you 30 s to revive it, else it flees home and is lost.
+- **Commands:** Follow, Hold, Fetch (grab nearby loot), Attack (your target). In the prototype, G cycles them and the bottom-left panel has tap buttons.
+- Companions have HP and body-zone hits like players. A downed companion gives you 30 s to revive it, else it's gone and its pack drops.
 - **Companion dies:** its whole mini grid drops as a loot pile anyone can grab.
-- **You survive:** it carries over to the next match with its grid and gains a level <span class="tag assumed">Assumed</span>. A paid revive can include it <span class="tag assumed">Assumed</span>.
+- **You survive:** your companion survives too and joins your next match (Cob, 2026-10-02). A paid revive can include it <span class="tag assumed">Assumed</span>.
 
 ![Companion rules](assets/img/companions/rules.jpg)
 

@@ -14,30 +14,37 @@ What each input does. The **In prototype** tag means it already works in the Rob
 
 | Input | Action |
 |-|-|
-| **Hold** left click | A fine ring **hub** appears around the crosshair (only while attacking) and the view stops turning |
-| While holding, **drag left or right** | Slash to that side: targets that side's arm, hand or torso |
-| While holding, **drag up** | Overhead: targets the head or chest |
-| While holding, **drag down** | Low sweep: targets the legs and feet |
-| Hold without dragging | Thrust (pierce): hits whatever is under the crosshair |
-| **Release quickly** | Light attack |
-| **Keep holding** until the thin arc fills, then release | Heavy attack: +60% damage, double injury, staggers the enemy |
-| Hold right mouse while the hub is up | Turn the camera again mid-swing (Cob, 2026-10-02). It doesn't block. Release right mouse to steer the hub again |
-| Hold right mouse | Block |
-| Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
+| **Scroll up** | **High** stance |
+| **Middle click** | **Middle** stance |
+| **Scroll down** | **Low** stance |
+| Left click | Attack from your stance. **Click** for a light attack, **hold** for a heavy: +60% damage, double injury, staggers the enemy |
+| Hold right mouse | **Guard** your stance. A guard only blocks a blow from the **same** stance |
+| Right mouse as the hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
-| F or middle mouse | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release |
-| Mash Q | Throw off a latched spider (Cob, 2026-10-02): 6 presses every 2 s. Tap on touch, X on gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
+| F | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release. Middle click no longer focuses; it's the middle stance |
+| X | **Special ability** when Resolve is full (Y on a gamepad). See [Combat](combat.md#abilities) |
+| Mash Q | Throw off a latched spider, or tear free of a boss's hook (Cob, 2026-10-02): 6 presses every 2 s. Tap on touch, X on gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
-- **Q high guard is removed** (Cob, 2026-10-02). Drag up on the attack hub for an overhead; Q now throws off a latched spider.
+- **Gamepad:** d-pad up, side and down pick the high, middle and low stance. **Touch:** three stance buttons on the right edge.
+- **Q high guard is removed** (Cob, 2026-10-02); Q now throws off a latched spider.
 - **Jump is off.**
-- The Roblox cursor is hidden in play; menus show a custom cursor.
+- **Cursor** (Cob, 2026-10-02): a custom gold arrow in the project colours wherever the mouse is free, the shop included. It's hidden in first person and in cutscenes, except at the hostage choice.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
 - **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to its active weapon slot. See [Combat](combat.md#disarms).
 
-#### Attack hub <span class="tag decided">In prototype</span>
+#### Stance combat <span class="tag decided">In prototype</span> { #stances }
 
-Cob, 2026-10-02: the attack hub replaces the old mouse-flick swing, which was hard to aim. It's a mini circular hub in the middle of the screen that you drag toward the direction you want to attack. It only shows while you hold left click, and it's hidden while a ranged weapon is out. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
+Cob, 2026-10-02 (15:48): melee is now **stance combat**, Cob's own design. It replaces the attack hub ring entirely; there's no more dragging to pick a cut.
+
+- You're always in one of three stances: **high**, **middle** or **low**. You attack from your stance and guard your stance.
+- A guard only stops a blow that comes from the **same** stance.
+- A **red flush** on the screen edge shows where an enemy attack is coming from: **top** for high, **bottom** for low, **left or right** for side swings. It brightens in the parry window.
+- **Fliers and spiders have no stance**, so any guard works on them.
+
+<span class="tag draft">Draft</span> Studio's defaults, not confirmed by Cob: a high attack is the overhead, middle attacks alternate left and right slashes, and a low attack is the low sweep. There's no thrust for now.
+
+The view never moves on its own in the low stance (Cob, 2026-10-02). See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
 ### Ranged <span class="tag decided">In prototype</span>
 
@@ -67,17 +74,36 @@ See [Boss and finale](boss.md#moment-of-respite).
 
 | Input | Action |
 |-|-|
-| B | Open or close the bag (inventory) (Cob, 2026-10-01). A key reminder sits in the bottom-left of the HUD |
+| B | Open or close the bag (inventory) (Cob, 2026-10-01). A Bag hint sits at the bottom centre of the HUD |
 | I | Backup for B. Roblox Studio catches I before the game sees it, so use B when testing in Studio; I works in a real Roblox client |
 | Drag an item | Move it |
 | R while dragging | Rotate the item |
 | Drag a weapon to the active slot under the grid | Wield it. Any size fits; a weapon already there swaps back to the grid |
 | Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
-| Click food | Eat it: a bite takes **1.6 s** at **40% move speed**, and you can't attack during it. The food takes effect at the bite, extra clicks do nothing, and **Space** cancels the bite and keeps the food |
-| Hold E | Take from a loot box, pick up, or open a shop. Our own **E tag** floats over the thing and fills while you hold; there's no Roblox popup (Cob, 2026-10-02) |
+| Click food, a potion or a bandage | **Use** it with a real animation (Cob, 2026-10-02): food is eaten, a potion is drunk from the bottle, a bandage wraps the arm, so you can't spam them. <span class="tag draft">Draft</span>: the full clip must play, at 40% move speed; any hit, Space or click cancels it with no heal; cooldowns potion 8 s, bandage 6 s, food 4 s. See [Inventory](inventory.md#using-items) |
+| Hold E | Take from a loot box, pick up, or open a shop. Our own **E tag** floats over the thing and fills while you hold; there's no Roblox popup (Cob, 2026-10-02). If a pickup fails, the reason shows under the crosshair: arrows need a quiver and bolts need a bolt case |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
 
 Tab does nothing.
+
+### Companions <span class="tag decided">In prototype</span> { #companions }
+
+| Input | Action |
+|-|-|
+| G | Cycle your companion's command: Follow, Hold, Fetch, Attack <span class="tag draft">Draft</span> (G is a default Cob hasn't confirmed) |
+| Command buttons in the bottom-left panel | Tap to pick Follow, Hold, Fetch or Attack |
+| Hold E on your companion | **Patch up** a hurt companion, or **Revive** a downed one (2 s) |
+
+See [Companions](companions.md#prototype).
+
+### Shops <span class="tag decided">In prototype</span> { #shops }
+
+| Input | Action |
+|-|-|
+| Hold E on a keeper | Open the shop. The camera eases to a framed shot of the keeper and their stall |
+| Mouse wheel, Left/Right arrows, L1/R1 or d-pad | Move between wares. Scrolling past the last ware returns to the overview |
+
+The ware in focus gets a gold chevron and the green or red compare hint. The round clock keeps running. See [Shopkeepers](shopkeepers.md#shop-screen).
 
 ### Lobby <span class="tag decided">In prototype</span>
 
@@ -105,18 +131,15 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 | Hold E during a cutscene | Skip it (from 1 s in). See [Events and cutscenes](events.md#cutscenes) |
 | Hotbar weapon key | Weapon on the hotbar. Q is taken by the spider break-free, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |
-| Z, X, C, V | Companion orders: Follow, Hold, Fetch, Attack |
 
 ## Mobile <span class="tag draft">Planned</span>
 
-None of the touch controls are in the prototype yet. From the combat and HUD designs:
+The stance buttons are in the prototype; the rest is planned, from the combat and HUD designs.
 
 | Input | Action |
 |-|-|
-| Attack pad: tap | Thrust (snaps to the nearest zone in a small cone) |
-| Attack pad: swipe off it | Directional swing |
-| Attack pad: hold | Heavy attack |
-| Block button | Block, and parry when timed |
+| Three stance buttons on the right edge | High, middle and low stance <span class="tag decided">In prototype</span> |
+| Guard button | Guard your stance, and parry when timed |
 | Dodge button | Dodge |
 | Tap the minimap | Full map (clicking it already works on desktop) |
 | Companion pill: tap | Cycle companion orders |

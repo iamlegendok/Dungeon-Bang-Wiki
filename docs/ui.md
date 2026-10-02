@@ -28,9 +28,10 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![What each companion does to the map](assets/img/ui/companion_maps.jpg)
 
-- **Cave Hound** <span class="tag decided">Decided</span>: reveal radius 2 tiles while it is with you (test walk: 32% of floor lit, rooms entered 75% seen).
-- **Owl Familiar** <span class="tag decided">Decided</span>: once per floor, a dashed bearing toward the nearest stairs. Direction only, reveals no floor. A rim arrow tracks the stairs for 20 s <span class="tag assumed">Assumed</span>.
-- **Humans:** no map perk.
+- **Cave Hound** <span class="tag decided">In prototype</span>: the trail map reveals 2 tiles around you while it is with you (test walk: 32% of floor lit, rooms entered 75% seen).
+- **Owl Familiar** <span class="tag decided">In prototype</span>: once per floor, a dashed bearing toward the nearest stairs, shown in the world and on the trail map. Direction only, reveals no floor. A rim arrow tracks the stairs for 20 s <span class="tag assumed">Assumed</span>.
+- **Goblin Scout** <span class="tag decided">In prototype</span>: the trail map lights up the tiles he runs over, and a copper dot shows where he is.
+- **Other humans:** no map perk.
 
 ## HUD <span class="tag draft">Draft</span>
 
@@ -40,7 +41,29 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 
-**Attack hub** <span class="tag decided">In prototype</span>: a fine ring around the crosshair that appears only while you hold left click. Drag toward a side to pick the cut; a thin arc fills as a heavy charges. It's hidden while a ranged weapon is out. It replaces the earlier five-marker swing guide. See [Controls](controls.md#fighting).
+**Stance and threat** <span class="tag decided">In prototype</span>: melee is stance combat (Cob, 2026-10-02). A **red flush** on the screen edge shows where an enemy attack is coming from: top for high, bottom for low, left or right for side swings; it brightens in the parry window. It replaces the attack hub ring. See [Controls](controls.md#stances).
+
+**Bottom-left panel** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): the HUD is one panel in the bottom left. From left to right:
+
+1. The **body doll**.
+2. A column with **HP** (and its poison overlay), the **eating bar**, **stamina**, **Resolve** (the [special ability](combat.md#abilities) bar), **damage and armour** with the compare hint, your **coins and vault**, and your **injuries**.
+3. The **companion ring** on the right.
+
+The companion command buttons sit above the panel, and the **Bag** hint is at the bottom centre.
+
+**Enemy health bars** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): every enemy has a health bar and flashes red when hit.
+
+**Better-drop gleam** <span class="tag decided">In prototype</span>: floor gear that beats yours gets a slow gold rim, per player.
+
+**Cursor** <span class="tag decided">In prototype</span>: a custom gold arrow wherever the mouse is free (menus and the shop); hidden in first person and cutscenes, except at the hostage choice.
+
+**Stairs banner:** "Stairs taken" clears once the new floor has loaded.
+
+**Companion portrait** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): a circle to the right of the HP and stamina panel shows your companion's head. A red ring around it drains as the companion takes damage, and it pulses red while the companion is down. It's hidden when you have no companion.
+
+**Damage, armour and comparing** <span class="tag decided">In prototype</span>: your damage and armour sit in the panel's column under HP and stamina. Comparing an item shows **green with an up arrow** when it's better and **red with a down arrow** when it's worse. Weapons compare against your active weapon; armour compares against the best piece of the same kind you carry.
+
+**Pickups:** a failed pickup shows its reason under the crosshair.
 
 **Mobile** (landscape): body doll top left, timer top centre, minimap top right with a companion pill beside it (tap cycles orders, hold opens a 4-way wheel), hotbar low between the thumbs, and the combat cluster (attack pad, block, dodge) from [Combat](combat.md#fighting-skill).
 

@@ -2,6 +2,38 @@
 
 Everything Cob has confirmed, newest first. Drafts and assumptions are not here until Cob confirms them.
 
+## 2026-10-02 (evening)
+
+### Combat
+- **Special abilities:** each class has one powerful ability, charged by parrying (the Resolve bar), on **X** (Y on a pad): Knight Bastion, Nobleman Gilded Reprisal, Ranger Pinning Shot, Arcanist Rune Nova, Witcher Grim Tonic. Cinematic look approved. See [Combat](combat.md#abilities).
+- **Tuning:** harder to evade, enemies swing longer and hit harder, parries are easier to read, a bolder red flush.
+- **Using items is animated:** a potion is drunk, a bandage wraps the arm, food is eaten, so you can't spam them.
+
+### Enemies
+- Every enemy has a **health bar** and flashes red when hit. Enemies don't stack behind each other; a blocked one strafes around.
+- **Spiders walk** instead of sliding. Big web-lobbing spiders lay **eggs** that hatch Skitterlings after 30 s, counting only while a player is near.
+- **Spider Slinger:** the rider sits upright and has a real fall-off animation, then fights on foot.
+- **Shopkeepers and cutscene NPCs die like other NPCs** (death clip, body sinks), never fading out.
+
+### Companions
+- A companion's health **drains if you don't heal him**, and he **defends himself** while attacked instead of following. The Goblin Scout never fights; he scurries away. Hold E to patch up or revive.
+
+### Events and shops
+- **Treasure thief:** you must **capture** him. He steals your carried silver if you have any; otherwise you chase him for a drop. He never spawns silver and never tumbles.
+- **Storyteller once per match**, in a random round from 1 to 3; his story plays the next round.
+- **Dragon's Egg:** defend a nest and egg through waves; if it survives, the whelp goes to the best defender.
+- The **Prince** is scared in the cage and relieved when freed.
+- **Every shopkeeper is animated** (idle, greet, talk, sale, refuse; the early four also startle and flee). In the shop you can't move, and there are no first-person arms in shops or cutscenes.
+
+### Map and UI
+- **HUD panel** now holds Resolve and your injuries too.
+- **Better-drop gleam:** floor gear that beats yours gets a slow gold rim, per player.
+- **Cursor:** a custom gold arrow wherever the mouse is free; hidden in first person and cutscenes, except at the hostage choice.
+- The **"Stairs taken"** banner clears once the new floor loads.
+
+### Boss
+- Cob asked for a **lich who portals in enemies** and is invincible until they're dead, with a **chain hook that never misses**, curves around things and is broken with Q, in a **huge room** with roof routes and one wide entryway. The design is **Morrakhet, the Hollow King**; which boss goes in is still open. See [Boss and finale](boss.md).
+
 ## 2026-10-02
 
 ### Endgame
@@ -12,8 +44,17 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **More weapons and armour**, and **drops roll their own stats** so the same item rarely repeats the same numbers. See [Weapons and armour](gear.md); the lineup and numbers there are drafts.
 
 ### Combat
+- **Stance combat** (15:48, Cob's design) replaces the attack hub. Scroll up, middle click and scroll down pick the high, middle and low stance (d-pad on gamepad, three stance buttons on touch). Left click attacks from your stance (click light, hold heavy); right mouse guards it, timed to parry. **F** alone focuses.
+- **A guard only blocks a blow from the same stance.** A red flush on the screen edge shows where an attack comes from and brightens in the parry window. Fliers and spiders have no stance, so any guard works.
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
 - **Hurt enemy body parts flash red** (deeper red when broken).
+
+### Companions
+- **One companion slot**; your companion dies with you. Enemies treat companions like another player.
+- **Survive a run and your companion survives too:** it follows you in the lobby, stands beside your preview and joins your next match. A hard death still loses it.
+- A **companion portrait** sits right of the HP and stamina panel, with a red ring that drains with damage and pulses while it's down.
+- **Goblin Scout** companion (Cob's design, approved 18:08): a small friendly goblin who runs around finding gold for you; the trail map lights up the tiles he runs over and a copper dot shows where he is.
+- A healing human companion allows a downed state. "Join me" on a freed hostage recruits them. The Dragon's Egg hatches a Dragon Whelp.
 
 ### Enemies
 - Some enemies are **gated by round**, not depth: fliers from round 3, Brood Sack from round 4, elite Gulpers from round 5.
@@ -22,7 +63,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Inventory
 - Dropped items show their **3D mesh**, or a coloured orb with the item's icon above it (**red** weapons, **green** food, **blue** armor).
 - Legacy items with no inventory icon are **removed** from the game.
-- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. Two slots, **Active melee** and **Active ranged**; R swaps between them. See [Inventory](inventory.md#active-weapon).
+- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. Two slots, **Active melee** and **Active ranged**; R swaps between them. Active weapons stay visible in the bag so enchants can be dragged onto them. See [Inventory](inventory.md#active-weapon).
 
 ### Shopkeepers
 - **Eight shopkeepers**, each tied to certain rounds, grislier and more armoured in later rounds. Shops vary: a rolled keeper per round, rolled stock with a deal of the round, and a rolled stall placement. See [Shopkeepers](shopkeepers.md).
@@ -35,9 +76,14 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **Loading screen:** while a dungeon loads, show the title card art with the logo and a **rotating tip**, **no loading bar**. This replaces the earlier logo-only, no-tip rule.
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
 - The sword's swing aid should not show while a bow is drawn.
-- **Attack hub:** hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaces the mouse-flick swing.
-- **Right mouse during a swing** turns the camera again while the attack hub is up; it doesn't block then.
+- **Attack hub** (replaced the same day by stance combat): hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaced the mouse-flick swing.
 - **Q high guard retired.** Q is now mashed to throw off a latched spider (Cob's idea; in the prototype).
+- **The HUD is one bottom-left panel:** body doll, then a column (HP with poison overlay, eating bar, stamina, damage and armour, coins and vault, status icons), then the companion ring. Companion buttons sit above it; the Bag hint is bottom centre.
+- **The view never moves on its own in the low stance** (Cob rejected the camera dip).
+- **Damage and armour** show under the health and stamina bars. Compared items show green with an up arrow when better and red with a down arrow when worse (weapons against your active weapon, armour against your best piece of that kind).
+- **Failed pickups** show their reason under the crosshair; arrows need a quiver and bolts a bolt case.
+- **Shop screen:** holding E on a keeper frames the keeper and stall; a tall card on the right shows wares above your pack. Wheel, arrows, L1/R1 or d-pad move between wares; the focused ware gets a gold chevron and compare hint. The clock keeps running.
+- **Cutscenes are cinematic:** cuts with a slow push-in, close on the speaker's face, letterbox bars and typed subtitles with the name in gold (text only until audio uploads reopen 28 October).
 - **Interact prompts** are our own E tags that fill while you hold E, not the Roblox popup.
 - **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 
@@ -77,7 +123,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Controls
 - The bag (inventory) opens and closes with **B**. I stays as a backup key.
 - **R swaps between melee and ranged.**
-- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Retired 2026-10-02: overheads come from dragging up on the attack hub, and Q becomes the spider break-free key.)
+- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Retired 2026-10-02: overheads came from the attack hub, now the high stance, and Q becomes the spider break-free key.)
 - Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead. (Replaced on 2026-10-02 by the attack hub.)
 
 ### Combat
