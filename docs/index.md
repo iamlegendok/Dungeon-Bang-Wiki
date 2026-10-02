@@ -24,6 +24,7 @@ A first-person Roblox dungeon crawler. Parties of up to four drop into small ran
 [**Lobby, queue and shop** <span>Vault, invite codes, silverlings, goldlings and Robux</span>](lobby.md)
 [**Controls** <span>Keys, mouse and touch, what works today</span>](controls.md)
 [**Combat and injuries** <span>Body zones, hunger, parries, stamina</span>](combat.md)
+[**Ranged weapons** <span>Bows, crossbow, throwing axes, swaying reticle</span>](ranged.md)
 [**Inventory** <span>Three layers, islands, backpacks</span>](inventory.md)
 [**Companions** <span>One pet or human NPC, mini grids</span>](companions.md)
 [**Enemies** <span>Families by depth, elites, scaling</span>](enemies.md)

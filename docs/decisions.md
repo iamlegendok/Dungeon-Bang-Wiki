@@ -37,6 +37,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 
 ### Controls
 - The bag (inventory) opens and closes with **B**. I stays as a backup key.
+- **R swaps between melee and ranged.**
 - **Q toggles a high guard**, the only way to swing overhead: every swing becomes an overhead, so you don't have to look at the ceiling.
 - Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead.
 

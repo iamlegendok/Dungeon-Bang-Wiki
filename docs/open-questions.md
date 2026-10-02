@@ -22,6 +22,9 @@ Everything waiting on Cob, grouped by system. Each page also lists its own quest
 ## Combat
 - Can every human companion heal, or only some (for example a dedicated Medic)?
 
+## Ranged
+- Honest reticle, or a drop hint? Longbow for Rangers only? ([Ranged weapons](ranged.md#open))
+
 ## Companions
 - Is the split "pets sense, humans fight and carry" right?
 - Do companions fight in the finale? Can a human companion betray you or be bribed?

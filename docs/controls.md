@@ -77,6 +77,7 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 | Q | Weapon on the hotbar. Q is now the high guard toggle, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |
 | Z, X, C, V | Companion orders: Follow, Hold, Fetch, Attack |
+| R | Swap between melee and ranged (Cob, 2026-10-01). Ranged isn't in the prototype yet; see [Ranged weapons](ranged.md#controls) |
 
 ## Mobile <span class="tag draft">Planned</span>
 

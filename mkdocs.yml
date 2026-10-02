@@ -59,6 +59,7 @@ nav:
   - Systems:
       - Controls: controls.md
       - Combat and injuries: combat.md
+      - Ranged weapons: ranged.md
       - Inventory: inventory.md
       - Companions: companions.md
       - Enemies: enemies.md
