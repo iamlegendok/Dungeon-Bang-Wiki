@@ -34,20 +34,20 @@ Each point of loot luck moves 30% of every tier's chance up one tier. Events kee
 
 ![The new weapon and shield models](assets/img/gear/weapon_roster.jpg)
 
-All of them use the existing animations: blades swing like the Longsword, daggers like the Dagger (25% quicker), and staffs and the spear like the Staff (two-handed). Damage is the round-1 Common midpoint of a light hit; heavy hits do 1.6×.
+No melee weapon is longer than 4 cells, so every class except the Witcher can wield any blade, staff or spear. The Witcher's smaller weapon slots take daggers and the short blades. All of them use the existing animations: blades swing like the Longsword, daggers like the Dagger (25% quicker), and staffs and the spear like the Staff (two-handed). Damage is the round-1 Common midpoint of a light hit; heavy hits do 1.6×.
 
 ### Blades
 | Item | Size | Rounds | Damage | Built-in bonus | Look |
 |-|-|-|-|-|-|
 | Rusty Shortsword | 1x3 | 1–2 | 15 (speed 105%) | – | a pitted starter blade |
-| Longsword | 1x5 | 1–6 | 20 (speed 100%) | – | the all-rounder |
-| Arming Sword | 1x4 | 1–4 | 19 (speed 106%) | – | light and quick for a sword |
+| Longsword | 1x4 | 1–6 | 20 (speed 100%) | – | the all-rounder |
+| Arming Sword | 1x3 | 1–4 | 19 (speed 106%) | – | light and quick for a sword |
 | Falchion | 1x4 | 2–5 | 22 (speed 96%) | – | broad single edge, chops hard |
-| Bearded Axe | 2x4 | 2–6 | 25 (speed 88%) | Brutal | slow, heavy blows |
-| Broadsword | 1x5 | 3–6 | 24 (speed 92%) | – | wide blade, knuckle guard |
-| Flanged Mace | 1x4 | 3–6 | 23 (speed 92%) | Bonebreaker | breaks bones |
-| Runeblade | 1x5 | 4–6 | 23 (speed 100%) | Hexing | arcane runes slow what it cuts |
-| Bonereaver | 2x5 | 5–6 | 28 (speed 85%) | Serrated | grisly serrated cleaver |
+| Bearded Axe | 2x3 | 2–6 | 25 (speed 88%) | Brutal | slow, heavy blows |
+| Broadsword | 1x4 | 3–6 | 24 (speed 92%) | – | wide blade, knuckle guard |
+| Flanged Mace | 1x3 | 3–6 | 23 (speed 92%) | Bonebreaker | breaks bones |
+| Runeblade | 1x4 | 4–6 | 23 (speed 100%) | Hexing | arcane runes slow what it cuts |
+| Bonereaver | 2x4 | 5–6 | 28 (speed 85%) | Serrated | grisly serrated cleaver |
 
 ### Daggers
 | Item | Size | Rounds | Damage | Built-in bonus | Look |
@@ -62,12 +62,12 @@ All of them use the existing animations: blades swing like the Longsword, dagger
 ### Staffs and spear
 | Item | Size | Rounds | Damage | Built-in bonus | Look |
 |-|-|-|-|-|-|
-| Quarterstaff | 1x5 | 1–3 | 17 (speed 100%) | – | plain ash pole |
-| Staff | 1x5 | 1–6 | 18 (speed 100%) | – | the Arcanist's staff |
-| Iron-shod Staff | 1x5 | 2–5 | 20 (speed 97%) | – | iron caps both ends |
-| Boar Spear | 1x5 | 2–6 | 21 (speed 96%) | Brutal | heavy leaf head with lugs |
-| Ember Staff | 1x5 | 3–6 | 21 (speed 100%) | Searing | a live coal in a copper cage |
-| Voidwood Staff | 1x5 | 5–6 | 23 (speed 100%) | Thirsting | bone claws, drinks life |
+| Quarterstaff | 1x4 | 1–3 | 17 (speed 100%) | – | plain ash pole |
+| Staff | 1x4 | 1–6 | 18 (speed 100%) | – | the Arcanist's staff |
+| Iron-shod Staff | 1x4 | 2–5 | 20 (speed 97%) | – | iron caps both ends |
+| Boar Spear | 1x4 | 2–6 | 21 (speed 96%) | Brutal | heavy leaf head with lugs |
+| Ember Staff | 1x4 | 3–6 | 21 (speed 100%) | Searing | a live coal in a copper cage |
+| Voidwood Staff | 1x4 | 5–6 | 23 (speed 100%) | Thirsting | bone claws, drinks life |
 
 The [ranged weapons](ranged.md) (Shortbow, Longbow, Crossbow, Throwing Axes) roll rarity and bonuses too, as a damage multiplier on their own damage.
 
