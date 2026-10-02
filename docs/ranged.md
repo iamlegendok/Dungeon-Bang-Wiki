@@ -22,6 +22,8 @@ Ranged weapons are built into the Studio prototype (Cob hasn't played them yet) 
 
 ## The reticle
 
+- The sword's swing guide is hidden while a bow is drawn (Cob, 2026-10-02) <span class="tag decided">Decided</span>.
+
 - The reticle shows where the shot **leaves**, not where it lands. Whether it ever hints at drop is <span class="tag draft">Draft</span> (the recommendation is an honest reticle with no hint).
 - It always wanders a little. Walking, sprinting, jumping, low stamina and an injured bow arm make it wander more. A hurt head adds twitches.
 - Holding a full draw too long makes it tremble and costs stamina.

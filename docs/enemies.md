@@ -8,7 +8,7 @@
 
 ## Ground rules <span class="tag draft">Draft</span>
 
-- Every humanoid enemy uses the same 15-part R15 rig as the players, so it has the same 10 hit zones and [injury rules](combat.md), and can reuse player animations. Beasts map their parts onto the same zone names.
+- Every humanoid enemy uses the same 15-part R15 rig as the players, so it has the same 10 hit zones and [injury rules](combat.md#enemy-injuries), with repeated hits to one limb making it worse (Cob, 2026-10-02 <span class="tag decided">Decided</span>). It can also reuse player animations. Beasts map their parts onto the same zone names.
 - Every attack has a visual tell (a warm glint on the weapon) plus a sound. Standard wind-up is 0.45 s; heavier attacks are longer; nothing is ever faster than 0.35 s so parries stay fair on phones.
 - Each role has its own silhouette so you can read a room at a glance: rushers small, ranged hold weapons up, tanks wide, supports in tall hats, ambushers disguised.
 - At most 2 enemies swing at the same player at once; the rest circle.

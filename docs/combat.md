@@ -90,6 +90,14 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
 - Enemies and the boss use the same zones.
 
+### Enemy injuries <span class="tag decided">Decided</span> { #enemy-injuries }
+
+!!! success "Cob, 2026-10-02"
+    Humanoid enemies take body-part damage like players, and hitting the same limb again (for example the right arm) hurts them more each time, just like it does for players.
+
+- "Humanoid" means enemies with person-like limbs: head, arms, hands, legs and feet. The exact list is <span class="tag draft">Draft</span> until the Studio prototype confirms it, but it covers goblins, orcs and skeletons, and not slimes or fliers.
+- A hurt or broken enemy limb has the same effects as on a player: a broken weapon hand weakens or drops its attacks, broken legs slow it down.
+
 ### Enemy guard <span class="tag decided">In prototype</span> { #enemy-guard }
 
 Enemies can raise a guard. The tell is obvious: the weapon comes up across the body, a steel-white outline appears and a soft clink plays. The guard lasts about 0.7 to 0.9 s.

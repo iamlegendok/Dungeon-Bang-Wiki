@@ -2,6 +2,15 @@
 
 Everything Cob has confirmed, newest first. Drafts and assumptions are not here until Cob confirms them.
 
+## 2026-10-02
+
+### Combat
+- **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
+
+### Map and UI
+- **Loading screen:** while a dungeon loads, show the title cards **with tips**. This replaces the earlier logo-only, no-tip rule.
+- The sword's swing guide should not show while a bow is drawn.
+
 ## 2026-10-01
 
 ### Game loop and progression
@@ -63,7 +72,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Map and UI
 - **Dynamic trail map**: reveal radius locked at **1 tile (4 studs)**, no light through walls.
 - **All UI uses the shared palette**: arcane colours mixed with earthy tones.
-- **Loading cards:** 4 cards, logo only, no tip or loading bar.
+- **Loading cards:** 4 cards with the logo. (Replaced on 2026-10-02: see above.)
 
 ### Characters
 - Mobile-first but fun on desktop; detailed heads and adornments on simpler bodies; flexible joints; per-body-part damage.
