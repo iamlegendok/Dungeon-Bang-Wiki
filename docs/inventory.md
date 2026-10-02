@@ -58,6 +58,22 @@ There are **two** active slots, **Active melee** and **Active ranged**, and **R*
 
 <span class="tag assumed">Assumed</span> Dropping onto a filled slot swaps the weapons; that's the prototype's choice, not yet confirmed.
 
+### Weapon families <span class="tag draft">Draft</span> { #weapon-families }
+
+Weapons share animations by family, so a new weapon only needs a family to swing. Built in Studio; Cob hasn't seen it in game yet.
+
+| Family | Weapons | Notes |
+|-|-|-|
+| Blade | Longsword | |
+| Dagger | Dagger | Swings are 25% quicker: light 0.6 s, heavy 1.1 s |
+| Staff | Staff | Two-handed |
+| Shield | Hex Shield | Worn in the off hand with a Blade or Dagger; put away with a Staff or a ranged weapon |
+| Bow | Shortbow, Longbow | |
+| Crossbow | Crossbow | |
+| Throw | Throwing Axes | |
+
+Every melee family has the same five cuts from the [attack hub](controls.md#fighting) (left and right slash, overhead, low sweep, thrust), plus block, parry and the disarm and pickup moves.
+
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 
 ![Island layouts per class](assets/img/inventory/islands.jpg)
