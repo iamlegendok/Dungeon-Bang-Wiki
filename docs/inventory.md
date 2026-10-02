@@ -28,7 +28,7 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 4. Each item type belongs to exactly one layer.
 5. An item must fit entirely inside one island; it can't bridge a gap.
 6. Each class's islands sit at fixed spots on a shared class map (10 x 7 in the mockup), so layers line up the same way every time.
-7. Layer 3 cells over nothing can hold standalone trinkets and charms that work by themselves.
+7. Layer 3 can also hold standalone [trinkets](trinkets.md) that work by themselves, anywhere on the layer.
 
 ### Example loadout (from the mockup)
 
