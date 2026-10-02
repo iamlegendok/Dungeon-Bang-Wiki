@@ -15,6 +15,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Inventory
 - Dropped items show their **3D mesh**, or a coloured orb with the item's icon above it (**red** weapons, **green** food, **blue** armor).
 - Legacy items with no inventory icon are **removed** from the game.
+- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. Two slots, **Active melee** and **Active ranged**; R swaps between them. See [Inventory](inventory.md#active-weapon).
 
 ### Shopkeepers
 - **Eight shopkeepers**, each tied to certain rounds, grislier and more armoured in later rounds. Shops vary: a rolled keeper per round, rolled stock with a deal of the round, and a rolled stall placement. See [Shopkeepers](shopkeepers.md).
@@ -28,6 +29,9 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
 - The sword's swing aid should not show while a bow is drawn.
 - **Attack hub:** hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaces the mouse-flick swing.
+- **Right mouse during a swing** turns the camera again while the attack hub is up; it doesn't block then.
+- **Q high guard retired.** Q is now mashed to throw off a latched spider (Cob's idea; in the prototype).
+- **Interact prompts** are our own E tags that fill while you hold E, not the Roblox popup.
 - **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 
 ## 2026-10-01
@@ -66,11 +70,11 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Controls
 - The bag (inventory) opens and closes with **B**. I stays as a backup key.
 - **R swaps between melee and ranged.**
-- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Since 2026-10-02, dragging up on the attack hub also gives an overhead.)
+- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Retired 2026-10-02: overheads come from dragging up on the attack hub, and Q becomes the spider break-free key.)
 - Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead. (Replaced on 2026-10-02 by the attack hub.)
 
 ### Combat
-- **Parries can disarm**, both ways. A picked-up weapon returns to its **same inventory slot**, or the player is told there's no room.
+- **Parries can disarm**, both ways. A picked-up weapon returns to its **same inventory slot**, or the player is told there's no room. (Since 2026-10-02 it returns to its active weapon slot.)
 - **Skill based and survival strained**, with per-body-part injuries.
 - **Hunger is a draining meter**; food lives on inventory layer 1.
 - **Broken bones carry into the next round**, not the next match.

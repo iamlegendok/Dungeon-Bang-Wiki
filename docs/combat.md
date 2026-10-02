@@ -82,8 +82,8 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ![Fighting skill](assets/img/combat/fighting_skill.jpg)
 
-- **Swing direction picks the zone:** a slash targets that side's arm, hand or torso, a low sweep targets the legs and feet, a thrust hits whatever is under the crosshair, and an overhead targets the head or chest. You pick the direction on the **attack hub** (Cob, 2026-10-02): hold left click and a small ring appears around the crosshair while the view holds still; drag left or right to slash, up for an overhead, down for a low sweep, or don't drag to thrust. Release quickly for a light hit, or keep holding until the arc fills for a heavy: +60% damage, 2x injury, but parryable. The **Q high guard** still turns every swing into an overhead.
-- **Desktop:** hold left click and drag on the attack hub to swing (see [Controls](controls.md#fighting)), Q for the high guard; hold right mouse to block; Space plus a direction to dodge.
+- **Swing direction picks the zone:** a slash targets that side's arm, hand or torso, a low sweep targets the legs and feet, a thrust hits whatever is under the crosshair, and an overhead targets the head or chest. You pick the direction on the **attack hub** (Cob, 2026-10-02): hold left click and a small ring appears around the crosshair while the view holds still; drag left or right to slash, up for an overhead, down for a low sweep, or don't drag to thrust. Release quickly for a light hit, or keep holding until the arc fills for a heavy: +60% damage, 2x injury, but parryable. The old **Q high guard** is retired (Cob, 2026-10-02).
+- **Desktop:** hold left click and drag on the attack hub to swing (see [Controls](controls.md#fighting)); hold right mouse to block; Space plus a direction to dodge.
 - **Mobile:** an attack pad. Tap to thrust, swipe off it for a directional swing, hold for a heavy. Block and dodge buttons. Thrusts snap to the nearest zone in a small cone.
 - **Enemy swing timing:** 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is block pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
 - Block stops 80% from the front; the rest chips the shield arm. Dodge has 0.25 s of invincibility.
@@ -133,7 +133,7 @@ The timings and multiplier are prototype values from the Studio build and may ch
 
 - **It works both ways:** if an enemy's guard parries your light swing, there's a 10% chance you lose your sword.
 - A disarmed weapon flies **4 to 6 studs**. Until you pick it up you can only dodge.
-- **Walk over the weapon** to pick it up. It goes back into the **same pack slot**. If something filled that slot in the meantime, you see "No room" and the weapon stays on the floor.
+- **Walk over the weapon** to pick it up. It goes back into its **active weapon slot** (see [Inventory](inventory.md#active-weapon)).
 - Pickup animations are wanted <span class="tag draft">Planned</span>.
 
 All numbers are prototype values.

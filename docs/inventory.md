@@ -45,6 +45,35 @@ From Cob, 2026-10-02:
 - If it has no mesh, it shows a **coloured orb** with the item's icon floating above it: **red** for weapons, **green** for food, **blue** for armor.
 - Every item in the game has an inventory icon. The old prototype placeholder items that had none (Short Sword, War Axe and the old runes) have been removed.
 
+## Active weapon <span class="tag decided">Decided</span> { #active-weapon }
+
+From Cob, 2026-10-02: under the bag grid sits an **active weapon** slot. Drag a weapon there and it becomes the weapon in your hands.
+
+- It takes a weapon of **any size**; there's no footprint limit.
+- A weapon in the active slot **doesn't use grid space**.
+- Dropping a weapon onto a filled active slot **swaps** them: the old weapon goes back to the grid.
+- A [disarmed](combat.md#disarms) weapon returns to its active slot when you pick it up.
+
+There are **two** active slots, **Active melee** and **Active ranged**, and **R** swaps between them (Cob, 2026-10-02).
+
+<span class="tag assumed">Assumed</span> Dropping onto a filled slot swaps the weapons; that's the prototype's choice, not yet confirmed.
+
+### Weapon families <span class="tag draft">Draft</span> { #weapon-families }
+
+Weapons share animations by family, so a new weapon only needs a family to swing. Built in Studio; Cob hasn't seen it in game yet.
+
+| Family | Weapons | Notes |
+|-|-|-|
+| Blade | Longsword | |
+| Dagger | Dagger | Swings are 25% quicker: light 0.6 s, heavy 1.1 s |
+| Staff | Staff | Two-handed |
+| Shield | Hex Shield | Worn in the off hand with a Blade or Dagger; put away with a Staff or a ranged weapon |
+| Bow | Shortbow, Longbow | |
+| Crossbow | Crossbow | |
+| Throw | Throwing Axes | |
+
+Every melee family has the same five cuts from the [attack hub](controls.md#fighting) (left and right slash, overhead, low sweep, thrust), plus block, parry and the disarm and pickup moves.
+
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 
 ![Island layouts per class](assets/img/inventory/islands.jpg)
