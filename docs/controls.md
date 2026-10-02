@@ -26,9 +26,10 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
 | F or middle mouse | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release |
+| Mash Q | Throw off a latched spider (Cob, 2026-10-02): 6 presses every 2 s. Tap on touch, X on gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
-- **Q high guard is removed** (Cob, 2026-10-02). Q is unbound in the prototype; drag up on the attack hub for an overhead.
+- **Q high guard is removed** (Cob, 2026-10-02). Drag up on the attack hub for an overhead; Q now throws off a latched spider.
 - **Jump is off.**
 - The Roblox cursor is hidden in play; menus show a custom cursor.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
@@ -89,7 +90,6 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 
 | Input | Action |
 |-|-|
-| Mash Q | Break free when a Skitterling latches on: 6 presses every 2 s (tap on phone, X on a pad). Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 | Hold E during a cutscene | Skip it (from 1 s in). See [Events and cutscenes](events.md#cutscenes) |
 | Hotbar weapon key | Weapon on the hotbar. Q is taken by the spider break-free, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |

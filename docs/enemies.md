@@ -41,15 +41,15 @@ Fliers take no limb injuries.
 
 ## Spiders and mounted enemies <span class="tag draft">Draft</span> { #spiders }
 
-Designed 2026-10-02 after Cob's ask. The round gates are defaults and Cob hasn't seen these in game yet.
+Built in Studio 2026-10-02. Q to break free is Cob's own idea and is in the prototype (see [Controls](controls.md#fighting)); the rest is draft. The round gates are defaults and Cob hasn't seen these in game yet.
 
 | Enemy | From round | What it does |
 |-|-|-|
-| **Skitterling** | 2 | Small and fast. A pincer bite with a rear-up and fang glint tell. It leaps at your face and **latches on** |
+| **Skitterling** | 2 | Small and fast, in packs of 2 to 4. A pincer bite with a rear-up and fang glint tell. It leaps at your face and **latches on** |
 | **Webspinner** | 3 | About twice a Skitterling's size. Flings a glowing web glob at where you're heading, plus a pincer bite |
 | **Spider Slinger** | 4 | The first **mounted** enemy: a Goblin Slinger riding a saddled Webspinner |
 
-**Latched on.** A camera cut shows the Skitterling clinging and a big **Q** pulses (tap on phone, X on a pad). Mash Q **6 times every 2 s** to throw it off. Each missed window is a bite; the 3rd miss poisons you and it drops off. Space, attacks and dodge do nothing while it's on you, and other enemies hold back.
+**Latched on.** A camera cut shows the Skitterling clinging and a big **Q** pulses (tap on phone, X on a pad). Mash Q **6 times every 2 s** to throw it off. Each missed window is a bite; the 3rd miss poisons you and it drops off. A Skitterling you throw off lies **dazed** for a moment and takes extra damage. Space, attacks and dodge do nothing while it's on you, and other enemies hold back.
 
 **Webs.** A hit slows you hard; a dodge shakes it off. A miss leaves a sticky floor patch for a few seconds. Block or parry catches the web on your weapon.
 
