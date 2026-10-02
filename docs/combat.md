@@ -95,8 +95,11 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 !!! success "Cob, 2026-10-02"
     Humanoid enemies take body-part damage like players, and hitting the same limb again (for example the right arm) hurts them more each time, just like it does for players.
 
-- "Humanoid" means enemies with person-like limbs: head, arms, hands, legs and feet. The exact list is <span class="tag draft">Draft</span> until the Studio prototype confirms it, but it covers goblins, orcs and skeletons, and not slimes or fliers.
-- A hurt or broken enemy limb has the same effects as on a player: a broken weapon hand weakens or drops its attacks, broken legs slow it down.
+In the Studio prototype <span class="tag decided">In prototype</span>:
+
+- **Goblins, orcs (elites included) and skeletons** use the player injury steps: hurt, then broken, scaled to their health.
+- **Legs** slow them, a **broken foot** makes them stumble, **arm** injuries weaken their hits, **two broken arms** make some swings miss, and **head** hits daze them.
+- **Fliers** take no limb injuries.
 
 ### Enemy guard <span class="tag decided">In prototype</span> { #enemy-guard }
 
