@@ -34,6 +34,8 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **Q high guard retired.** Q is now mashed to throw off a latched spider (Cob's idea; in the prototype).
 - **Damage and armour** show under the health and stamina bars. Compared items show green with an up arrow when better and red with a down arrow when worse (weapons against your active weapon, armour against your best piece of that kind).
 - **Failed pickups** show their reason under the crosshair; arrows need a quiver and bolts a bolt case.
+- **Shop screen:** holding E on a keeper frames the keeper and stall; a tall card on the right shows wares above your pack. Wheel, arrows, L1/R1 or d-pad move between wares; the focused ware gets a gold chevron and compare hint. The clock keeps running.
+- **Cutscenes are cinematic:** cuts with a slow push-in, close on the speaker's face, letterbox bars and typed subtitles with the name in gold (text only until audio uploads reopen 28 October).
 - **Interact prompts** are our own E tags that fill while you hold E, not the Roblox popup.
 - **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 

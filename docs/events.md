@@ -1,6 +1,6 @@
 # Events and cutscenes
 
-Everything on this page is <span class="tag draft">Draft</span> (v0.2, 2026-10-02). Cob asked for "a thread about events, safe cutscenes (npcs wont attack you during it) ect"; the defaults below were picked without asking and Cob hasn't confirmed them yet. Each round's events sit in the special rooms described on [Dungeon floors](dungeon.md).
+Everything on this page is <span class="tag draft">Draft</span> (v0.2, 2026-10-02) except the cinematic look, which Cob asked for. Cob asked for "a thread about events, safe cutscenes (npcs wont attack you during it) ect"; the defaults below were picked without asking and Cob hasn't confirmed them yet. Each round's events sit in the special rooms described on [Dungeon floors](dungeon.md).
 
 ## Safe cutscenes <span class="tag draft">Draft</span> { #cutscenes }
 
@@ -28,9 +28,11 @@ A cutscene is a short scripted camera moment: letterbox bars and a subtitle or t
 - **Round end wins.** Clock at 0 or taking the stairs ends any scene.
 - **No cutscenes in the finale fight**, except the boss or PvP intro, where everyone is Sheltered.
 
-### How it looks
+### How it looks <span class="tag decided">Decided</span> { #cinematic }
 
-Letterbox bars, subtitles in parchment on a dark backing with the speaker's name in gold, no sparkles. Two to four slow shots, ending back on your own view. The HUD hides except the clock, which shows a small pause mark. Party members outside the scene see "*Name* is watching a scene" under the clock.
+Cutscenes are **cinematic** (Cob, 2026-10-02): shots cut and slowly push in, the camera closes on the speaker's face, and there are letterbox bars and **typed subtitles** with the speaker's name in gold. No sparkles. Two to four shots, ending back on your own view.
+
+The Storyteller tells a two-line tale for each story, and the hostage, the Prince, the Fallen Knight, the altar and the thief speak too. It's **text only** until audio uploads reopen on 28 October. The HUD hides except the clock, which shows a small pause mark. Party members outside the scene see "*Name* is watching a scene" under the clock.
 
 ## Events <span class="tag draft">Draft</span> { #events }
 

@@ -40,6 +40,16 @@
 - <span class="tag draft">Draft</span> **Coin price** = base price x the keeper's multiplier x (1 + 15% for each round after round 1). The [Signet Ring](trinkets.md) lowers it.
 - <span class="tag draft">Draft</span> **Robux price** comes from a bucket by coin price: up to 10 silverlings = 5 R$, up to 30 = 15, up to 60 = 25, up to 120 = 49, up to 250 = 99, up to 500 = 199, more = 399.
 
+## The shop screen <span class="tag decided">In prototype</span> { #shop-screen }
+
+Cob, 2026-10-02:
+
+- Holding E on a keeper eases the camera to a framed shot of the keeper and their stall.
+- The shop card is a tall column on the right: the **wares** on top and **your pack** below.
+- The mouse wheel, Left/Right arrows, L1/R1 or the d-pad move between wares. Scrolling past the last ware returns to the overview.
+- The ware in focus gets a **gold chevron** and the green or red compare hint (see [Map and HUD](ui.md)).
+- The round clock keeps running in shops.
+
 ## At any shop
 
 - Rearrange your inventory, sell, fuse trinkets and remove cursed trinkets.

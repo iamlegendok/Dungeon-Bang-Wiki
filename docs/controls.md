@@ -71,6 +71,15 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 
 Tab does nothing.
 
+### Shops <span class="tag decided">In prototype</span> { #shops }
+
+| Input | Action |
+|-|-|
+| Hold E on a keeper | Open the shop. The camera eases to a framed shot of the keeper and their stall |
+| Mouse wheel, Left/Right arrows, L1/R1 or d-pad | Move between wares. Scrolling past the last ware returns to the overview |
+
+The ware in focus gets a gold chevron and the green or red compare hint. The round clock keeps running. See [Shopkeepers](shopkeepers.md#shop-screen).
+
 ### Lobby <span class="tag decided">In prototype</span>
 
 | Input | Action |
