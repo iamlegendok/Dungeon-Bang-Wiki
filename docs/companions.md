@@ -34,6 +34,7 @@ Built in Studio 2026-10-02 because Cob asked for companions to be prototyped. Co
 | **Cave Hound** | Pet | Reveals 2 trail-map tiles |
 | **Owl** | Pet | Draws a dashed line toward the stairs each floor |
 | **Dragon Whelp** | Pet | Hatches from the Dragon's Egg |
+| **Goblin Scout** | Goblin, gold finder | A small, friendly goblin who runs around finding gold for you. Your trail map lights up the tiles he runs over, and a copper dot shows where he is (Cob, 2026-10-02) |
 
 **Commands:** Follow, Hold, Fetch and Attack. Attack goes after the enemy you're facing <span class="tag draft">Draft</span>. See [Controls](controls.md#companions) for the keys.
 
@@ -41,7 +42,8 @@ Built in Studio 2026-10-02 because Cob asked for companions to be prototyped. Co
 
 Picked in Studio, not confirmed by Cob:
 
-- Cages hold a **Squire 60%** of the time, a **hound 20%** and an **owl 20%**.
+- Cages hold a **Squire 50%** of the time, a **hound 17%**, an **owl 17%** and a **Goblin Scout 16%**.
+- The **Goblin Scout** picks up floor coins and smashes small breakables (crates, barrels, pots) for silverlings, then brings his purse back to you. He never fights and runs back to you when enemies get close. If he's lost for good, his purse spills on the floor.
 - With a full slot, a freed hostage goes home and you still get the loot luck bonus.
 - A **downed companion** is helped up with hold E for 2 s and comes back at 30% HP. After 30 s it's gone and its pack drops.
 - **While you're downed** you can crawl but not fight, and enemies ignore you. With a pet, no bandage left, or 20 s without help, it's a hard death.

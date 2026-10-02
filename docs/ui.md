@@ -30,7 +30,8 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 - **Cave Hound** <span class="tag decided">In prototype</span>: the trail map reveals 2 tiles around you while it is with you (test walk: 32% of floor lit, rooms entered 75% seen).
 - **Owl Familiar** <span class="tag decided">In prototype</span>: once per floor, a dashed bearing toward the nearest stairs, shown in the world and on the trail map. Direction only, reveals no floor. A rim arrow tracks the stairs for 20 s <span class="tag assumed">Assumed</span>.
-- **Humans:** no map perk.
+- **Goblin Scout** <span class="tag decided">In prototype</span>: the trail map lights up the tiles he runs over, and a copper dot shows where he is.
+- **Other humans:** no map perk.
 
 ## HUD <span class="tag draft">Draft</span>
 
