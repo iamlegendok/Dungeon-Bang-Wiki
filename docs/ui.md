@@ -36,7 +36,7 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Desktop HUD](assets/img/ui/hud_desktop.jpg)
 
-**Desktop:** pickup feed top left, timer top centre, minimap with coin (silverlings and goldlings), luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (a weapon slot, items 1 to 4; Q is now the high guard toggle; the bag opens with B, see [Controls](controls.md)).
+**Desktop:** pickup feed top left, timer top centre, minimap with coin (silverlings and goldlings), luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (a weapon slot, items 1 to 4; Q is the spider break-free key; the bag opens with B, see [Controls](controls.md)).
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 

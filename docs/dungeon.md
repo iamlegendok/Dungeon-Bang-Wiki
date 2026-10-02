@@ -79,7 +79,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 </div>
 
 - **Shopkeepers:** eight keepers, each in certain rounds, with rolled stock. They take silverlings, goldlings or Robux. See [Shopkeepers](shopkeepers.md).
-- **Mini events**: Ambush, Cursed Altar, Gold Rush, Wandering Merchant, Trap Gauntlet.
+- **Mini events**: Ambush, Cursed Altar, Gold Rush, Treasure Thief, Trap Gauntlet. See [Events and cutscenes](events.md) <span class="tag draft">Draft</span>.
 - **Hostages** are caged people or animals. Freeing one gives +1 loot luck next round, or you can ask them to join you as a [companion](companions.md) and give up that bonus.
 
 ### Stories <span class="tag decided">Decided</span> { #stories }

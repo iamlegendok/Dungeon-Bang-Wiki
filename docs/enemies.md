@@ -38,6 +38,15 @@ Cob counts the match in **rounds 1 to 6**; depth only rises when you take the st
 
 Fliers take no limb injuries.
 
+## Spiders and mounted enemies <span class="tag draft">Draft</span> { #spiders }
+
+Being designed now (Cob, 2026-10-02):
+
+- **Spiders** can latch onto you; **mash Q** to break free.
+- **Mounted enemies** are a new class: a rider on a mount, such as a Goblin Slinger riding a spider.
+
+Final rules will land here once the enemy roster settles them.
+
 ## Ranged enemies <span class="tag decided">In prototype</span> { #ranged-enemies }
 
 | Enemy | Keeps | Attack | How to answer |

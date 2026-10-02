@@ -21,7 +21,6 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | Hold without dragging | Thrust (pierce): hits whatever is under the crosshair |
 | **Release quickly** | Light attack |
 | **Keep holding** until the thin arc fills, then release | Heavy attack: +60% damage, double injury, staggers the enemy |
-| Q | Toggle **high guard**. While it's on, every swing is an overhead whichever way you drag, and "▲ HIGH (Q)" shows in gold under the crosshair |
 | Hold right mouse while the hub is up | Turn the camera again mid-swing (Cob, 2026-10-02). It doesn't block. Release right mouse to steer the hub again |
 | Hold right mouse | Block |
 | Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
@@ -29,6 +28,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | F or middle mouse | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
+- **Q high guard is retired** (Cob, 2026-10-02): overheads come from dragging up on the attack hub.
 - **Jump is off.**
 - The Roblox cursor is hidden in play; menus show a custom cursor.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
@@ -89,7 +89,9 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 
 | Input | Action |
 |-|-|
-| Q | Weapon on the hotbar. Q is now the high guard toggle, so this needs another key <span class="tag open">Open</span> |
+| Mash Q | Break free when a spider latches on (Cob, 2026-10-02). Rules come from the enemy roster |
+| Hold E during a cutscene | Skip it (from 1 s in). See [Events and cutscenes](events.md#cutscenes) |
+| Hotbar weapon key | Weapon on the hotbar. Q is taken by the spider break-free, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |
 | Z, X, C, V | Companion orders: Follow, Hold, Fetch, Attack |
 
