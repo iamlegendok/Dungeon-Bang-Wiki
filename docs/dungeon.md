@@ -63,7 +63,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 | Shopkeeper | One shop room per round, a 30% chance of a second from round 3. See [Shopkeepers](shopkeepers.md) |
 | Mini event | About 1 per 10 rooms |
 | Hostage | About 1 per 12 rooms, caged and guarded off the fast route |
-| Storyteller | Near the route on floors 1 to 5 <span class="tag draft">Draft</span> |
+| Storyteller | Once per match, in one random round from 1 to 3 <span class="tag decided">Decided</span> |
 | Story room | One per floor, off the fast route, from floor 2 <span class="tag draft">Draft</span> |
 
 ![New room types](assets/img/dungeon/room_types.jpg)

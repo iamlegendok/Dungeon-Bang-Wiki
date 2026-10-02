@@ -45,6 +45,14 @@ From Cob, 2026-10-02:
 - If it has no mesh, it shows a **coloured orb** with the item's icon floating above it: **red** for weapons, **green** for food, **blue** for armor.
 - Every item in the game has an inventory icon. The old prototype placeholder items that had none (Short Sword, War Axe and the old runes) have been removed.
 
+**Better-drop gleam** (Cob, 2026-10-02): floor gear that beats what you have gets a slow gold rim. It's per player, so each of you sees your own upgrades.
+
+## Using items <span class="tag decided">In prototype</span> { #using-items }
+
+Cob, 2026-10-02: using an item plays a real animation, so you can't spam them mid-fight. Food is eaten, a potion is drunk from the bottle, and a bandage wraps the arm.
+
+<span class="tag draft">Draft</span>: the full clip has to play, at 40% move speed. Any hit, Space or click cancels it and you get no heal. Cooldowns are 8 s for potions, 6 s for bandages and 4 s for food.
+
 ## Active weapon <span class="tag decided">Decided</span> { #active-weapon }
 
 From Cob, 2026-10-02: under the bag grid sits an **active weapon** slot. Drag a weapon there and it becomes the weapon in your hands.

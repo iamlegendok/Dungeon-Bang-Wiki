@@ -22,13 +22,14 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | Right mouse as the hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
 | F | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release. Middle click no longer focuses; it's the middle stance |
-| Mash Q | Throw off a latched spider (Cob, 2026-10-02): 6 presses every 2 s. Tap on touch, X on gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
+| X | **Special ability** when Resolve is full (Y on a gamepad). See [Combat](combat.md#abilities) |
+| Mash Q | Throw off a latched spider, or tear free of a boss's hook (Cob, 2026-10-02): 6 presses every 2 s. Tap on touch, X on gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
 - **Gamepad:** d-pad up, side and down pick the high, middle and low stance. **Touch:** three stance buttons on the right edge.
 - **Q high guard is removed** (Cob, 2026-10-02); Q now throws off a latched spider.
 - **Jump is off.**
-- The Roblox cursor is hidden in play; menus show a custom cursor.
+- **Cursor** (Cob, 2026-10-02): a custom gold arrow in the project colours wherever the mouse is free, the shop included. It's hidden in first person and in cutscenes, except at the hostage choice.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
 - **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to its active weapon slot. See [Combat](combat.md#disarms).
 
@@ -67,7 +68,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | R while dragging | Rotate the item |
 | Drag a weapon to the active slot under the grid | Wield it. Any size fits; a weapon already there swaps back to the grid |
 | Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
-| Click food | Eat it: a bite takes **1.6 s** at **40% move speed**, and you can't attack during it. The food takes effect at the bite, extra clicks do nothing, and **Space** cancels the bite and keeps the food |
+| Click food, a potion or a bandage | **Use** it with a real animation (Cob, 2026-10-02): food is eaten, a potion is drunk from the bottle, a bandage wraps the arm, so you can't spam them. <span class="tag draft">Draft</span>: the full clip must play, at 40% move speed; any hit, Space or click cancels it with no heal; cooldowns potion 8 s, bandage 6 s, food 4 s. See [Inventory](inventory.md#using-items) |
 | Hold E | Take from a loot box, pick up, or open a shop. Our own **E tag** floats over the thing and fills while you hold; there's no Roblox popup (Cob, 2026-10-02). If a pickup fails, the reason shows under the crosshair: arrows need a quiver and bolts need a bolt case |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
 
@@ -79,7 +80,7 @@ Tab does nothing.
 |-|-|
 | G | Cycle your companion's command: Follow, Hold, Fetch, Attack <span class="tag draft">Draft</span> (G is a default Cob hasn't confirmed) |
 | Command buttons in the bottom-left panel | Tap to pick Follow, Hold, Fetch or Attack |
-| Hold E on a downed companion for 2 s | Help it up |
+| Hold E on your companion | **Patch up** a hurt companion, or **Revive** a downed one (2 s) |
 
 See [Companions](companions.md#prototype).
 

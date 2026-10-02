@@ -2,6 +2,38 @@
 
 Everything Cob has confirmed, newest first. Drafts and assumptions are not here until Cob confirms them.
 
+## 2026-10-02 (evening)
+
+### Combat
+- **Special abilities:** each class has one powerful ability, charged by parrying (the Resolve bar), on **X** (Y on a pad): Knight Bastion, Nobleman Gilded Reprisal, Ranger Pinning Shot, Arcanist Rune Nova, Witcher Grim Tonic. Cinematic look approved. See [Combat](combat.md#abilities).
+- **Tuning:** harder to evade, enemies swing longer and hit harder, parries are easier to read, a bolder red flush.
+- **Using items is animated:** a potion is drunk, a bandage wraps the arm, food is eaten, so you can't spam them.
+
+### Enemies
+- Every enemy has a **health bar** and flashes red when hit. Enemies don't stack behind each other; a blocked one strafes around.
+- **Spiders walk** instead of sliding. Big web-lobbing spiders lay **eggs** that hatch Skitterlings after 30 s, counting only while a player is near.
+- **Spider Slinger:** the rider sits upright and has a real fall-off animation, then fights on foot.
+- **Shopkeepers and cutscene NPCs die like other NPCs** (death clip, body sinks), never fading out.
+
+### Companions
+- A companion's health **drains if you don't heal him**, and he **defends himself** while attacked instead of following. The Goblin Scout never fights; he scurries away. Hold E to patch up or revive.
+
+### Events and shops
+- **Treasure thief:** you must **capture** him. He steals your carried silver if you have any; otherwise you chase him for a drop. He never spawns silver and never tumbles.
+- **Storyteller once per match**, in a random round from 1 to 3; his story plays the next round.
+- **Dragon's Egg:** defend a nest and egg through waves; if it survives, the whelp goes to the best defender.
+- The **Prince** is scared in the cage and relieved when freed.
+- **Every shopkeeper is animated** (idle, greet, talk, sale, refuse; the early four also startle and flee). In the shop you can't move, and there are no first-person arms in shops or cutscenes.
+
+### Map and UI
+- **HUD panel** now holds Resolve and your injuries too.
+- **Better-drop gleam:** floor gear that beats yours gets a slow gold rim, per player.
+- **Cursor:** a custom gold arrow wherever the mouse is free; hidden in first person and cutscenes, except at the hostage choice.
+- The **"Stairs taken"** banner clears once the new floor loads.
+
+### Boss
+- Cob asked for a **lich who portals in enemies** and is invincible until they're dead, with a **chain hook that never misses**, curves around things and is broken with Q, in a **huge room** with roof routes and one wide entryway. The design is **Morrakhet, the Hollow King**; which boss goes in is still open. See [Boss and finale](boss.md#boss-options).
+
 ## 2026-10-02
 
 ### Combat

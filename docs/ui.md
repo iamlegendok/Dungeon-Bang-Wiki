@@ -46,10 +46,18 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 **Bottom-left panel** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): the HUD is one panel in the bottom left. From left to right:
 
 1. The **body doll**.
-2. A column with **HP** (and its poison overlay), the **eating bar**, **stamina**, **damage and armour** with the compare hint, your **coins and vault**, and **status icons**.
+2. A column with **HP** (and its poison overlay), the **eating bar**, **stamina**, **Resolve** (the [special ability](combat.md#abilities) bar), **damage and armour** with the compare hint, your **coins and vault**, and your **injuries**.
 3. The **companion ring** on the right.
 
 The companion command buttons sit above the panel, and the **Bag** hint is at the bottom centre.
+
+**Enemy health bars** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): every enemy has a health bar and flashes red when hit.
+
+**Better-drop gleam** <span class="tag decided">In prototype</span>: floor gear that beats yours gets a slow gold rim, per player.
+
+**Cursor** <span class="tag decided">In prototype</span>: a custom gold arrow wherever the mouse is free (menus and the shop); hidden in first person and cutscenes, except at the hostage choice.
+
+**Stairs banner:** "Stairs taken" clears once the new floor has loaded.
 
 **Companion portrait** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): a circle to the right of the HP and stamina panel shows your companion's head. A red ring around it drains as the companion takes damage, and it pulses red while the companion is down. It's hidden when you have no companion.
 

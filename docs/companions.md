@@ -45,11 +45,17 @@ Picked in Studio, not confirmed by Cob:
 - Cages hold a **Squire 50%** of the time, a **hound 17%**, an **owl 17%** and a **Goblin Scout 16%**.
 - The **Goblin Scout** picks up floor coins and smashes small breakables (crates, barrels, pots) for silverlings, then brings his purse back to you. He never fights and runs back to you when enemies get close. If he's lost for good, his purse spills on the floor.
 - With a full slot, a freed hostage goes home and you still get the loot luck bonus.
-- A **downed companion** is helped up with hold E for 2 s and comes back at 30% HP. After 30 s it's gone and its pack drops.
+- A **downed companion** is helped up with hold E for 2 s and comes back at 30% HP. If its health drains to 0 (30 s) it's gone and its pack drops.
 - **While you're downed** you can crawl but not fight, and enemies ignore you. With a pet, no bandage left, or 20 s without help, it's a hard death.
 - A companion that survives a run **levels up** and starts the next match at **full HP**.
 - The egg's whelp goes to the **best defender** who has a free slot; otherwise the egg leaves an Epic chest.
 - Enemies pull hard toward a healer who is reviving someone.
+
+### Health and self-defence { #companion-health }
+
+Cob, 2026-10-02: a companion's health **drains if you don't heal him**, and while he's attacked he **defends himself** instead of following you. The Goblin Scout never fights; he scurries away.
+
+<span class="tag draft">Draft</span>: a downed companion starts at 30% and drains to 0 over 30 s. Standing below 25% HP he bleeds 1% a second. Hold E on him to patch him up, or to revive him to 30%. He fights whoever hit him in the last 5 s, as long as they're within 45 studs of you.
 
 ## How it works <span class="tag draft">Draft</span>
 

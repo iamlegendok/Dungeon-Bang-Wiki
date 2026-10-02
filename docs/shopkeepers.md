@@ -49,6 +49,9 @@ Cob, 2026-10-02:
 - The mouse wheel, Left/Right arrows, L1/R1 or the d-pad move between wares. Scrolling past the last ware returns to the overview.
 - The ware in focus gets a **gold chevron** and the green or red compare hint (see [Map and HUD](ui.md)).
 - The round clock keeps running in shops.
+- **You can't move** while the shop is open, and your first-person arms are hidden.
+
+**Every keeper is animated** (Cob, 2026-10-02): idle, greet, talk, sale and refuse. The four early keepers can also startle and flee. Keepers **die like other NPCs**, with a death clip and a sinking body; they never fade out.
 
 ## At any shop
 
