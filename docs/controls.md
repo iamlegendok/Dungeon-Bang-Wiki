@@ -41,7 +41,9 @@ Cob, 2026-10-02 (15:48): melee is now **stance combat**, Cob's own design. It re
 - A **red flush** on the screen edge shows where an enemy attack is coming from: **top** for high, **bottom** for low, **left or right** for side swings. It brightens in the parry window.
 - **Fliers and spiders have no stance**, so any guard works on them.
 
-<span class="tag draft">Draft</span> Studio's defaults, not confirmed by Cob: a high attack is the overhead, middle attacks alternate left and right slashes, and a low attack is the low sweep. There's no thrust for now. The view dips slightly during low guards and swings. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
+<span class="tag draft">Draft</span> Studio's defaults, not confirmed by Cob: a high attack is the overhead, middle attacks alternate left and right slashes, and a low attack is the low sweep. There's no thrust for now.
+
+The view never moves on its own in the low stance (Cob, 2026-10-02). See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
 ### Ranged <span class="tag decided">In prototype</span>
 
@@ -59,7 +61,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 
 | Input | Action |
 |-|-|
-| B | Open or close the bag (inventory) (Cob, 2026-10-01). A key reminder sits in the bottom-left of the HUD |
+| B | Open or close the bag (inventory) (Cob, 2026-10-01). A Bag hint sits at the bottom centre of the HUD |
 | I | Backup for B. Roblox Studio catches I before the game sees it, so use B when testing in Studio; I works in a real Roblox client |
 | Drag an item | Move it |
 | R while dragging | Rotate the item |

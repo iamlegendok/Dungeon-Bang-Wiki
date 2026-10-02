@@ -43,9 +43,17 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 **Stance and threat** <span class="tag decided">In prototype</span>: melee is stance combat (Cob, 2026-10-02). A **red flush** on the screen edge shows where an enemy attack is coming from: top for high, bottom for low, left or right for side swings; it brightens in the parry window. It replaces the attack hub ring. See [Controls](controls.md#stances).
 
+**Bottom-left panel** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): the HUD is one panel in the bottom left. From left to right:
+
+1. The **body doll**.
+2. A column with **HP** (and its poison overlay), the **eating bar**, **stamina**, **damage and armour** with the compare hint, your **coins and vault**, and **status icons**.
+3. The **companion ring** on the right.
+
+The companion command buttons sit above the panel, and the **Bag** hint is at the bottom centre.
+
 **Companion portrait** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): a circle to the right of the HP and stamina panel shows your companion's head. A red ring around it drains as the companion takes damage, and it pulses red while the companion is down. It's hidden when you have no companion.
 
-**Damage, armour and comparing** <span class="tag decided">In prototype</span>: your damage and armour show under the health and stamina bars. Comparing an item shows **green with an up arrow** when it's better and **red with a down arrow** when it's worse. Weapons compare against your active weapon; armour compares against the best piece of the same kind you carry.
+**Damage, armour and comparing** <span class="tag decided">In prototype</span>: your damage and armour sit in the panel's column under HP and stamina. Comparing an item shows **green with an up arrow** when it's better and **red with a down arrow** when it's worse. Weapons compare against your active weapon; armour compares against the best piece of the same kind you carry.
 
 **Pickups:** a failed pickup shows its reason under the crosshair.
 

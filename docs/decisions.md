@@ -39,6 +39,8 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - The sword's swing aid should not show while a bow is drawn.
 - **Attack hub** (replaced the same day by stance combat): hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaced the mouse-flick swing.
 - **Q high guard retired.** Q is now mashed to throw off a latched spider (Cob's idea; in the prototype).
+- **The HUD is one bottom-left panel:** body doll, then a column (HP with poison overlay, eating bar, stamina, damage and armour, coins and vault, status icons), then the companion ring. Companion buttons sit above it; the Bag hint is bottom centre.
+- **The view never moves on its own in the low stance** (Cob rejected the camera dip).
 - **Damage and armour** show under the health and stamina bars. Compared items show green with an up arrow when better and red with a down arrow when worse (weapons against your active weapon, armour against your best piece of that kind).
 - **Failed pickups** show their reason under the crosshair; arrows need a quiver and bolts a bolt case.
 - **Shop screen:** holding E on a keeper frames the keeper and stall; a tall card on the right shows wares above your pack. Wheel, arrows, L1/R1 or d-pad move between wares; the focused ware gets a gold chevron and compare hint. The clock keeps running.
