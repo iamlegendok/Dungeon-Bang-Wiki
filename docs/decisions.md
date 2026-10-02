@@ -22,7 +22,9 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Map and UI
 - **Loading screen:** while a dungeon loads, show the title card art with the logo and a **rotating tip**, **no loading bar**. This replaces the earlier logo-only, no-tip rule.
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
-- The sword's swing guide should not show while a bow is drawn.
+- The sword's swing aid should not show while a bow is drawn.
+- **Attack hub:** hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaces the mouse-flick swing.
+- **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 
 ## 2026-10-01
 
@@ -60,8 +62,8 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Controls
 - The bag (inventory) opens and closes with **B**. I stays as a backup key.
 - **R swaps between melee and ranged.**
-- **Q toggles a high guard**, the only way to swing overhead: every swing becomes an overhead, so you don't have to look at the ceiling.
-- Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead.
+- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Since 2026-10-02, dragging up on the attack hub also gives an overhead.)
+- Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead. (Replaced on 2026-10-02 by the attack hub.)
 
 ### Combat
 - **Parries can disarm**, both ways. A picked-up weapon returns to its **same inventory slot**, or the player is told there's no room.

@@ -14,13 +14,14 @@ What each input does. The **In prototype** tag means it already works in the Rob
 
 | Input | Action |
 |-|-|
-| Flick the mouse **down**, then click | Low sweep: targets the legs and feet |
-| Flick **right** or **left**, then click | Slash to that side: targets that side's arm, hand or torso |
-| Flick **up**, then click | No overhead from a flick. It falls back to the nearest slash, or a thrust if there's no sideways movement |
-| Click with the mouse **barely moving** | Thrust (pierce): hits whatever is under the crosshair |
-| Q | Toggle **high guard**, the only way to swing overhead. While it's on, every swing is an overhead (targets the head or chest) whichever way you flick, and "▲ HIGH (Q)" shows in gold under the crosshair (Cob, 2026-10-01) |
-| Click and release quickly | Light hit |
-| **Hold** left click, then **release** | Heavy attack: it charges while you hold (the charge pose lasts as long as the button is down) and strikes on release. +60% damage, double injury, staggers the enemy |
+| **Hold** left click | A fine ring **hub** appears around the crosshair (only while attacking) and the view stops turning |
+| While holding, **drag left or right** | Slash to that side: targets that side's arm, hand or torso |
+| While holding, **drag up** | Overhead: targets the head or chest |
+| While holding, **drag down** | Low sweep: targets the legs and feet |
+| Hold without dragging | Thrust (pierce): hits whatever is under the crosshair |
+| **Release quickly** | Light attack |
+| **Keep holding** until the thin arc fills, then release | Heavy attack: +60% damage, double injury, staggers the enemy |
+| Q | Toggle **high guard**. While it's on, every swing is an overhead whichever way you drag, and "▲ HIGH (Q)" shows in gold under the crosshair |
 | Hold right mouse | Block |
 | Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
@@ -28,20 +29,13 @@ What each input does. The **In prototype** tag means it already works in the Rob
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
 - **Jump is off.**
+- The Roblox cursor is hidden in play; menus show a custom cursor.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
 - **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to the same pack slot, or shows "No room" if that slot was filled. See [Combat](combat.md#disarms).
 
-#### How a swing is picked <span class="tag draft">Prototype values</span>
+#### Attack hub <span class="tag decided">In prototype</span>
 
-- The direction comes from the mouse flick in the **0.14 s** just before the click.
-- A flick under **8 px** counts as barely moving, so you thrust.
-- Release within **0.35 s** for a light hit. Hold longer to charge a heavy, which strikes on release.
-
-These numbers come from the Studio prototype's code and may change.
-
-#### Swing guide <span class="tag decided">In prototype</span>
-
-Five markers sit around the crosshair: low sweep at the bottom, slashes left and right, thrust in the centre, and overhead at the top (only while Q is on). The marker for the attack you'd get lights up. A line underneath reads "next: …", then LIGHT or HEAVY while you hold, then what you actually swung. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
+Cob, 2026-10-02: the attack hub replaces the old mouse-flick swing, which was hard to aim. It's a mini circular hub in the middle of the screen that you drag toward the direction you want to attack. It only shows while you hold left click, and it's hidden while a ranged weapon is out. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
 ### Ranged <span class="tag decided">In prototype</span>
 
@@ -64,7 +58,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | Drag an item | Move it |
 | R while dragging | Rotate the item |
 | Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
-| Click food | Eat it |
+| Click food | Eat it: a bite takes **1.6 s** at **40% move speed**, and you can't attack during it. The food takes effect at the bite, extra clicks do nothing, and **Space** cancels the bite and keeps the food |
 | Hold E | Take from a loot box |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
 
