@@ -28,7 +28,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | F or middle mouse | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
-- **Q high guard is retired** (Cob, 2026-10-02): overheads come from dragging up on the attack hub.
+- **Q high guard is removed** (Cob, 2026-10-02). Q is unbound in the prototype; drag up on the attack hub for an overhead.
 - **Jump is off.**
 - The Roblox cursor is hidden in play; menus show a custom cursor.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
