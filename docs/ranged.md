@@ -2,7 +2,7 @@
 
 ![Ranged test range](assets/img/ranged/test_range.jpg)
 
-Ranged weapons are designed and playable in a browser test range, but not yet in the Studio prototype. Everything below is <span class="tag draft">Draft</span> unless tagged otherwise.
+Ranged weapons are built into the Studio prototype (Cob hasn't played them yet) and playable in a browser test range. The controls are <span class="tag decided">In prototype</span>; numbers and the rest are <span class="tag draft">Draft</span> unless tagged otherwise.
 
 !!! success "Cob, 2026-10-01"
     A ranged weapon system where the reticle is constantly shifting, shots are real projectiles (not instant hit rays, and not super fast), and some weapons drop more than others. **R swaps between melee and ranged.**
@@ -37,10 +37,11 @@ Ranged weapons are designed and playable in a browser test range, but not yet in
 
 | Input | Action | Status |
 |-|-|-|
-| R | Swap between melee and ranged | <span class="tag decided">Decided</span> |
-| Hold left click, release | Draw, then loose (crossbow: click) | <span class="tag draft">Draft</span> |
-| Hold right mouse | Steady (no block with a bow) | <span class="tag draft">Draft</span> |
-| Space | Dodge, which cancels a draw | <span class="tag draft">Draft</span> |
+| R | Swap between sword and ranged weapon | <span class="tag decided">In prototype</span> |
+| Hold left click, release | Draw, then loose. The crossbow fires on a click; throwing axes wind up while held | <span class="tag decided">In prototype</span> |
+| Hold right mouse | Steady your aim, at a stamina cost (no block with a bow) | <span class="tag decided">In prototype</span> |
+| Space | Dodge, which cancels a draw | <span class="tag decided">In prototype</span> |
+| Walk over a miss | Pick up an arrow, bolt or axe that missed | <span class="tag decided">In prototype</span> |
 | Mobile | A weapon button above the attack pad; hold the pad to draw, release to loose; the block button becomes Steady | <span class="tag draft">Draft</span> |
 
 ## Feel

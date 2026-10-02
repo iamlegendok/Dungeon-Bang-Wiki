@@ -43,6 +43,18 @@ These numbers come from the Studio prototype's code and may change.
 
 Five markers sit around the crosshair: low sweep at the bottom, slashes left and right, thrust in the centre, and overhead at the top (only while Q is on). The marker for the attack you'd get lights up. A line underneath reads "next: …", then LIGHT or HEAVY while you hold, then what you actually swung. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
+### Ranged <span class="tag decided">In prototype</span>
+
+Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged.md).
+
+| Input | Action |
+|-|-|
+| R | Swap between sword and ranged weapon (Cob, 2026-10-01) |
+| Hold left click, then release | Draw, then loose. The crossbow fires on a click; throwing axes wind up while held |
+| Hold right mouse | Steady your aim. Costs stamina |
+| Space + direction | Dodge, which cancels a draw |
+| Walk over a missed arrow, bolt or axe | Pick it up. Misses stay where they land |
+
 ### Inventory and loot <span class="tag decided">In prototype</span>
 
 | Input | Action |
@@ -77,7 +89,6 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 | Q | Weapon on the hotbar. Q is now the high guard toggle, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |
 | Z, X, C, V | Companion orders: Follow, Hold, Fetch, Attack |
-| R | Swap between melee and ranged (Cob, 2026-10-01). Ranged isn't in the prototype yet; see [Ranged weapons](ranged.md#controls) |
 
 ## Mobile <span class="tag draft">Planned</span>
 
