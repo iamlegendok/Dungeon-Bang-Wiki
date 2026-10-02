@@ -10,6 +10,10 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
 - **Hurt enemy body parts flash red** (deeper red when broken).
 
+### Companions
+- **One companion slot**; your companion dies with you. Enemies treat companions like another player.
+- A healing human companion allows a downed state. "Join me" on a freed hostage recruits them. The Dragon's Egg hatches a Dragon Whelp.
+
 ### Enemies
 - Some enemies are **gated by round**, not depth: fliers from round 3, Brood Sack from round 4, elite Gulpers from round 5.
 - **Ranged enemies:** the Goblin Slinger from round 1 and the Hollow Bowman from round 3.

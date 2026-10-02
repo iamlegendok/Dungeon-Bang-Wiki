@@ -151,6 +151,7 @@ All numbers are prototype values.
 - Enemies **aim at your broken limbs**: +25% damage on an already-broken limb.
 - Goblins only rarely go for a heavy head swing (8 s heavy cooldown).
 - **Weaker enemies back off when hurt.**
+- **Brain v5** <span class="tag draft">Draft</span>, until Cob plays it: enemies attack the stance you **aren't** guarding, and their own guard covers the stance you're in. They pull hard toward a healer who is reviving someone. Spiders: see [Enemies](enemies.md#spiders).
 
 Timings are prototype values.
 

@@ -58,7 +58,7 @@ A **Storyteller** sits near the route in rounds 1 to 5. Hold E to hear a 7 s tal
 | The Prisoner Prince | 2 | Rescue a royal hostage for +3 loot luck instead of +1. He can't join you |
 | The Collapsing Vault | 2 | A vault of chests; 20 s to loot it before it seals |
 | The Lost Caravan | 3 | A caravan selling Legendary gear for goldlings |
-| The Dragon's Egg | 4 | Guard an egg through 3 waves; it hatches a pet companion |
+| The Dragon's Egg | 4 | Guard an egg through 3 waves; it hatches a Dragon Whelp companion |
 | The Fallen Knight | 4 | Duel a cursed knight alone (others are kept out) for his Epic blade |
 
 ### How each story plays { #story-rooms }
@@ -66,7 +66,7 @@ A **Storyteller** sits near the route in rounds 1 to 5. Hold E to hear a 7 s tal
 - **The Prisoner Prince:** 2 to 4 guards (one elite from round 3) around a royal cage. Kill them and hold E: everyone there gets +3 loot luck and he walks out.
 - **The Collapsing Vault:** 3 to 5 chests, each one rarity up. You have 20 s, with rumbles at 10 and 5. When it seals, anyone inside is shoved out and takes 15 damage; unopened chests are lost.
 - **The Lost Caravan:** 3 Legendary items (Epic if the round has none), goldlings only, at 1.5x shop price. It leaves after 60 s.
-- **The Dragon's Egg:** the doors bar and the egg has 160 to 320 HP. Three waves come, and most of each wave goes for the egg. It hatches if it survives. Until companions exist, the whelp flies off and leaves an Epic chest.
+- **The Dragon's Egg:** the doors bar and the egg has 160 to 320 HP. Three waves come, and most of each wave goes for the egg. It hatches if it survives. The whelp goes to the best defender with a free companion slot; if nobody has one, the egg leaves an Epic chest. See [Companions](companions.md#prototype).
 - **The Fallen Knight:** the first player in duels him alone behind a barrier (420 to 640 HP, parries like an elite). Win and you get an Epic weapon. Lose and he kneels back down, and nobody else may try.
 
 ## Loot luck <span class="tag draft">Draft</span> { #loot-luck }

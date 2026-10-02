@@ -71,6 +71,16 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 
 Tab does nothing.
 
+### Companions <span class="tag decided">In prototype</span> { #companions }
+
+| Input | Action |
+|-|-|
+| G | Cycle your companion's command: Follow, Hold, Fetch, Attack <span class="tag draft">Draft</span> (G is a default Cob hasn't confirmed) |
+| Command buttons in the bottom-left panel | Tap to pick Follow, Hold, Fetch or Attack |
+| Hold E on a downed companion for 2 s | Help it up |
+
+See [Companions](companions.md#prototype).
+
 ### Shops <span class="tag decided">In prototype</span> { #shops }
 
 | Input | Action |
@@ -106,7 +116,6 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 | Hold E during a cutscene | Skip it (from 1 s in). See [Events and cutscenes](events.md#cutscenes) |
 | Hotbar weapon key | Weapon on the hotbar. Q is taken by the spider break-free, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |
-| Z, X, C, V | Companion orders: Follow, Hold, Fetch, Attack |
 
 ## Mobile <span class="tag draft">Planned</span>
 

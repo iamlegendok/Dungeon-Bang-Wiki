@@ -14,13 +14,44 @@ From Cob, 2026-10-01:
 - **Cave Hound:** widens your trail-map reveal from 1 tile to 2 tiles.
 - **Owl Familiar:** points toward the stairs once per floor.
 
+From Cob, 2026-10-02:
+
+- You have **one companion slot**, and your companion dies with you.
+- **Enemies treat companions like another player.**
+- **"Join me"** on a freed hostage recruits them.
+- **The Dragon's Egg** (a [story](events.md#stories)) hatches a **Dragon Whelp**.
+
+## In the prototype <span class="tag decided">In prototype</span> { #prototype }
+
+Built in Studio 2026-10-02 because Cob asked for companions to be prototyped. Cob hasn't played them yet.
+
+| Companion | Kind | What it does |
+|-|-|-|
+| **Squire** | Human, healer | Fights with a spear, starts with 2 bandages, and revives you in 3 s at 25 HP |
+| **Cave Hound** | Pet | Reveals 2 trail-map tiles |
+| **Owl** | Pet | Draws a dashed line toward the stairs each floor |
+| **Dragon Whelp** | Pet | Hatches from the Dragon's Egg |
+
+**Commands:** Follow, Hold, Fetch and Attack. Attack goes after the enemy you're facing <span class="tag draft">Draft</span>. See [Controls](controls.md#companions) for the keys.
+
+### Prototype defaults <span class="tag draft">Draft</span> { #defaults }
+
+Picked in Studio, not confirmed by Cob:
+
+- Cages hold a **Squire 60%** of the time, a **hound 20%** and an **owl 20%**.
+- With a full slot, a freed hostage goes home and you still get the loot luck bonus.
+- A **downed companion** is helped up with hold E for 2 s and comes back at 30% HP. After 30 s it's gone and its pack drops.
+- **While you're downed** you can crawl but not fight, and enemies ignore you. With a pet, no bandage left, or 20 s without help, it's a hard death.
+- The egg's whelp goes to the **best defender** who has a free slot; otherwise the egg leaves an Epic chest.
+- Enemies pull hard toward a healer who is reviving someone.
+
 ## How it works <span class="tag draft">Draft</span>
 
 - **One companion slot.** A full slot means dismissing the current companion to take a new one.
 - Drawn in the player style. Humans are 84% of player height so they never read as another player. A violet bond ring under each companion shows whose it is, to enemies in PvP too.
 - **Getting one:** free a caged hostage, then pick "Join me" (takes the slot) or "Go home" (the usual +1 loot luck next round). Keeping one costs you that bonus. Pets can also be bought from shopkeepers <span class="tag assumed">Assumed</span>.
-- **Commands:** Follow, Hold, Fetch (grab nearby loot), Attack (your target). On mobile one button opens a 4-way wheel.
-- Companions have HP and body-zone hits like players. A downed companion gives you 30 s to revive it, else it flees home and is lost.
+- **Commands:** Follow, Hold, Fetch (grab nearby loot), Attack (your target). In the prototype, G cycles them and the bottom-left panel has tap buttons.
+- Companions have HP and body-zone hits like players. A downed companion gives you 30 s to revive it, else it's gone and its pack drops.
 - **Companion dies:** its whole mini grid drops as a loot pile anyone can grab.
 - **You survive:** it carries over to the next match with its grid and gains a level <span class="tag assumed">Assumed</span>. A paid revive can include it <span class="tag assumed">Assumed</span>.
 

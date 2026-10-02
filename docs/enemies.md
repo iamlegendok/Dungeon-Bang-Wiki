@@ -51,7 +51,7 @@ Built in Studio 2026-10-02. Q to break free is Cob's own idea and is in the prot
 
 **Latched on.** A camera cut shows the Skitterling clinging and a big **Q** pulses (tap on phone, X on a pad). Mash Q **6 times every 2 s** to throw it off. Each missed window is a bite; the 3rd miss poisons you and it drops off. A Skitterling you throw off lies **dazed** for a moment and takes extra damage. Space, attacks and dodge do nothing while it's on you, and other enemies hold back.
 
-**No stance.** Spiders (like fliers) have no stance, so any guard works on them.
+**No stance.** Spiders (like fliers) have no stance, so any guard works on them. A leaping Skitterling is swatted away by a **high guard**, or dodge it. Webspinners hang back and lob webs where you're heading <span class="tag draft">Draft</span>.
 
 **Webs.** A hit slows you hard; a dodge shakes it off. A miss leaves a sticky floor patch for a few seconds. Block or parry catches the web on your weapon.
 
