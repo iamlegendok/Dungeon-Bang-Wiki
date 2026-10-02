@@ -5,7 +5,7 @@
 !!! success "Decided (Cob, 2026-10-01)"
     The match ends with a boss that scales with **how many players** are in it **and the total dungeon level of the whole party**. Bring friends, and better gear.
 
-## Moment of respite <span class="tag decided">Decided</span>
+## Moment of respite <span class="tag decided">Decided</span> { #moment-of-respite }
 
 ![Moment of respite](assets/img/boss/respite.jpg)
 
