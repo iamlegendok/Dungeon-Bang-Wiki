@@ -70,6 +70,13 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 
 Tab does nothing.
 
+### Lobby <span class="tag decided">In prototype</span>
+
+| Input | Action |
+|-|-|
+| Drag the character preview left or right (touch-drag on mobile) | Rotate your character. The auto-spin pauses while you drag and resumes about 1.5 s after you let go |
+| **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
+
 ### Map <span class="tag decided">In prototype</span>
 
 | Input | Action |
