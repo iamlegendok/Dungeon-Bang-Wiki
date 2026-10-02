@@ -37,7 +37,7 @@ From Cob, 2026-10-01:
 
 - Leaving is not a death: pack coin is banked to the vault, and your level doesn't rise.
 - Only allowed after 10 s out of combat and not while downed.
-- The second early leave in one life is a **Deserter fine** of 10% of vault gold (minimum 50), removable with Robux. The counter resets when your level resets.
+- The second early leave in one life is a **Deserter fine** of 10% of vault coin (minimum 50), removable with Robux. The counter resets when your level resets.
 
 ## Pack and vault
 
@@ -50,7 +50,7 @@ Drag gear between your class pack (the three [inventory](inventory.md) layers) a
 | Currency | Buys |
 |-|-|
 | Silverlings and goldlings | The same things dungeon shopkeepers sell: food, splints, potions, common and uncommon gear, backpacks, bonesetter, pets |
-| Robux | Cosmetics, and clearing a Deserter fine. Never gear, coin, levels, revives, backpacks or companions |
+| Robux | Anything a shop sells, at a Robux price set by price bucket (amounts <span class="tag draft">Draft</span>, see [Shopkeepers](shopkeepers.md#paying)). Also cosmetics and clearing a Deserter fine |
 
 ## Open
 

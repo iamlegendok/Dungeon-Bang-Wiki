@@ -27,6 +27,7 @@ A first-person Roblox dungeon crawler. Parties of up to four drop into small ran
 [**Ranged weapons** <span>Bows, crossbow, throwing axes, swaying reticle</span>](ranged.md)
 [**Inventory** <span>Three layers, islands, backpacks</span>](inventory.md)
 [**Trinkets** <span>21 layer-3 trinkets, tiers I to IV, cursed ones</span>](trinkets.md)
+[**Shopkeepers** <span>Eight keepers by round, rolled stock, paying and robbing</span>](shopkeepers.md)
 [**Companions** <span>One pet or human NPC, mini grids</span>](companions.md)
 [**Enemies** <span>Families by depth, elites, scaling</span>](enemies.md)
 [**Map and HUD** <span>Trail map, desktop and phone HUD</span>](ui.md)

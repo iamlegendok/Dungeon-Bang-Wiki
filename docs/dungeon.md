@@ -60,7 +60,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 | Heal shrine | Depth 2 and deeper |
 | Elite guard | The room guarding the stairs, depth 3 and deeper |
 | Stairs | The room farthest from the start |
-| Shopkeeper | About 1 per 15 rooms |
+| Shopkeeper | One shop room per round, a 30% chance of a second from round 3. See [Shopkeepers](shopkeepers.md) |
 | Mini event | About 1 per 10 rooms |
 | Hostage | About 1 per 12 rooms, caged and guarded off the fast route |
 | Storyteller | Near the route on floors 1 to 5 <span class="tag draft">Draft</span> |
@@ -78,7 +78,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 
 </div>
 
-- **Shopkeepers** sell food, splints, potions, common and uncommon gear, backpacks, a bonesetter and pets, for silverlings and goldlings.
+- **Shopkeepers:** eight keepers, each in certain rounds, with rolled stock. They take silverlings, goldlings or Robux. See [Shopkeepers](shopkeepers.md).
 - **Mini events**: Ambush, Cursed Altar, Gold Rush, Wandering Merchant, Trap Gauntlet.
 - **Hostages** are caged people or animals. Freeing one gives +1 loot luck next round, or you can ask them to join you as a [companion](companions.md) and give up that bonus.
 
