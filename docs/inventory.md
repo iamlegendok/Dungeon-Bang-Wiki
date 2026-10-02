@@ -54,7 +54,9 @@ From Cob, 2026-10-02: under the bag grid sits an **active weapon** slot. Drag a 
 - Dropping a weapon onto a filled active slot **swaps** them: the old weapon goes back to the grid.
 - A [disarmed](combat.md#disarms) weapon returns to its active slot when you pick it up.
 
-<span class="tag assumed">Assumed</span> The prototype has **two** active slots, **Active melee** and **Active ranged**, and **R** swaps between them. The swap-on-drop behaviour is the prototype's choice too.
+There are **two** active slots, **Active melee** and **Active ranged**, and **R** swaps between them (Cob, 2026-10-02).
+
+<span class="tag assumed">Assumed</span> Dropping onto a filled slot swaps the weapons; that's the prototype's choice, not yet confirmed.
 
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 

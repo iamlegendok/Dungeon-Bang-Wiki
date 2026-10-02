@@ -15,7 +15,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Inventory
 - Dropped items show their **3D mesh**, or a coloured orb with the item's icon above it (**red** weapons, **green** food, **blue** armor).
 - Legacy items with no inventory icon are **removed** from the game.
-- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. See [Inventory](inventory.md#active-weapon).
+- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. Two slots, **Active melee** and **Active ranged**; R swaps between them. See [Inventory](inventory.md#active-weapon).
 
 ### Shopkeepers
 - **Eight shopkeepers**, each tied to certain rounds, grislier and more armoured in later rounds. Shops vary: a rolled keeper per round, rolled stock with a deal of the round, and a rolled stall placement. See [Shopkeepers](shopkeepers.md).
