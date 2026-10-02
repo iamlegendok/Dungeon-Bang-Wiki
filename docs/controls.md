@@ -22,6 +22,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 | **Release quickly** | Light attack |
 | **Keep holding** until the thin arc fills, then release | Heavy attack: +60% damage, double injury, staggers the enemy |
 | Q | Toggle **high guard**. While it's on, every swing is an overhead whichever way you drag, and "▲ HIGH (Q)" shows in gold under the crosshair |
+| Hold right mouse while the hub is up | Turn the camera again mid-swing (Cob, 2026-10-02). It doesn't block. Release right mouse to steer the hub again |
 | Hold right mouse | Block |
 | Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
@@ -60,7 +61,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | Drag a weapon to the active slot under the grid | Wield it. Any size fits; a weapon already there swaps back to the grid |
 | Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
 | Click food | Eat it: a bite takes **1.6 s** at **40% move speed**, and you can't attack during it. The food takes effect at the bite, extra clicks do nothing, and **Space** cancels the bite and keeps the food |
-| Hold E | Take from a loot box |
+| Hold E | Take from a loot box, pick up, or open a shop. Our own **E tag** floats over the thing and fills while you hold; there's no Roblox popup (Cob, 2026-10-02) |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
 
 Tab does nothing.

@@ -29,6 +29,8 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
 - The sword's swing aid should not show while a bow is drawn.
 - **Attack hub:** hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaces the mouse-flick swing.
+- **Right mouse during a swing** turns the camera again while the attack hub is up; it doesn't block then.
+- **Interact prompts** are our own E tags that fill while you hold E, not the Roblox popup.
 - **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 
 ## 2026-10-01

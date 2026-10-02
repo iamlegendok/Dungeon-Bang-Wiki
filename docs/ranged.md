@@ -34,6 +34,7 @@ Ranged weapons are built into the Studio prototype (Cob hasn't played them yet) 
 - Shots are real projectiles with their own gravity per weapon. The server checks and simulates every shot.
 - Head x2 (pierce x2.5, ignores 30% armor), torso x1, limbs x0.75. Shields block from the front. Arrows can't be parried.
 - An empty quiver won't draw: you see "Out of arrows". Ammo is shown under the crosshair <span class="tag decided">In prototype</span>.
+- **Ammo drops:** arrow and bolt bundles come from crates, loot and enemies, Hollow Bowmen most of all <span class="tag decided">In prototype</span>.
 - Missed arrows stick where they land; walk over them to pick them up (40% break). Arrows in bodies come back through loot. Axes always come back.
 
 ## Controls
