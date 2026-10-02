@@ -4,6 +4,9 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 
 ## 2026-10-02
 
+### Weapons and armour
+- **More weapons and armour**, and **drops roll their own stats** so the same item rarely repeats the same numbers. See [Weapons and armour](gear.md); the lineup and numbers there are drafts.
+
 ### Combat
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
 - **Hurt enemy body parts flash red** (deeper red when broken).
