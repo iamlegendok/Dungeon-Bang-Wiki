@@ -50,7 +50,7 @@ From Cob, 2026-10-02:
 From Cob, 2026-10-02: under the bag grid sits an **active weapon** slot. Drag a weapon there and it becomes the weapon in your hands.
 
 - It takes a weapon of **any size**; there's no footprint limit.
-- A weapon in the active slot **doesn't use grid space**.
+- A weapon in the active slot **doesn't use grid space**, but it stays visible in the bag so you can drag enchants onto it.
 - Dropping a weapon onto a filled active slot **swaps** them: the old weapon goes back to the grid.
 - A [disarmed](combat.md#disarms) weapon returns to its active slot when you pick it up.
 
@@ -72,7 +72,7 @@ Weapons share animations by family, so a new weapon only needs a family to swing
 | Crossbow | Crossbow | |
 | Throw | Throwing Axes | |
 
-Every melee family has the same five cuts from the [attack hub](controls.md#fighting) (left and right slash, overhead, low sweep, thrust), plus block, parry and the disarm and pickup moves.
+Every melee family has the same high, middle and low [stance](controls.md#stances) attacks and guards, plus parry and the disarm and pickup moves.
 
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 

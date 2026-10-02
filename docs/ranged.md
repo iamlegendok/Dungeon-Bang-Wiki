@@ -22,8 +22,6 @@ Ranged weapons are built into the Studio prototype (Cob hasn't played them yet) 
 
 ## The reticle
 
-- The sword's attack hub is hidden while a ranged weapon is out (Cob, 2026-10-02) <span class="tag decided">Decided</span>.
-
 - The reticle shows where the shot **leaves**, not where it lands. Whether it ever hints at drop is <span class="tag draft">Draft</span> (the recommendation is an honest reticle with no hint).
 - It always wanders a little. Walking, sprinting, jumping, low stamina and an injured bow arm make it wander more. A hurt head adds twitches.
 - Holding a full draw too long makes it tremble and costs stamina.
@@ -33,6 +31,7 @@ Ranged weapons are built into the Studio prototype (Cob hasn't played them yet) 
 
 - Shots are real projectiles with their own gravity per weapon. The server checks and simulates every shot.
 - Head x2 (pierce x2.5, ignores 30% armor), torso x1, limbs x0.75. Shields block from the front. Arrows can't be parried.
+- Arrows need a quiver and bolts need a bolt case; without one the pickup fails and the reason shows under the crosshair <span class="tag decided">In prototype</span>.
 - An empty quiver won't draw: you see "Out of arrows". Ammo is shown under the crosshair <span class="tag decided">In prototype</span>.
 - **Ammo drops:** arrow and bolt bundles come from crates, loot and enemies, Hollow Bowmen most of all <span class="tag decided">In prototype</span>.
 - Missed arrows stick where they land; walk over them to pick them up (40% break). Arrows in bodies come back through loot. Axes always come back.

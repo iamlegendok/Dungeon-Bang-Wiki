@@ -5,6 +5,8 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ## 2026-10-02
 
 ### Combat
+- **Stance combat** (15:48, Cob's design) replaces the attack hub. Scroll up, middle click and scroll down pick the high, middle and low stance (d-pad on gamepad, three stance buttons on touch). Left click attacks from your stance (click light, hold heavy); right mouse guards it, timed to parry. **F** alone focuses.
+- **A guard only blocks a blow from the same stance.** A red flush on the screen edge shows where an attack comes from and brightens in the parry window. Fliers and spiders have no stance, so any guard works.
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
 - **Hurt enemy body parts flash red** (deeper red when broken).
 
@@ -15,7 +17,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Inventory
 - Dropped items show their **3D mesh**, or a coloured orb with the item's icon above it (**red** weapons, **green** food, **blue** armor).
 - Legacy items with no inventory icon are **removed** from the game.
-- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. Two slots, **Active melee** and **Active ranged**; R swaps between them. See [Inventory](inventory.md#active-weapon).
+- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. Two slots, **Active melee** and **Active ranged**; R swaps between them. Active weapons stay visible in the bag so enchants can be dragged onto them. See [Inventory](inventory.md#active-weapon).
 
 ### Shopkeepers
 - **Eight shopkeepers**, each tied to certain rounds, grislier and more armoured in later rounds. Shops vary: a rolled keeper per round, rolled stock with a deal of the round, and a rolled stall placement. See [Shopkeepers](shopkeepers.md).
@@ -28,9 +30,10 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **Loading screen:** while a dungeon loads, show the title card art with the logo and a **rotating tip**, **no loading bar**. This replaces the earlier logo-only, no-tip rule.
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
 - The sword's swing aid should not show while a bow is drawn.
-- **Attack hub:** hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaces the mouse-flick swing.
-- **Right mouse during a swing** turns the camera again while the attack hub is up; it doesn't block then.
+- **Attack hub** (replaced the same day by stance combat): hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaced the mouse-flick swing.
 - **Q high guard retired.** Q is now mashed to throw off a latched spider (Cob's idea; in the prototype).
+- **Damage and armour** show under the health and stamina bars. Compared items show green with an up arrow when better and red with a down arrow when worse (weapons against your active weapon, armour against your best piece of that kind).
+- **Failed pickups** show their reason under the crosshair; arrows need a quiver and bolts a bolt case.
 - **Interact prompts** are our own E tags that fill while you hold E, not the Roblox popup.
 - **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 
@@ -70,7 +73,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Controls
 - The bag (inventory) opens and closes with **B**. I stays as a backup key.
 - **R swaps between melee and ranged.**
-- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Retired 2026-10-02: overheads come from dragging up on the attack hub, and Q becomes the spider break-free key.)
+- **Q toggles a high guard**: every swing becomes an overhead, so you don't have to look at the ceiling. (Retired 2026-10-02: overheads came from the attack hub, now the high stance, and Q becomes the spider break-free key.)
 - Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead. (Replaced on 2026-10-02 by the attack hub.)
 
 ### Combat

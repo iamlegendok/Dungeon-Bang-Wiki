@@ -14,30 +14,34 @@ What each input does. The **In prototype** tag means it already works in the Rob
 
 | Input | Action |
 |-|-|
-| **Hold** left click | A fine ring **hub** appears around the crosshair (only while attacking) and the view stops turning |
-| While holding, **drag left or right** | Slash to that side: targets that side's arm, hand or torso |
-| While holding, **drag up** | Overhead: targets the head or chest |
-| While holding, **drag down** | Low sweep: targets the legs and feet |
-| Hold without dragging | Thrust (pierce): hits whatever is under the crosshair |
-| **Release quickly** | Light attack |
-| **Keep holding** until the thin arc fills, then release | Heavy attack: +60% damage, double injury, staggers the enemy |
-| Hold right mouse while the hub is up | Turn the camera again mid-swing (Cob, 2026-10-02). It doesn't block. Release right mouse to steer the hub again |
-| Hold right mouse | Block |
-| Right mouse just before a hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
+| **Scroll up** | **High** stance |
+| **Middle click** | **Middle** stance |
+| **Scroll down** | **Low** stance |
+| Left click | Attack from your stance. **Click** for a light attack, **hold** for a heavy: +60% damage, double injury, staggers the enemy |
+| Hold right mouse | **Guard** your stance. A guard only blocks a blow from the **same** stance |
+| Right mouse as the hit lands | **Parry.** The enemy flashes gold, a ring pulses on the crosshair, and a hum and glint play |
 | Space + direction | Dodge about 10 studs, costs a quarter of your stamina |
-| F or middle mouse | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release |
+| F | Focus lock on the enemy nearest the crosshair (purple outline). Press again to release. Middle click no longer focuses; it's the middle stance |
 | Mash Q | Throw off a latched spider (Cob, 2026-10-02): 6 presses every 2 s. Tap on touch, X on gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
-- **Q high guard is removed** (Cob, 2026-10-02). Drag up on the attack hub for an overhead; Q now throws off a latched spider.
+- **Gamepad:** d-pad up, side and down pick the high, middle and low stance. **Touch:** three stance buttons on the right edge.
+- **Q high guard is removed** (Cob, 2026-10-02); Q now throws off a latched spider.
 - **Jump is off.**
 - The Roblox cursor is hidden in play; menus show a custom cursor.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
 - **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to its active weapon slot. See [Combat](combat.md#disarms).
 
-#### Attack hub <span class="tag decided">In prototype</span>
+#### Stance combat <span class="tag decided">In prototype</span> { #stances }
 
-Cob, 2026-10-02: the attack hub replaces the old mouse-flick swing, which was hard to aim. It's a mini circular hub in the middle of the screen that you drag toward the direction you want to attack. It only shows while you hold left click, and it's hidden while a ranged weapon is out. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
+Cob, 2026-10-02 (15:48): melee is now **stance combat**, Cob's own design. It replaces the attack hub ring entirely; there's no more dragging to pick a cut.
+
+- You're always in one of three stances: **high**, **middle** or **low**. You attack from your stance and guard your stance.
+- A guard only stops a blow that comes from the **same** stance.
+- A **red flush** on the screen edge shows where an enemy attack is coming from: **top** for high, **bottom** for low, **left or right** for side swings. It brightens in the parry window.
+- **Fliers and spiders have no stance**, so any guard works on them.
+
+<span class="tag draft">Draft</span> Studio's defaults, not confirmed by Cob: a high attack is the overhead, middle attacks alternate left and right slashes, and a low attack is the low sweep. There's no thrust for now. The view dips slightly during low guards and swings. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
 ### Ranged <span class="tag decided">In prototype</span>
 
@@ -62,7 +66,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | Drag a weapon to the active slot under the grid | Wield it. Any size fits; a weapon already there swaps back to the grid |
 | Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
 | Click food | Eat it: a bite takes **1.6 s** at **40% move speed**, and you can't attack during it. The food takes effect at the bite, extra clicks do nothing, and **Space** cancels the bite and keeps the food |
-| Hold E | Take from a loot box, pick up, or open a shop. Our own **E tag** floats over the thing and fills while you hold; there's no Roblox popup (Cob, 2026-10-02) |
+| Hold E | Take from a loot box, pick up, or open a shop. Our own **E tag** floats over the thing and fills while you hold; there's no Roblox popup (Cob, 2026-10-02). If a pickup fails, the reason shows under the crosshair: arrows need a quiver and bolts need a bolt case |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |
 
 Tab does nothing.
@@ -97,14 +101,12 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 
 ## Mobile <span class="tag draft">Planned</span>
 
-None of the touch controls are in the prototype yet. From the combat and HUD designs:
+The stance buttons are in the prototype; the rest is planned, from the combat and HUD designs.
 
 | Input | Action |
 |-|-|
-| Attack pad: tap | Thrust (snaps to the nearest zone in a small cone) |
-| Attack pad: swipe off it | Directional swing |
-| Attack pad: hold | Heavy attack |
-| Block button | Block, and parry when timed |
+| Three stance buttons on the right edge | High, middle and low stance <span class="tag decided">In prototype</span> |
+| Guard button | Guard your stance, and parry when timed |
 | Dodge button | Dodge |
 | Tap the minimap | Full map (clicking it already works on desktop) |
 | Companion pill: tap | Cycle companion orders |

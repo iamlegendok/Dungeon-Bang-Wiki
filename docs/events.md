@@ -12,7 +12,7 @@ A cutscene is a short scripted camera moment: letterbox bars and a subtitle or t
 - **Nothing targets you.** Enemies can't pick you as a target.
 - **Enemies near you freeze.** Any enemy within 40 studs of you or the scene's focus is *Held*: it stops and idles warily. Fliers hover. A swing already in motion finishes but can't hit.
 - **Shots in flight fizzle.** An arrow or rock heading for you drops harmlessly; a missed arrow can still be picked up.
-- **You can't act.** The attack hub, block, dodge, ranged, bag and eating are locked. A meal in progress pauses and picks up where it left off.
+- **You can't act.** Stances, attacks, guard, dodge, ranged, bag and eating are locked. A meal in progress pauses and picks up where it left off.
 - **The 3:00 clock pauses** for the whole party, like on the loading screen. Everything that runs on the round clock pauses with it: food aging, poison, moldy food's bonus HP and the 45 s Hurt-part heal. At most **30 s** of cutscene pause per round; after that scenes stay safe but the clock keeps running.
 
 ### Getting out

@@ -82,9 +82,10 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ![Fighting skill](assets/img/combat/fighting_skill.jpg)
 
-- **Swing direction picks the zone:** a slash targets that side's arm, hand or torso, a low sweep targets the legs and feet, a thrust hits whatever is under the crosshair, and an overhead targets the head or chest. You pick the direction on the **attack hub** (Cob, 2026-10-02): hold left click and a small ring appears around the crosshair while the view holds still; drag left or right to slash, up for an overhead, down for a low sweep, or don't drag to thrust. Release quickly for a light hit, or keep holding until the arc fills for a heavy: +60% damage, 2x injury, but parryable. The old **Q high guard** is retired (Cob, 2026-10-02).
-- **Desktop:** hold left click and drag on the attack hub to swing (see [Controls](controls.md#fighting)); hold right mouse to block; Space plus a direction to dodge.
-- **Mobile:** an attack pad. Tap to thrust, swipe off it for a directional swing, hold for a heavy. Block and dodge buttons. Thrusts snap to the nearest zone in a small cone.
+- **Stances** (Cob, 2026-10-02): you fight from a **high**, **middle** or **low** stance and attack and guard from it. A guard only blocks a blow from the **same** stance, and a red flush on the screen edge shows where an enemy attack comes from (top high, bottom low, left or right for side swings), brightening in the parry window. Fliers and spiders have no stance, so any guard works on them. Click for a light attack or hold for a heavy: +60% damage, 2x injury, but parryable. This replaces the attack hub. See [Controls](controls.md#stances).
+- **Which cut each stance throws** <span class="tag draft">Draft</span>: high is the overhead (head or chest), middle alternates left and right slashes (that side's arm, hand or torso), low is the low sweep (legs and feet). No thrust for now.
+- **Desktop:** scroll up, middle click and scroll down pick the stance; left click attacks; hold right mouse to guard; Space plus a direction to dodge; F to focus.
+- **Mobile:** three stance buttons on the right edge <span class="tag decided">In prototype</span>; attack, guard and dodge buttons are still planned.
 - **Enemy swing timing:** 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is block pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
 - Block stops 80% from the front; the rest chips the shield arm. Dodge has 0.25 s of invincibility.
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.

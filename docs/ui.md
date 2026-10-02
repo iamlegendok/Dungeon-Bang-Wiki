@@ -40,7 +40,11 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 
-**Attack hub** <span class="tag decided">In prototype</span>: a fine ring around the crosshair that appears only while you hold left click. Drag toward a side to pick the cut; a thin arc fills as a heavy charges. It's hidden while a ranged weapon is out. It replaces the earlier five-marker swing guide. See [Controls](controls.md#fighting).
+**Stance and threat** <span class="tag decided">In prototype</span>: melee is stance combat (Cob, 2026-10-02). A **red flush** on the screen edge shows where an enemy attack is coming from: top for high, bottom for low, left or right for side swings; it brightens in the parry window. It replaces the attack hub ring. See [Controls](controls.md#stances).
+
+**Damage, armour and comparing** <span class="tag decided">In prototype</span>: your damage and armour show under the health and stamina bars. Comparing an item shows **green with an up arrow** when it's better and **red with a down arrow** when it's worse. Weapons compare against your active weapon; armour compares against the best piece of the same kind you carry.
+
+**Pickups:** a failed pickup shows its reason under the crosshair.
 
 **Mobile** (landscape): body doll top left, timer top centre, minimap top right with a companion pill beside it (tap cycles orders, hold opens a 4-way wheel), hotbar low between the thumbs, and the combat cluster (attack pad, block, dodge) from [Combat](combat.md#fighting-skill).
 
