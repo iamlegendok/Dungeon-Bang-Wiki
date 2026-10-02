@@ -25,6 +25,28 @@
 
 Older families keep showing up deeper as veterans with one armor piece: depth 3 to 4 is 70% Hollow and 30% first-level; depth 5 to 6 is 60% Deep, 30% Hollow, 10% first-level.
 
+## Gated by round <span class="tag decided">Decided</span> { #by-round }
+
+Cob counts the match in **rounds 1 to 6**; depth only rises when you take the stairs. Some enemies unlock by round, whatever depth you're at:
+
+| From round | Enemy |
+|-|-|
+| 1 | Goblin Slinger (about 3 in 10 goblins) |
+| 3 | Fliers; Hollow Bowman (about 1 in 3 skeletons) |
+| 4 | Brood Sack |
+| 5 | Elite Gulpers |
+
+Fliers take no limb injuries.
+
+## Ranged enemies <span class="tag decided">In prototype</span> { #ranged-enemies }
+
+| Enemy | Keeps | Attack | How to answer |
+|-|-|-|-|
+| **Goblin Slinger** | 11 to 22 studs away | Whirls a sling and throws stones | Dodge, block, or parry the stone back |
+| **Hollow Bowman** (skeleton) | 15 to 30 studs away | Draws for about 1 s with a visible glint; arrows hit individual limbs | Parry deflects, block stops the arrow |
+
+Ranges and timings are prototype values. The tables further down are the older design notes for both.
+
 ## First level (depth 1 to 2)
 
 Goblins, orcs, skeletons and slimes, plus two creatures from folktales. Weak alone, dangerous in mixed packs. Teaches reading tells, dodging and directional swings.

@@ -138,6 +138,8 @@ All numbers are prototype values.
 | A quick glint with no gold parry ring | **Feint.** Don't commit your parry |
 
 - Enemies run a small **learning brain** that adapts to each player's habits during a match.
+- Enemies **aim at your broken limbs**: +25% damage on an already-broken limb.
+- Goblins only rarely go for a heavy head swing (8 s heavy cooldown).
 - **Weaker enemies back off when hurt.**
 
 Timings are prototype values.

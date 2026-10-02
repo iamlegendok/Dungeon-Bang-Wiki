@@ -7,8 +7,13 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Combat
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
 
+### Enemies
+- Some enemies are **gated by round**, not depth: fliers from round 3, Brood Sack from round 4, elite Gulpers from round 5.
+- **Ranged enemies:** the Goblin Slinger from round 1 and the Hollow Bowman from round 3.
+
 ### Map and UI
-- **Loading screen:** while a dungeon loads, show the title cards **with tips**. This replaces the earlier logo-only, no-tip rule.
+- **Loading screen:** while a dungeon loads, show the title card art with the logo and a **rotating tip**, **no loading bar**. This replaces the earlier logo-only, no-tip rule.
+- Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
 - The sword's swing guide should not show while a bow is drawn.
 
 ## 2026-10-01

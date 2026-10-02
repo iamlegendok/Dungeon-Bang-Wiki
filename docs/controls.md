@@ -63,7 +63,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | I | Backup for B. Roblox Studio catches I before the game sees it, so use B when testing in Studio; I works in a real Roblox client |
 | Drag an item | Move it |
 | R while dragging | Rotate the item |
-| Drag off the panel | Drop the item at your feet. Only in the dungeon; in the lobby the item eases back into place |
+| Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
 | Click food | Eat it |
 | Hold E | Take from a loot box |
 | Lobby: **Edit pack & vault** button | Rearrange your pack and move gear to or from the vault |

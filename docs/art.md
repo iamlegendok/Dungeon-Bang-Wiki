@@ -53,7 +53,7 @@ The full table of roles (bars, injuries, inventory layers, states) lives with th
 !!! success "Cob, 2026-10-02"
     Use a loading screen while the dungeon loads in, built from the title cards **with tips**. This replaces the earlier logo-only, no-tip rule.
 
-The four cards below are the art. In Roblox, the loading screen is built from layers (card art, logo, a tip line, a real progress bar) so tips can rotate. Whether it shows a progress bar, and the tip list itself, are <span class="tag draft">Draft</span>.
+The four cards below are the art. The loading screen shows the card art, the logo and a **rotating tip**, with **no loading bar**. The tip list itself is <span class="tag draft">Draft</span>.
 
 <div class="grid" markdown>
 
