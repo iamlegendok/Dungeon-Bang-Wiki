@@ -11,6 +11,9 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Some enemies are **gated by round**, not depth: fliers from round 3, Brood Sack from round 4, elite Gulpers from round 5.
 - **Ranged enemies:** the Goblin Slinger from round 1 and the Hollow Bowman from round 3.
 
+### Trinkets
+- **21 trinkets** on layer 3 (8 for anyone, 2 per class, 3 cursed), **tiers I to IV**. Better tiers drop in later rounds, trinkets **level up while carried** (two full rounds = +1 tier), and two matching ones **fuse at a shopkeeper**. See [Trinkets](trinkets.md).
+
 ### Map and UI
 - **Loading screen:** while a dungeon loads, show the title card art with the logo and a **rotating tip**, **no loading bar**. This replaces the earlier logo-only, no-tip rule.
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
