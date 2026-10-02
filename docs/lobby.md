@@ -7,12 +7,20 @@
 From Cob, 2026-10-01:
 
 - Parties of **4**.
-- The lobby shop sells with in-game currency (Gold) **or Robux**.
+- The lobby shop sells with in-game currency (**silverlings and goldlings**) **or Robux**.
 - Gear can be moved between your pack and the vault in the lobby before a match, and you can rearrange your inventory there.
-- Gold you bring out alive sits safe in the **vault**.
+- Coin you bring out alive sits safe in the **vault**.
 - Two ways in: **auto queue**, matched around your level (worst case a new player joins), or **launch a party** with a 5-character invite code of capitals and digits.
-- Leaving a match early **twice in one progression** costs a small gold penalty, removable with Robux.
+- Leaving a match early **twice in one progression** costs a small coin penalty, removable with Robux.
 - A friend can pay the gear for your revive.
+
+## Currency <span class="tag decided">Decided</span> { #currency }
+
+!!! success "Cob, 2026-10-01"
+    The currency is **silverlings** and **goldlings**. There is no bronze. **10 silverlings make 1 goldling.**
+
+- **Smashed props** (barrels, crates, pots, bone piles) occasionally drop silverlings. The exact drop odds are <span class="tag draft">Draft</span>.
+- Robux stays separate, as before.
 
 ## Queue <span class="tag draft">Draft</span>
 
@@ -27,9 +35,9 @@ From Cob, 2026-10-01:
 
 ### Leaving early <span class="tag assumed">Assumed</span>
 
-- Leaving is not a death: pack gold is banked to the vault, and your level doesn't rise.
+- Leaving is not a death: pack coin is banked to the vault, and your level doesn't rise.
 - Only allowed after 10 s out of combat and not while downed.
-- The second early leave in one life is a **Deserter fine** of 10% of vault gold (minimum 50), removable with Robux. The counter resets when your level resets.
+- The second early leave in one life is a **Deserter fine** of 10% of vault coin (minimum 50), removable with Robux. The counter resets when your level resets.
 
 ## Pack and vault
 
@@ -41,8 +49,8 @@ Drag gear between your class pack (the three [inventory](inventory.md) layers) a
 
 | Currency | Buys |
 |-|-|
-| Gold | The same things dungeon shopkeepers sell: food, splints, potions, common and uncommon gear, backpacks, bonesetter, pets |
-| Robux | Cosmetics, and clearing a Deserter fine. Never gear, gold, levels, revives, backpacks or companions |
+| Silverlings and goldlings | The same things dungeon shopkeepers sell: food, splints, potions, common and uncommon gear, backpacks, bonesetter, pets |
+| Robux | Anything a shop sells, at a Robux price set by price bucket (amounts <span class="tag draft">Draft</span>, see [Shopkeepers](shopkeepers.md#paying)). Also cosmetics and clearing a Deserter fine |
 
 ## Open
 

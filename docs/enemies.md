@@ -8,7 +8,7 @@
 
 ## Ground rules <span class="tag draft">Draft</span>
 
-- Every humanoid enemy uses the same 15-part R15 rig as the players, so it has the same 10 hit zones and [injury rules](combat.md), and can reuse player animations. Beasts map their parts onto the same zone names.
+- Every humanoid enemy uses the same 15-part R15 rig as the players, so it has the same 10 hit zones and [injury rules](combat.md#enemy-injuries), with repeated hits to one limb making it worse (Cob, 2026-10-02 <span class="tag decided">Decided</span>). It can also reuse player animations. Beasts map their parts onto the same zone names.
 - Every attack has a visual tell (a warm glint on the weapon) plus a sound. Standard wind-up is 0.45 s; heavier attacks are longer; nothing is ever faster than 0.35 s so parries stay fair on phones.
 - Each role has its own silhouette so you can read a room at a glance: rushers small, ranged hold weapons up, tanks wide, supports in tall hats, ambushers disguised.
 - At most 2 enemies swing at the same player at once; the rest circle.
@@ -24,6 +24,28 @@
 | Any (from 2) | Mimic | scales | 20 |
 
 Older families keep showing up deeper as veterans with one armor piece: depth 3 to 4 is 70% Hollow and 30% first-level; depth 5 to 6 is 60% Deep, 30% Hollow, 10% first-level.
+
+## Gated by round <span class="tag decided">Decided</span> { #by-round }
+
+Cob counts the match in **rounds 1 to 6**; depth only rises when you take the stairs. Some enemies unlock by round, whatever depth you're at:
+
+| From round | Enemy |
+|-|-|
+| 1 | Goblin Slinger (about 3 in 10 goblins) |
+| 3 | Fliers; Hollow Bowman (about 1 in 3 skeletons) |
+| 4 | Brood Sack |
+| 5 | Elite Gulpers |
+
+Fliers take no limb injuries.
+
+## Ranged enemies <span class="tag decided">In prototype</span> { #ranged-enemies }
+
+| Enemy | Keeps | Attack | How to answer |
+|-|-|-|-|
+| **Goblin Slinger** | 11 to 22 studs away | Whirls a sling and throws stones | Dodge, block, or parry the stone back |
+| **Hollow Bowman** (skeleton) | 15 to 30 studs away | Draws for about 1 s with a visible glint; arrows hit individual limbs | Parry deflects, block stops the arrow |
+
+Ranges and timings are prototype values. The tables further down are the older design notes for both.
 
 ## First level (depth 1 to 2)
 

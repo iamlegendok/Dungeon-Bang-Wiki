@@ -28,7 +28,7 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 4. Each item type belongs to exactly one layer.
 5. An item must fit entirely inside one island; it can't bridge a gap.
 6. Each class's islands sit at fixed spots on a shared class map (10 x 7 in the mockup), so layers line up the same way every time.
-7. Layer 3 cells over nothing can hold standalone trinkets and charms that work by themselves.
+7. Layer 3 can also hold standalone [trinkets](trinkets.md) that work by themselves, anywhere on the layer.
 
 ### Example loadout (from the mockup)
 
@@ -36,6 +36,14 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 - **Frost Sigil** over the Quiver and half the Bow: slowing arrows.
 - **Haste Charm** on the Boots: move speed.
 - **Cursed Gem** on the Dagger: huge crits, drains HP while equipped. A risk item.
+
+## Items on the floor <span class="tag decided">Decided</span> { #dropped-items }
+
+From Cob, 2026-10-02:
+
+- A dropped item shows its **real 3D mesh** in the world.
+- If it has no mesh, it shows a **coloured orb** with the item's icon floating above it: **red** for weapons, **green** for food, **blue** for armor.
+- Every item in the game has an inventory icon. The old prototype placeholder items that had none (Short Sword, War Axe and the old runes) have been removed.
 
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 

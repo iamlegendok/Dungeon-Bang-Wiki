@@ -9,10 +9,11 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 | Rule | Value | Status |
 |-|-|-|
 | Rounds per match | 6 | <span class="tag decided">Decided</span> |
-| Time per floor | 3:00 | <span class="tag decided">Decided</span> |
+| Time per round | 3:00, shared by every depth reached in the round. Stairs never reset or add time | <span class="tag decided">Decided</span> |
 | Rooms per floor | 9, 15, 21, 27, 33, 39 | <span class="tag decided">Decided</span> |
 | Shopkeepers, mini events, hostages | On every map | <span class="tag decided">Decided</span> |
-| Going deeper | Reach the stairs in time = one depth deeper; time out = keep loot, same depth | <span class="tag assumed">Assumed</span> |
+| Going deeper | Stairs take you straight to the next depth, on the same clock | <span class="tag decided">Decided</span> |
+| Clock runs out | What you keep and where the next round starts | <span class="tag open">Open</span> |
 
 !!! success "How floors grow (Cob, 2026-10-01)"
     "3x larger" means a linear base of 3, 5, 7, 9, 11, 13 rooms, multiplied by 3. It is **not** exponential growth.
@@ -40,7 +41,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 | Ceiling | 16 studs, with lintels over doorways |
 | Room shapes | Each room rolls an octagon, a hexagon, irregular cut corners or a slanted shape, with angled, mitred walls |
 | Corridors | Up to about 4x longer than the blockout, each with its own lamps |
-| Fastest route | About 70 s to the stairs on the biggest floor, out of the 3:00 timer |
+| Fastest route | About 70 s to the stairs on the biggest floor, out of the 3:00 round, which also has to cover any deeper floors |
 
 ## Building blocks <span class="tag draft">Draft</span>
 
@@ -59,7 +60,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 | Heal shrine | Depth 2 and deeper |
 | Elite guard | The room guarding the stairs, depth 3 and deeper |
 | Stairs | The room farthest from the start |
-| Shopkeeper | About 1 per 15 rooms |
+| Shopkeeper | One shop room per round, a 30% chance of a second from round 3. See [Shopkeepers](shopkeepers.md) |
 | Mini event | About 1 per 10 rooms |
 | Hostage | About 1 per 12 rooms, caged and guarded off the fast route |
 | Storyteller | Near the route on floors 1 to 5 <span class="tag draft">Draft</span> |
@@ -77,7 +78,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 
 </div>
 
-- **Shopkeepers** sell food, splints, potions, common and uncommon gear, backpacks, a bonesetter and pets, for Gold.
+- **Shopkeepers:** eight keepers, each in certain rounds, with rolled stock. They take silverlings, goldlings or Robux. See [Shopkeepers](shopkeepers.md).
 - **Mini events**: Ambush, Cursed Altar, Gold Rush, Wandering Merchant, Trap Gauntlet.
 - **Hostages** are caged people or animals. Freeing one gives +1 loot luck next round, or you can ask them to join you as a [companion](companions.md) and give up that bonus.
 
@@ -122,6 +123,6 @@ In the trail-map test walk on a 21-room floor, a player reached the stairs at 2:
 
 ## Open
 
-??? question "Is the depth rule right?"
-    Reaching the stairs in time moves you one depth deeper; timing out keeps you at the same depth with your loot. Assumed, not confirmed.
+??? question "What happens when the clock runs out?"
+    The stairs take you deeper on the same 3:00 clock (decided). Still open: what you keep when the 3:00 runs out, and which depth the next round starts at.
 

@@ -57,7 +57,7 @@ Loud footsteps also widen how far enemies hear you.
 | Splint | Broken becomes Splinted (4 s, standing; a companion can apply it) |
 | Potion | HP only |
 | Heal shrine | 5 s channel, full heal, once per player per shrine |
-| Shop bonesetter | Gold, fixes one Broken zone |
+| Shop bonesetter | Silverlings and goldlings, fixes one Broken zone |
 | Stairs | Heal Hurt zones; Broken and Splinted zones carry into the next round |
 | Surviving the match | Heals everything <span class="tag decided">Decided</span> |
 
@@ -82,13 +82,33 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ![Fighting skill](assets/img/combat/fighting_skill.jpg)
 
-- **Swing direction picks the zone:** overhead hits head and torso, a side cut hits that side's arm, hand and torso, a low sweep hits legs and feet, a thrust hits exactly the crosshair. Hold to charge a heavy: +60% damage, 2x injury, but parryable.
-- **Desktop:** click while moving the mouse to swing that way, click with a still mouse to thrust; hold right mouse to block; Space plus a direction to dodge.
+- **Swing direction picks the zone:** a slash targets that side's arm, hand or torso, a low sweep targets the legs and feet, a thrust hits whatever is under the crosshair, and an overhead targets the head or chest. You pick the direction on the **attack hub** (Cob, 2026-10-02): hold left click and a small ring appears around the crosshair while the view holds still; drag left or right to slash, up for an overhead, down for a low sweep, or don't drag to thrust. Release quickly for a light hit, or keep holding until the arc fills for a heavy: +60% damage, 2x injury, but parryable. The **Q high guard** still turns every swing into an overhead.
+- **Desktop:** hold left click and drag on the attack hub to swing (see [Controls](controls.md#fighting)), Q for the high guard; hold right mouse to block; Space plus a direction to dodge.
 - **Mobile:** an attack pad. Tap to thrust, swipe off it for a directional swing, hold for a heavy. Block and dodge buttons. Thrusts snap to the nearest zone in a small cone.
 - **Enemy swing timing:** 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is block pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
 - Block stops 80% from the front; the rest chips the shield arm. Dodge has 0.25 s of invincibility.
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
 - Enemies and the boss use the same zones.
+
+### Enemy injuries <span class="tag decided">Decided</span> { #enemy-injuries }
+
+!!! success "Cob, 2026-10-02"
+    Humanoid enemies take body-part damage like players, and hitting the same limb again (for example the right arm) hurts them more each time, just like it does for players.
+
+In the Studio prototype <span class="tag decided">In prototype</span>:
+
+- **Goblins, orcs (elites included) and skeletons** use the player injury steps: hurt, then broken, scaled to their health.
+- **Legs** slow them, a **broken foot** makes them stumble, **arm** injuries weaken their hits, **two broken arms** make some swings miss, and **head** hits daze them.
+- **Fliers** take no limb injuries.
+
+**Hurt parts flash red** <span class="tag decided">Decided</span> (Cob, 2026-10-02), so you can see where an enemy is hurt:
+
+- A **Hurt** limb pulses red, on that part only.
+- A **Broken** limb pulses a deeper red.
+- A hit that newly hurts a part gives one quick, bright flash.
+- Fliers take no limb injuries, so they never flash.
+
+The exact look is being built in Studio and isn't tested yet.
 
 ### Enemy guard <span class="tag decided">In prototype</span> { #enemy-guard }
 
@@ -97,9 +117,41 @@ Enemies can raise a guard. The tell is obvious: the weapon comes up across the b
 | You hit the guard with | What happens |
 |-|-|
 | A light swing | You get parried: pushed back, no swings for 0.8 s, and the enemy gets a free counter |
-| A heavy (hold left click) | The guard breaks: the enemy reels and takes 1.5x damage for a moment |
+| A heavy (hold left click, then release) | The guard breaks: the enemy reels and takes 1.5x damage for a moment |
 
 The timings and multiplier are prototype values from the Studio build and may change.
+
+### Parries and disarms <span class="tag decided">In prototype</span> { #disarms }
+
+!!! success "Cob, 2026-10-01"
+    Parried enemies reel, and a parry can randomly knock the weapon out of their hands. It works both ways. A dropped weapon goes back into the same inventory slot when picked up, or the player is told they don't have room.
+
+| You parry | The enemy | Disarm chance |
+|-|-|-|
+| A light attack | Reels for 0.8 s | 10% |
+| A heavy attack | Reels for 1.2 s and takes 1.5x damage while reeling | 35% |
+
+- **It works both ways:** if an enemy's guard parries your light swing, there's a 10% chance you lose your sword.
+- A disarmed weapon flies **4 to 6 studs**. Until you pick it up you can only dodge.
+- **Walk over the weapon** to pick it up. It goes back into the **same pack slot**. If something filled that slot in the meantime, you see "No room" and the weapon stays on the floor.
+- Pickup animations are wanted <span class="tag draft">Planned</span>.
+
+All numbers are prototype values.
+
+### Enemy tells and behaviour <span class="tag decided">In prototype</span>
+
+| Tell | What it means |
+|-|-|
+| Ember glow and a soft growl, about 0.8 s wind-up | **Heavy.** It smashes through a plain block, so parry or dodge it |
+| The glint holds longer than usual | **Delayed swing.** Wait for it before you parry |
+| A quick glint with no gold parry ring | **Feint.** Don't commit your parry |
+
+- Enemies run a small **learning brain** that adapts to each player's habits during a match.
+- Enemies **aim at your broken limbs**: +25% damage on an already-broken limb.
+- Goblins only rarely go for a heavy head swing (8 s heavy cooldown).
+- **Weaker enemies back off when hurt.**
+
+Timings are prototype values.
 
 ## Open
 

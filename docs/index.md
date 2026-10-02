@@ -3,13 +3,13 @@
 <div class="hero" markdown>
 ![Dungeon Bang logo](assets/img/logo.png)
 
-A first-person Roblox dungeon crawler. Parties of up to four drop into small randomized dungeons, race a 3-minute timer on each of 6 floors, and carry what they find into the next match. Die and you lose it all.
+A first-person Roblox dungeon crawler. Parties of up to four drop into small randomized dungeons, race a 3-minute clock down through 6 depths, and carry what they find into the next match. Die and you lose it all.
 </div>
 
 ## The game in one breath
 
 1. **Queue** from the lobby, alone or with a party code. Your level is how many dungeon runs you have survived in a row.
-2. **Six floors, three minutes each.** Each floor is a fresh, seeded dungeon that grows from 9 rooms to 39. Find the stairs, loot chests, rescue hostages, visit shopkeepers, fight.
+2. **Six depths, one 3:00 clock per round.** Each depth is a fresh, seeded dungeon that grows from 9 rooms to 39, and the stairs never add time. Find the stairs, loot chests, rescue hostages, visit shopkeepers, fight.
 3. **Fight with your body, not a health bar.** Swings are directional, every body part can be hurt or broken, and hunger never stops draining.
 4. **Pack smart.** Your inventory is three stacked grids: armor and food, weapons, then enchants that power whatever sits beneath them.
 5. **Finale.** A boss that scales with the party's size and total level. <span class="tag open">Open</span> whether the player-vs-player fight still happens too.
@@ -21,10 +21,13 @@ A first-person Roblox dungeon crawler. Parties of up to four drop into small ran
 [**Game loop** <span>Match flow, levels, hard death, revives</span>](game-loop.md)
 [**Dungeon floors** <span>Generator, room counts, shops, events, hostages</span>](dungeon.md)
 [**Boss and finale** <span>Party-scaled boss, PvP question</span>](boss.md)
-[**Lobby, queue and shop** <span>Vault, invite codes, Gold and Robux</span>](lobby.md)
+[**Lobby, queue and shop** <span>Vault, invite codes, silverlings, goldlings and Robux</span>](lobby.md)
 [**Controls** <span>Keys, mouse and touch, what works today</span>](controls.md)
 [**Combat and injuries** <span>Body zones, hunger, parries, stamina</span>](combat.md)
+[**Ranged weapons** <span>Bows, crossbow, throwing axes, swaying reticle</span>](ranged.md)
 [**Inventory** <span>Three layers, islands, backpacks</span>](inventory.md)
+[**Trinkets** <span>21 layer-3 trinkets, tiers I to IV, cursed ones</span>](trinkets.md)
+[**Shopkeepers** <span>Eight keepers by round, rolled stock, paying and robbing</span>](shopkeepers.md)
 [**Companions** <span>One pet or human NPC, mini grids</span>](companions.md)
 [**Enemies** <span>Families by depth, elites, scaling</span>](enemies.md)
 [**Map and HUD** <span>Trail map, desktop and phone HUD</span>](ui.md)

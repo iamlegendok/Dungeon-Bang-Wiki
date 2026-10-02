@@ -59,7 +59,10 @@ nav:
   - Systems:
       - Controls: controls.md
       - Combat and injuries: combat.md
+      - Ranged weapons: ranged.md
       - Inventory: inventory.md
+      - Trinkets: trinkets.md
+      - Shopkeepers: shopkeepers.md
       - Companions: companions.md
       - Enemies: enemies.md
       - Map and HUD: ui.md

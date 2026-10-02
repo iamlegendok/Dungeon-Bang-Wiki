@@ -36,9 +36,11 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![Desktop HUD](assets/img/ui/hud_desktop.jpg)
 
-**Desktop:** pickup feed top left, timer top centre, minimap with gold, luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (weapon Q, items 1 to 4; the pack opens with I, see [Controls](controls.md)).
+**Desktop:** pickup feed top left, timer top centre, minimap with coin (silverlings and goldlings), luck and lit% plus the companion panel (portrait, HP, injuries, can-revive tag, orders on Z X C V) on the right, body doll with HP, stamina and food bottom left, hotbar bottom centre (a weapon slot, items 1 to 4; Q is now the high guard toggle; the bag opens with B, see [Controls](controls.md)).
 
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
+
+**Attack hub** <span class="tag decided">In prototype</span>: a fine ring around the crosshair that appears only while you hold left click. Drag toward a side to pick the cut; a thin arc fills as a heavy charges. It's hidden while a ranged weapon is out. It replaces the earlier five-marker swing guide. See [Controls](controls.md#fighting).
 
 **Mobile** (landscape): body doll top left, timer top centre, minimap top right with a companion pill beside it (tap cycles orders, hold opens a 4-way wheel), hotbar low between the thumbs, and the combat cluster (attack pad, block, dodge) from [Combat](combat.md#fighting-skill).
 

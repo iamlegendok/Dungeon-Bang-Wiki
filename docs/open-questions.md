@@ -4,7 +4,7 @@ Everything waiting on Cob, grouped by system. Each page also lists its own quest
 
 ## Game loop
 - **Does the boss replace the PvP finale,** or do players still fight each other too? ([Boss](boss.md))
-- **Depth rule:** reaching the stairs in time takes you one depth deeper and timing out keeps you at the same depth with your loot. Assumed, not confirmed. ([Dungeon](dungeon.md))
+- **When the clock runs out:** a round is one 3:00 clock shared by every depth (decided). What do you keep when it runs out, and which depth does the next round start at? ([Game loop](game-loop.md#moving-between-floors))
 - **Stories:** the draft has a storyteller on floors 1 to 5 announcing one of five stories (Fallen Knight, Collapsing Vault, Prisoner Prince, Lost Caravan, Dragon's Egg) that plays out in a room on the next floor. Waiting on a yes. ([Dungeon](dungeon.md#stories))
 
 ## Lobby
@@ -21,6 +21,9 @@ Everything waiting on Cob, grouped by system. Each page also lists its own quest
 
 ## Combat
 - Can every human companion heal, or only some (for example a dedicated Medic)?
+
+## Ranged
+- Honest reticle, or a drop hint? Longbow for Rangers only? ([Ranged weapons](ranged.md#open))
 
 ## Companions
 - Is the split "pets sense, humans fight and carry" right?

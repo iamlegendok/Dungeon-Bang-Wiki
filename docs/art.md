@@ -48,9 +48,12 @@
 
 The full table of roles (bars, injuries, inventory layers, states) lives with the palette source in the project files.
 
-## Loading cards <span class="tag decided">Decided</span>
+## Loading screen and cards <span class="tag decided">Decided</span> { #loading-cards }
 
-Four cards, logo only: no tip line or loading bar on the card itself. In Roblox, build the loading screen from layers (art, logo, a TextLabel for tips, a real progress bar) so tips can rotate.
+!!! success "Cob, 2026-10-02"
+    Use a loading screen while the dungeon loads in, built from the title cards **with tips**. This replaces the earlier logo-only, no-tip rule.
+
+The four cards below are the art. The loading screen shows the card art, the logo and a **rotating tip**, with **no loading bar**. The tip list itself is <span class="tag draft">Draft</span>.
 
 <div class="grid" markdown>
 
