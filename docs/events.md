@@ -1,6 +1,6 @@
 # Events and cutscenes
 
-Everything on this page is <span class="tag draft">Draft</span> (v0.1, 2026-10-02). Cob asked for "a thread about events, safe cutscenes (npcs wont attack you during it) ect"; the defaults below were picked without asking and Cob hasn't confirmed them yet. Each round's events sit in the special rooms described on [Dungeon floors](dungeon.md).
+Everything on this page is <span class="tag draft">Draft</span> (v0.2, 2026-10-02). Cob asked for "a thread about events, safe cutscenes (npcs wont attack you during it) ect"; the defaults below were picked without asking and Cob hasn't confirmed them yet. Each round's events sit in the special rooms described on [Dungeon floors](dungeon.md).
 
 ## Safe cutscenes <span class="tag draft">Draft</span> { #cutscenes }
 
@@ -58,6 +58,18 @@ A **Storyteller** sits near the route in rounds 1 to 5. Hold E to hear a 7 s tal
 | The Lost Caravan | 3 | A caravan selling Legendary gear for goldlings |
 | The Dragon's Egg | 4 | Guard an egg through 3 waves; it hatches a pet companion |
 | The Fallen Knight | 4 | Duel a cursed knight alone (others are kept out) for his Epic blade |
+
+### How each story plays { #story-rooms }
+
+- **The Prisoner Prince:** 2 to 4 guards (one elite from round 3) around a royal cage. Kill them and hold E: everyone there gets +3 loot luck and he walks out.
+- **The Collapsing Vault:** 3 to 5 chests, each one rarity up. You have 20 s, with rumbles at 10 and 5. When it seals, anyone inside is shoved out and takes 15 damage; unopened chests are lost.
+- **The Lost Caravan:** 3 Legendary items (Epic if the round has none), goldlings only, at 1.5x shop price. It leaves after 60 s.
+- **The Dragon's Egg:** the doors bar and the egg has 160 to 320 HP. Three waves come, and most of each wave goes for the egg. It hatches if it survives. Until companions exist, the whelp flies off and leaves an Epic chest.
+- **The Fallen Knight:** the first player in duels him alone behind a barrier (420 to 640 HP, parries like an elite). Win and you get an Epic weapon. Lose and he kneels back down, and nobody else may try.
+
+## Loot luck <span class="tag draft">Draft</span> { #loot-luck }
+
+Luck you earn this round pays out **next round** (capped at +5) and counts for the chests you open. With no luck in round 1, chests roll 50% common, 30% uncommon, 14% rare, 5% epic and 1% legendary. Each point of luck moves the odds about as much as 0.8 of a round. It's the same formula as the Blender prototype.
 
 ## Open
 
