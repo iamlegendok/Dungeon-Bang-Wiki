@@ -69,7 +69,7 @@ No melee weapon is longer than 4 cells, so every class except the Witcher can wi
 | Ember Staff | 1x4 | 3–6 | 21 (speed 100%) | Searing | a live coal in a copper cage |
 | Voidwood Staff | 1x4 | 5–6 | 23 (speed 100%) | Thirsting | bone claws, drinks life |
 
-The [ranged weapons](ranged.md) (Shortbow, Longbow, Crossbow, Throwing Axes) roll rarity and bonuses too, as a damage multiplier on their own damage.
+The [ranged weapons](ranged.md) (Shortbow, Longbow, Crossbow, Throwing Axes) roll rarity and bonuses too, as a damage multiplier on their own damage. Bows are one cell wide so every class can carry one: the Shortbow and Crossbow are 1x3, the Longbow 1x5 (Ranger only), and Throwing Axes 2x1. **Swift** on a ranged weapon shortens the draw, the axe wind-up and the reload alike, and the hands animate faster to match.
 
 ## Shields and armour
 

@@ -4,6 +4,10 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 
 ## 2026-10-02
 
+### Endgame
+- **Moment of respite:** after round 6 the party gets **30 seconds** to rearrange gear before the boss. Everyone sees every inventory with live changes, each character's portrait above their map, and a `30s` clock. **You can't walk** during it, and **Ready** from every living player ends it early. See [Boss and finale](boss.md#moment-of-respite).
+- **Fallen teammates keep a grey seat** with an empty map (hard death loses all gear). They watch but can't act. A player who quits mid-respite shows as **Left**.
+
 ### Weapons and armour
 - **More weapons and armour**, and **drops roll their own stats** so the same item rarely repeats the same numbers. See [Weapons and armour](gear.md); the lineup and numbers there are drafts.
 
