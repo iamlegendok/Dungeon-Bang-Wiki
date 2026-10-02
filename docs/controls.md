@@ -58,6 +58,18 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | Space + direction | Dodge, which cancels a draw |
 | Walk over a missed arrow, bolt or axe | Pick it up. Misses stay where they land |
 
+### Moment of respite <span class="tag draft">Planned</span>
+
+| Input | Action |
+|-|-|
+| Drag your item | Move it (your own map only) |
+| R or right mouse while dragging | Rotate it |
+| Double-tap an item | Rotate it in place |
+| Layer chips | Show one layer at a time |
+| Ready | You're done; press again to keep sorting |
+
+See [Boss and finale](boss.md#moment-of-respite).
+
 ### Inventory and loot <span class="tag decided">In prototype</span>
 
 | Input | Action |

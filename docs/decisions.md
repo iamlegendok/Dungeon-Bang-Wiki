@@ -32,9 +32,13 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - The **"Stairs taken"** banner clears once the new floor loads.
 
 ### Boss
-- Cob asked for a **lich who portals in enemies** and is invincible until they're dead, with a **chain hook that never misses**, curves around things and is broken with Q, in a **huge room** with roof routes and one wide entryway. The design is **Morrakhet, the Hollow King**; which boss goes in is still open. See [Boss and finale](boss.md#boss-options).
+- Cob asked for a **lich who portals in enemies** and is invincible until they're dead, with a **chain hook that never misses**, curves around things and is broken with Q, in a **huge room** with roof routes and one wide entryway. The design is **Morrakhet, the Hollow King**; which boss goes in is still open. See [Boss and finale](boss.md).
 
 ## 2026-10-02
+
+### Endgame
+- **Moment of respite:** after round 6 the party gets **30 seconds** to rearrange gear before the boss. Everyone sees every inventory with live changes, each character's portrait above their map, and a `30s` clock. **You can't walk** during it, and **Ready** from every living player ends it early. See [Boss and finale](boss.md#moment-of-respite).
+- **Fallen teammates keep a grey seat** with an empty map (hard death loses all gear). They watch but can't act. A player who quits mid-respite shows as **Left**.
 
 ### Combat
 - **Stance combat** (15:48, Cob's design) replaces the attack hub. Scroll up, middle click and scroll down pick the high, middle and low stance (d-pad on gamepad, three stance buttons on touch). Left click attacks from your stance (click light, hold heavy); right mouse guards it, timed to parry. **F** alone focuses.
