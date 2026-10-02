@@ -101,6 +101,15 @@ In the Studio prototype <span class="tag decided">In prototype</span>:
 - **Legs** slow them, a **broken foot** makes them stumble, **arm** injuries weaken their hits, **two broken arms** make some swings miss, and **head** hits daze them.
 - **Fliers** take no limb injuries.
 
+**Hurt parts flash red** <span class="tag decided">Decided</span> (Cob, 2026-10-02), so you can see where an enemy is hurt:
+
+- A **Hurt** limb pulses red, on that part only.
+- A **Broken** limb pulses a deeper red.
+- A hit that newly hurts a part gives one quick, bright flash.
+- Fliers take no limb injuries, so they never flash.
+
+The exact look is being built in Studio and isn't tested yet.
+
 ### Enemy guard <span class="tag decided">In prototype</span> { #enemy-guard }
 
 Enemies can raise a guard. The tell is obvious: the weapon comes up across the body, a steel-white outline appears and a soft clink plays. The guard lasts about 0.7 to 0.9 s.

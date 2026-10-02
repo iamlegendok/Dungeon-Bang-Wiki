@@ -6,6 +6,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 
 ### Combat
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
+- **Hurt enemy body parts flash red** (deeper red when broken).
 
 ### Enemies
 - Some enemies are **gated by round**, not depth: fliers from round 3, Brood Sack from round 4, elite Gulpers from round 5.
