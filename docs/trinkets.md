@@ -42,7 +42,7 @@ Values are for tiers I / II / III / IV.
 | Lucky Knucklebone | 1x1 | Smashed props drop silverlings more often | +15 / +30 / +45 / +70% |
 | Wolf Tooth | 1x1 | Stamina refills faster | +10 / +15 / +22 / +30% |
 | Salt Pouch | 1x1 | Food in your grid rots slower | -25 / -40 / -55 / -75% |
-| Mender's Knot | 1x1 | Hurt body parts heal sooner out of combat (normally after 45 s). IV also turns one Broken body part into Hurt at round start | After 36 s / 28 s / 20 s / 12 s |
+| Mender's Knot | 1x1 | Hurt body parts heal sooner out of combat (normally after 45 s). IV also turns one Broken body part into Hurt at each round start | After 36 s / 28 s / 20 s / 12 s |
 | Heartstone | 1x2 | Max HP | +5 / +10 / +15 / +25 |
 | Duelist's Ring | 1x1 | Wider parry window (normally 0.20 s) | 0.22 / 0.24 / 0.27 / 0.30 s |
 | Tar Grip | 1x1 | Less chance to be disarmed | -25 / -45 / -65 / -90% |
