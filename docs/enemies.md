@@ -32,20 +32,30 @@ Cob counts the match in **rounds 1 to 6**; depth only rises when you take the st
 | From round | Enemy |
 |-|-|
 | 1 | Goblin Slinger (about 3 in 10 goblins) |
-| 3 | Fliers; Hollow Bowman (about 1 in 3 skeletons) |
-| 4 | Brood Sack |
+| 2 | Skitterling <span class="tag draft">Draft</span> |
+| 3 | Fliers; Hollow Bowman (about 1 in 3 skeletons); Webspinner <span class="tag draft">Draft</span> |
+| 4 | Brood Sack; Spider Slinger <span class="tag draft">Draft</span> |
 | 5 | Elite Gulpers |
 
 Fliers take no limb injuries.
 
 ## Spiders and mounted enemies <span class="tag draft">Draft</span> { #spiders }
 
-Being designed now (Cob, 2026-10-02):
+Designed 2026-10-02 after Cob's ask. The round gates are defaults and Cob hasn't seen these in game yet.
 
-- **Spiders** can latch onto you; **mash Q** to break free.
-- **Mounted enemies** are a new class: a rider on a mount, such as a Goblin Slinger riding a spider.
+| Enemy | From round | What it does |
+|-|-|-|
+| **Skitterling** | 2 | Small and fast. A pincer bite with a rear-up and fang glint tell. It leaps at your face and **latches on** |
+| **Webspinner** | 3 | About twice a Skitterling's size. Flings a glowing web glob at where you're heading, plus a pincer bite |
+| **Spider Slinger** | 4 | The first **mounted** enemy: a Goblin Slinger riding a saddled Webspinner |
 
-Final rules will land here once the enemy roster settles them.
+**Latched on.** A camera cut shows the Skitterling clinging and a big **Q** pulses (tap on phone, X on a pad). Mash Q **6 times every 2 s** to throw it off. Each missed window is a bite; the 3rd miss poisons you and it drops off. Space, attacks and dodge do nothing while it's on you, and other enemies hold back.
+
+**Webs.** A hit slows you hard; a dodge shakes it off. A miss leaves a sticky floor patch for a few seconds. Block or parry catches the web on your weapon.
+
+**Mounted.** Kill the spider and the goblin falls off and fights on foot. Kill the goblin, or knock it off with a heavy hit, and the spider fights on alone and starts lobbing webs.
+
+**Injuries.** Spider legs break and make it limp. With 3 broken legs it can't leap; a broken fang means it can't latch.
 
 ## Ranged enemies <span class="tag decided">In prototype</span> { #ranged-enemies }
 

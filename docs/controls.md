@@ -89,7 +89,7 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 
 | Input | Action |
 |-|-|
-| Mash Q | Break free when a spider latches on (Cob, 2026-10-02). Rules come from the enemy roster |
+| Mash Q | Break free when a Skitterling latches on: 6 presses every 2 s (tap on phone, X on a pad). Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 | Hold E during a cutscene | Skip it (from 1 s in). See [Events and cutscenes](events.md#cutscenes) |
 | Hotbar weapon key | Weapon on the hotbar. Q is taken by the spider break-free, so this needs another key <span class="tag open">Open</span> |
 | 1 to 4 | Hotbar items |
