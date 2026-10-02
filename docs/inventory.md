@@ -45,6 +45,17 @@ From Cob, 2026-10-02:
 - If it has no mesh, it shows a **coloured orb** with the item's icon floating above it: **red** for weapons, **green** for food, **blue** for armor.
 - Every item in the game has an inventory icon. The old prototype placeholder items that had none (Short Sword, War Axe and the old runes) have been removed.
 
+## Active weapon <span class="tag decided">Decided</span> { #active-weapon }
+
+From Cob, 2026-10-02: under the bag grid sits an **active weapon** slot. Drag a weapon there and it becomes the weapon in your hands.
+
+- It takes a weapon of **any size**; there's no footprint limit.
+- A weapon in the active slot **doesn't use grid space**.
+- Dropping a weapon onto a filled active slot **swaps** them: the old weapon goes back to the grid.
+- A [disarmed](combat.md#disarms) weapon returns to its active slot when you pick it up.
+
+<span class="tag assumed">Assumed</span> The prototype has **two** active slots, **Active melee** and **Active ranged**, and **R** swaps between them. The swap-on-drop behaviour is the prototype's choice too.
+
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 
 ![Island layouts per class](assets/img/inventory/islands.jpg)

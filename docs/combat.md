@@ -133,7 +133,7 @@ The timings and multiplier are prototype values from the Studio build and may ch
 
 - **It works both ways:** if an enemy's guard parries your light swing, there's a 10% chance you lose your sword.
 - A disarmed weapon flies **4 to 6 studs**. Until you pick it up you can only dodge.
-- **Walk over the weapon** to pick it up. It goes back into the **same pack slot**. If something filled that slot in the meantime, you see "No room" and the weapon stays on the floor.
+- **Walk over the weapon** to pick it up. It goes back into its **active weapon slot** (see [Inventory](inventory.md#active-weapon)).
 - Pickup animations are wanted <span class="tag draft">Planned</span>.
 
 All numbers are prototype values.

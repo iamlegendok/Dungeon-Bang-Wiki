@@ -40,7 +40,7 @@ Ranged weapons are built into the Studio prototype (Cob hasn't played them yet) 
 
 | Input | Action | Status |
 |-|-|-|
-| R | Swap between sword and ranged weapon | <span class="tag decided">In prototype</span> |
+| R | Swap between your active melee and active ranged weapon | <span class="tag decided">In prototype</span> |
 | Hold left click, release | Draw, then loose. The crossbow fires on a click; throwing axes wind up while held | <span class="tag decided">In prototype</span> |
 | Hold right mouse | Steady your aim, at a stamina cost (no block with a bow) | <span class="tag decided">In prototype</span> |
 | Space | Dodge, which cancels a draw | <span class="tag decided">In prototype</span> |

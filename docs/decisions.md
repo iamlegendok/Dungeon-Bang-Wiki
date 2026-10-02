@@ -15,6 +15,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 ### Inventory
 - Dropped items show their **3D mesh**, or a coloured orb with the item's icon above it (**red** weapons, **green** food, **blue** armor).
 - Legacy items with no inventory icon are **removed** from the game.
+- An **active weapon** slot sits under the bag grid: drag any weapon there, any size, to wield it. See [Inventory](inventory.md#active-weapon).
 
 ### Shopkeepers
 - **Eight shopkeepers**, each tied to certain rounds, grislier and more armoured in later rounds. Shops vary: a rolled keeper per round, rolled stock with a deal of the round, and a rolled stall placement. See [Shopkeepers](shopkeepers.md).
@@ -70,7 +71,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Swing gestures: flick **down = low sweep**, left or right = slash, still = thrust. A flick up gives no overhead. (Replaced on 2026-10-02 by the attack hub.)
 
 ### Combat
-- **Parries can disarm**, both ways. A picked-up weapon returns to its **same inventory slot**, or the player is told there's no room.
+- **Parries can disarm**, both ways. A picked-up weapon returns to its **same inventory slot**, or the player is told there's no room. (Since 2026-10-02 it returns to its active weapon slot.)
 - **Skill based and survival strained**, with per-body-part injuries.
 - **Hunger is a draining meter**; food lives on inventory layer 1.
 - **Broken bones carry into the next round**, not the next match.

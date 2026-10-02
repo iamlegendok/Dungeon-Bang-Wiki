@@ -31,7 +31,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 - **Jump is off.**
 - The Roblox cursor is hidden in play; menus show a custom cursor.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
-- **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to the same pack slot, or shows "No room" if that slot was filled. See [Combat](combat.md#disarms).
+- **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to its active weapon slot. See [Combat](combat.md#disarms).
 
 #### Attack hub <span class="tag decided">In prototype</span>
 
@@ -43,7 +43,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 
 | Input | Action |
 |-|-|
-| R | Swap between sword and ranged weapon (Cob, 2026-10-01) |
+| R | Swap between your active melee and active ranged weapon (Cob, 2026-10-01). See [Inventory](inventory.md#active-weapon) |
 | Hold left click, then release | Draw, then loose. The crossbow fires on a click; throwing axes wind up while held |
 | Hold right mouse | Steady your aim. Costs stamina |
 | Space + direction | Dodge, which cancels a draw |
@@ -57,6 +57,7 @@ Built in the Studio place; Cob hasn't played it yet. See [Ranged weapons](ranged
 | I | Backup for B. Roblox Studio catches I before the game sees it, so use B when testing in Studio; I works in a real Roblox client |
 | Drag an item | Move it |
 | R while dragging | Rotate the item |
+| Drag a weapon to the active slot under the grid | Wield it. Any size fits; a weapon already there swaps back to the grid |
 | Drag off the panel | Drop the item at your feet. Only during a round in the dungeon; in the lobby or while a loading screen is up, the item eases back into place |
 | Click food | Eat it: a bite takes **1.6 s** at **40% move speed**, and you can't attack during it. The food takes effect at the bite, extra clicks do nothing, and **Space** cancels the bite and keeps the food |
 | Hold E | Take from a loot box |
