@@ -37,6 +37,14 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 - **Haste Charm** on the Boots: move speed.
 - **Cursed Gem** on the Dagger: huge crits, drains HP while equipped. A risk item.
 
+## Items on the floor <span class="tag decided">Decided</span> { #dropped-items }
+
+From Cob, 2026-10-02:
+
+- A dropped item shows its **real 3D mesh** in the world.
+- If it has no mesh, it shows a **coloured orb** with the item's icon floating above it: **red** for weapons, **green** for food, **blue** for armor.
+- Every item in the game has an inventory icon. The old prototype placeholder items that had none (Short Sword, War Axe and the old runes) have been removed.
+
 ## Class layouts <span class="tag draft">Draft</span> { #class-layouts }
 
 ![Island layouts per class](assets/img/inventory/islands.jpg)

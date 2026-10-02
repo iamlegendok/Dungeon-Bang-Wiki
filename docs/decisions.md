@@ -12,6 +12,10 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Some enemies are **gated by round**, not depth: fliers from round 3, Brood Sack from round 4, elite Gulpers from round 5.
 - **Ranged enemies:** the Goblin Slinger from round 1 and the Hollow Bowman from round 3.
 
+### Inventory
+- Dropped items show their **3D mesh**, or a coloured orb with the item's icon above it (**red** weapons, **green** food, **blue** armor).
+- Legacy items with no inventory icon are **removed** from the game.
+
 ### Trinkets
 - **21 trinkets** on layer 3 (8 for anyone, 2 per class, 3 cursed), **tiers I to IV**. Better tiers drop in later rounds, trinkets **level up while carried** (two full rounds = +1 tier), and two matching ones **fuse at a shopkeeper**. See [Trinkets](trinkets.md).
 
