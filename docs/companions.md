@@ -20,6 +20,9 @@ From Cob, 2026-10-02:
 - **Enemies treat companions like another player.**
 - **"Join me"** on a freed hostage recruits them.
 - **The Dragon's Egg** (a [story](events.md#stories)) hatches a **Dragon Whelp**.
+- **Survive the run and your companion survives too.** It comes back to the lobby, follows you around there and stands beside your character preview, then joins your next match. A hard death still loses it.
+- A **portrait circle** next to your HP and stamina shows its head, with a red ring that drains as it takes damage and pulses while it's down. See [Map and HUD](ui.md#hud-draft).
+- **Cave Hound:** the trail map reveals 2 tiles around you. **Owl:** its pointer to the stairs also shows on the trail map.
 
 ## In the prototype <span class="tag decided">In prototype</span> { #prototype }
 
@@ -42,6 +45,7 @@ Picked in Studio, not confirmed by Cob:
 - With a full slot, a freed hostage goes home and you still get the loot luck bonus.
 - A **downed companion** is helped up with hold E for 2 s and comes back at 30% HP. After 30 s it's gone and its pack drops.
 - **While you're downed** you can crawl but not fight, and enemies ignore you. With a pet, no bandage left, or 20 s without help, it's a hard death.
+- A companion that survives a run **levels up** and starts the next match at **full HP**.
 - The egg's whelp goes to the **best defender** who has a free slot; otherwise the egg leaves an Epic chest.
 - Enemies pull hard toward a healer who is reviving someone.
 
@@ -53,7 +57,7 @@ Picked in Studio, not confirmed by Cob:
 - **Commands:** Follow, Hold, Fetch (grab nearby loot), Attack (your target). In the prototype, G cycles them and the bottom-left panel has tap buttons.
 - Companions have HP and body-zone hits like players. A downed companion gives you 30 s to revive it, else it's gone and its pack drops.
 - **Companion dies:** its whole mini grid drops as a loot pile anyone can grab.
-- **You survive:** it carries over to the next match with its grid and gains a level <span class="tag assumed">Assumed</span>. A paid revive can include it <span class="tag assumed">Assumed</span>.
+- **You survive:** your companion survives too and joins your next match (Cob, 2026-10-02). A paid revive can include it <span class="tag assumed">Assumed</span>.
 
 ![Companion rules](assets/img/companions/rules.jpg)
 

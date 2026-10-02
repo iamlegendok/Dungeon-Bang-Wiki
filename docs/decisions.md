@@ -12,6 +12,8 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 
 ### Companions
 - **One companion slot**; your companion dies with you. Enemies treat companions like another player.
+- **Survive a run and your companion survives too:** it follows you in the lobby, stands beside your preview and joins your next match. A hard death still loses it.
+- A **companion portrait** sits right of the HP and stamina panel, with a red ring that drains with damage and pulses while it's down.
 - A healing human companion allows a downed state. "Join me" on a freed hostage recruits them. The Dragon's Egg hatches a Dragon Whelp.
 
 ### Enemies

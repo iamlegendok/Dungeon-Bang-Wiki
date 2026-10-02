@@ -28,8 +28,8 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 
 ![What each companion does to the map](assets/img/ui/companion_maps.jpg)
 
-- **Cave Hound** <span class="tag decided">Decided</span>: reveal radius 2 tiles while it is with you (test walk: 32% of floor lit, rooms entered 75% seen).
-- **Owl Familiar** <span class="tag decided">Decided</span>: once per floor, a dashed bearing toward the nearest stairs. Direction only, reveals no floor. A rim arrow tracks the stairs for 20 s <span class="tag assumed">Assumed</span>.
+- **Cave Hound** <span class="tag decided">In prototype</span>: the trail map reveals 2 tiles around you while it is with you (test walk: 32% of floor lit, rooms entered 75% seen).
+- **Owl Familiar** <span class="tag decided">In prototype</span>: once per floor, a dashed bearing toward the nearest stairs, shown in the world and on the trail map. Direction only, reveals no floor. A rim arrow tracks the stairs for 20 s <span class="tag assumed">Assumed</span>.
 - **Humans:** no map perk.
 
 ## HUD <span class="tag draft">Draft</span>
@@ -41,6 +41,8 @@ A 2-tile radius was tried first: rooms came out 90 to 100% revealed, which defea
 ![Phone HUD](assets/img/ui/hud_mobile.jpg)
 
 **Stance and threat** <span class="tag decided">In prototype</span>: melee is stance combat (Cob, 2026-10-02). A **red flush** on the screen edge shows where an enemy attack is coming from: top for high, bottom for low, left or right for side swings; it brightens in the parry window. It replaces the attack hub ring. See [Controls](controls.md#stances).
+
+**Companion portrait** <span class="tag decided">In prototype</span> (Cob, 2026-10-02): a circle to the right of the HP and stamina panel shows your companion's head. A red ring around it drains as the companion takes damage, and it pulses red while the companion is down. It's hidden when you have no companion.
 
 **Damage, armour and comparing** <span class="tag decided">In prototype</span>: your damage and armour show under the health and stamina bars. Comparing an item shows **green with an up arrow** when it's better and **red with a down arrow** when it's worse. Weapons compare against your active weapon; armour compares against the best piece of the same kind you carry.
 
