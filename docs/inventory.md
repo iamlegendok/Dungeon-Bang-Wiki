@@ -8,7 +8,7 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 
 | Layer | Holds |
 |-|-|
-| 1 | Armor, mounted gear and **food** (chest, helmet, boots, shield, quiver, lantern, pouches, rations) |
+| 1 | Armor, mounted gear and **food** (chest, helmet, boots, shield, quiver, pouches, rations) |
 | 2 | Weapons |
 | 3 | Enchants, runes, gems and specials that affect the items **beneath** them |
 
