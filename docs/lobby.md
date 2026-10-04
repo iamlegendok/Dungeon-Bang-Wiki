@@ -55,5 +55,5 @@ Drag gear between your class pack (the three [inventory](inventory.md) layers) a
 ??? question "Any other Robux conveniences?"
     For example extra vault space or loadout presets.
 
-??? question "Does the PvP finale still happen alongside the boss?"
+??? question "Does PvP come back?"
     See [Boss and finale](boss.md).

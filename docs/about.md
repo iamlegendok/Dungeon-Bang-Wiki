@@ -1,6 +1,6 @@
 # About this wiki
 
-This wiki tracks how Dungeon Bang works, system by system. The game itself lives in [Dungeblox](https://github.com/theverycob/Dungeblox).
+This wiki tracks how Dungeon Bang works, system by system.
 
 ## Status tags
 
@@ -13,9 +13,8 @@ This wiki tracks how Dungeon Bang works, system by system. The game itself lives
 
 ## How it's kept
 
-- Design work happens in project threads. When a thread lands a change, the wiki page for that system is updated, and every decision goes into the [Decisions log](decisions.md) with its date.
+- When a design changes, the page for that system is updated, and every decision goes into the [Decisions log](decisions.md) with its date.
 - When a draft gets confirmed, its tag changes and the question leaves [Open questions](open-questions.md).
-- Pages show the latest render boards from each design thread.
 
 ## Editing
 

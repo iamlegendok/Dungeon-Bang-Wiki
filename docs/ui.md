@@ -2,7 +2,7 @@
 
 ## Trail map
 
-The trail map and minimap are in the Studio prototype as of 2026-10-01. The minimap sits top right and only shows inside the dungeon. See [Controls](controls.md) for the keys.
+The trail map and minimap are in the prototype. The minimap sits top right and only shows inside the dungeon. See [Controls](controls.md) for the keys.
 
 ![Trail map over a real floor](assets/img/ui/trail_map.jpg)
 
@@ -53,9 +53,11 @@ The companion command buttons sit above the panel, and the **Bag** hint is at th
 
 **Enemy health bars** <span class="tag decided">In prototype</span>: every enemy has a health bar and flashes red when hit.
 
+**Enemy status icons** <span class="tag decided">In prototype</span>: small icons under an enemy's health bar show what's affecting it: Stunned, Reeling, Pinned, Grounded, Disarmed, Slowed, Bleeding, Burning, Poisoned, Broken Arm, Broken Leg, Concussed, Downed, Warded or Exposed. The rim colour gives the kind: amber for control, red for damage over time and injuries, arcane for wards, gold for Exposed. Above each enemy, from the top, sit a warning icon (when it has one), its name, its health bar and its status icons, so nothing overlaps.
+
 **Better-drop gleam** <span class="tag decided">In prototype</span>: floor gear that beats yours gets a slow gold rim, per player.
 
-**Cursor** <span class="tag decided">In prototype</span>: a custom gold arrow wherever the mouse is free (menus and the shop); hidden in first person and cutscenes, except at the hostage choice.
+**Cursor** <span class="tag decided">In prototype</span>: a custom gold arrow wherever the mouse is free (menus and the shop); hidden in first person and cutscenes, except at the hostage choice and once you skip a scene.
 
 **Stairs banner:** "Stairs taken" clears once the new floor has loaded.
 
@@ -72,4 +74,4 @@ The companion command buttons sit above the panel, and the **Bag** hint is at th
 ## Open
 
 ??? question "Map in the finale and sharing"
-    Should the map survive into the boss or PvP? Should teammates be able to share their maps?
+    Should the map survive into the boss fight? Should teammates be able to share their maps?

@@ -3,9 +3,8 @@
 Everything waiting on a decision, grouped by system. Each page also lists its own questions at the bottom.
 
 ## Game loop
-- **Does the boss replace the PvP finale,** or do players still fight each other too? ([Boss](boss.md))
+- **Does PvP come back?** For now the boss ends the match. ([Boss](boss.md))
 - **When the clock runs out:** a round is one 3:00 clock shared by every depth (decided). What do you keep when it runs out, and which depth does the next round start at? ([Game loop](game-loop.md#moving-between-floors))
-- **Stories:** the draft has a storyteller on floors 1 to 5 announcing one of five stories (Fallen Knight, Collapsing Vault, Prisoner Prince, Lost Caravan, Dragon's Egg) that plays out in a room on the next floor. Waiting on a yes. ([Dungeon](dungeon.md#stories))
 
 ## Lobby
 - Any other Robux conveniences, like vault space or loadout presets? ([Lobby](lobby.md))
@@ -38,6 +37,3 @@ Everything waiting on a decision, grouped by system. Each page also lists its ow
 - Should the map survive into the finale, or be shareable with teammates?
 - Owl's Call details: the 20 s rim arrow and the dashed bearing are assumed.
 - Does the Cave Hound's bigger reveal drop back while it's on Hold or downed? (Assumed yes.)
-
-## Characters
-- First import into Roblox Studio is still to come.

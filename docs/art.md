@@ -66,6 +66,5 @@ The four cards below are the art. The loading screen shows the card art, the log
 
 - **Logo:** "DUNGEON" in Cinzel Decorative Black (gold), "BANG!" in Lilita One (orange-gold), with a violet glow. Both fonts are free (SIL Open Font License).
 - **Mobile-safe box:** everything important sits inside x 280 to 1640, y 147 to 963 of the 1920 x 1080 card, so it survives a phone crop and a tablet crop.
-- Roblox caps image uploads at 1024 px, so the in-game art is uploaded at 1024 x 576.
 
 ![Safe-area check](assets/img/title/safe_area.jpg)

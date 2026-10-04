@@ -26,61 +26,88 @@
 
 <span class="tag draft">Draft</span> Teammates' maps are read-only, and there's no trading between players yet.
 
-## Where the boss sits <span class="tag draft">Draft</span>
+## Where the boss sits <span class="tag decided">In prototype</span> { #where-the-boss-sits }
 
-After round 6 and the moment of respite, the whole party fights the boss together. The survivors then take their gear and his drop into the PvP arena, so the boss comes **before** PvP rather than replacing it. There's one boss per match, rolled at the start. This order is not confirmed yet.
+1. After round 6 comes the [moment of respite](#moment-of-respite), then the whole party fights the boss together.
+2. **The boss round has no clock.** It ends only when you win or every player is dead.
+3. Win or wipe, the [loot screen](#loot-screen) follows, then everyone goes back to the lobby.
 
-## Morrakhet, the Hollow King <span class="tag draft">Draft</span>
+There's **no PvP after the boss** for now. More than one boss is planned; Morrakhet is the first one built.
+
+## Morrakhet, the Hollow King <span class="tag decided">In prototype</span> { #morrakhet }
 
 ![Morrakhet, the Hollow King](assets/img/boss/hollow_king.jpg)
 
-**Morrakhet, the Hollow King, First of the Unburied.** He is the lich boss, and the dungeon's first king. His court buried him alive under his own throne, and he dragged them all back up with him. The [Hollow Legion](enemies.md#hollow-legion-depth-3-to-4) you fight from round 3 are his courtiers, so his adds reuse their models. He stands about 11 studs tall.
+**Morrakhet, the Hollow King, First of the Unburied.** A lich and the dungeon's first king. His court buried him alive under his own throne, and he dragged them all back up with him as the **Unburied Court**: skeleton chess pieces in ashen bone and gold. He stands about 11 studs tall and can't be hit by debuffs.
 
-| Move | Stance | What happens |
+**The intro.** The gate crashes shut behind the party. A portal tears open over the empty throne and he drops into the seat, lounging with his wrist under his chin. His honour guard of Wardens and Knights steps out of two portals by the dais and lines up in front of him while he brags in old-fashioned speech. On his last line he rises and walks down to fight. Skipping the intro keeps you at the gate until he wakes.
+
+**Every blow warns first.** Each attack from him or his court shows the red edge flush at least 0.6 s before it lands. **Every stun you land on him lasts 10 s**, in every phase.
+
+### His attacks
+
+| Attack | What it does | How to answer |
 |-|-|-|
-| **Grave Hook** | High or low | Chain rattle and glint (0.7 s); the red flush shows which stance. Guard that stance and it bounces off. Parry and the chain whips back: he's stunned 2 s. Caught, you're reeled to his feet over 1.5 s; **mash Q** (X on a pad) 6 times to tear free, or he gets a free Soul Reap. The hook **never misses**: it bends around pillars and players, so guarding saves you and hiding doesn't. |
-| **Soul Reap** | Middle | Chest-height sweep with the hook blade, 0.6 s wind-up, 35 damage. Parry for the usual reel and x1.5 damage. |
-| **Grasping Dead** | Low | Bone hands burst up in a line toward one player. Guard low or dodge out of the line; a catch holds you for 1 s. |
-| **Rite of the Hollow** | At 75%, 50%, 25% | He rises into a cage of giant ribs and **can't be hurt**. Portals (2, +1 per extra player) pour out Footmen and Bowmen, plus a Lantern Priest from the 50% rite. He keeps them coming **until every add is dead**, then the cage shatters and he's stunned 4 s, taking x1.5 damage. |
-| **Crawl** | Under 25% | He throws off his robe, climbs a pillar and crawls the vault ribs upside down, dropping on players (shadow on the floor for 1.0 s, then a low shockwave). Rib Crawler skeletons drop as adds. Shoot a chandelier as he passes to knock him down for 3 s. |
+| **Grave Hook** | A chain thrown at the **closest** player. It curves around pillars and never misses. A **GUARD HIGH** or **GUARD LOW** read appears under your crosshair, with an arrow showing where it arrives from | Guard that stance. A parry stuns him 10 s. A teammate can snap a link (1 heavy or 2 light hits), which also stuns him. If you're caught, you're dragged back: **mash Q** (X on a gamepad) 6 times to tear free |
+| **Soul Reap** | A wide middle sweep of his hook blade; its arc is drawn on the floor first | Parry it and he's stunned 10 s |
+| **Grasping Dead** | A low line of bone hands racing at you | Guard low, or jump |
+| **Grave Lob** | Urns, coffins (a Bone Pawn climbs out), statues or braziers thrown at the **farthest** player | Guard high, roll out of the ring, or shoot it while it hangs |
+| **Chandelier** | Drops on whoever stands under one | Step out of the shadow |
+| **Royal Decree** | A piece's path lights violet and its landing tile gold; 1 s later it moves exactly there | Step off the gold tile or out of the lane |
+| **Checkmate** | Below 75%: a soul cage traps one player | Break a wall within 6 s (3 hits from any weapon), or have a teammate break it |
+| **Castling** | He swaps places with a Warden near the farthest player, then attacks | Keep track of the Wardens |
+| **The Toll** | A bell swings over his head and strikes three times; the dark tiles glow brighter on each strike | Stand on a light tile, or jump, on the third strike |
+| **Gambit** | A piece's 3x3 tiles flash red, then it bursts | Guard any stance, dodge, or step out |
 
-**Weak points:** the soul lantern in his ribs takes x2 damage. Breaking his right arm means no Grave Hook for 20 s.
-**Drop:** his bone crown (a unique trinket) and one Legendary per survivor, picked before PvP.
+### The Unburied Court
 
-### The Hall of the Unburied <span class="tag draft">Draft</span>
-
-His room is huge, with room to leap and crawl on the roof: 130 studs wide, 182 long, walls 42 high and a bone vault peaking at 72.
-
-- **One shared entryway:** a 30-stud gate, wide enough for 4 players and their companions side by side. A bone portcullis drops behind the last of you and lifts when he dies.
-- **The Terrace:** a raised landing inside the gate, safe while his reveal plays. He wakes when someone steps off it, or after 10 s.
-- **The Court:** the main floor. Cracked grave slabs show where Grasping Dead come up.
-- **8 pillars** in two rows: cover from Bowmen, and what he climbs in the crawl phase.
-- **Galleries:** balconies on both sides with four portals in their walls, so adds step out up high and bows get a head start.
-- **Dais and Bone Throne** at the north end, where he starts, with two more floor portals.
-- **The Vault:** 11 bone ribs (his crawl rails) and three hanging chandeliers.
-
-### Scaling formula <span class="tag draft">Draft</span>
-
-| Stat | Formula |
+| Piece | On a Royal Decree |
 |-|-|
-| HP | 3,000 x players + 300 x party total level |
-| Damage | +10% per 2 players, +1.5% per total level, capped at +75% |
-| Adds | One add wave per 2 players; +1 elite add per 10 total levels, max 3 |
-| Level cap | Each player's level counts up to 15 |
-| Who counts | Players who died before the boss don't count |
-| Bonus | Optional: a level-0 survivor in a party with total level 20+ gets a bonus loot roll |
+| **Bone Pawn** | One step and a spear thrust. A Pawn that reaches the far rank rises as a Bishop |
+| **Tower Warden** (rook) | A shield charge down its lane. It can't be parried, so step out of the lane |
+| **Gravehorse Knight** | An L-shaped leap that stomps the gold tile. Between decrees it charges (guard low or dodge) and swings its lance (guard middle) |
+| **Mourning Bishop** | A bolt down a diagonal that any guard stops. It also raises one fallen piece per rite unless you smash its bone pile |
+| **Sabeth, the Widow Queen** | Arrives with the last rite. A dash with both sickles, low then high. She also races across the board like a chess queen, which doesn't hurt anyone |
 
-Example: a full party of four with levels 0, 3, 5 and 12 (total 20) faces a boss with 12,000 + 6,000 = 18,000 HP, +50% damage, and 2 elite adds.
+### Phases
 
-Bosses use the same body zones as everyone else, so breaking the boss's legs slows it. See [Combat](combat.md).
+- **Rite of the Hollow** at 75%, 50% and 25%: he blinks to the dais inside a cage of giant ribs and **can't be hurt**. Every portal opens and a wave of the court comes out. The wave grows with the party. Once every piece is dead, the cage shatters and he's stunned 10 s, taking x1.5 damage.
+- **Crawl** after the last rite: he climbs a pillar and crawls the vault ribs upside down. A shadow grows under a player, then he drops with a low shockwave: guard low or jump, then hit him while he's down. Shoot a chandelier as he passes to knock him down for 10 s.
+- **Weak point:** the soul lantern in his ribs takes x2 damage.
+- **Death:** the court freezes, he falls, and his last words go to Sabeth: "Alas, my beloved... when next we meet, 'twill be in flesh, not bone." The court crumbles to ash and the portcullis lifts.
+
+### The Hall of the Unburied
+
+130 studs wide and 182 long, with walls 42 high and a bone vault peaking at 72.
+
+- **One shared gate**, 30 studs wide. A bone portcullis drops behind the party and lifts when he dies.
+- **The court floor** is an 8x8 chessboard of 12-stud tiles, so his pieces move like chess pieces.
+- **8 pillars** in two rows: cover from his throws, and what he climbs in the crawl phase.
+- **Galleries** on both sides, with portals in their walls and stairs down to the court.
+- **The dais and the Bone Throne** at the north end, with two more portals.
+- **The vault**: bone ribs (his crawl rails) and hanging chandeliers.
+
+### Scaling <span class="tag draft">Draft</span>
+
+His HP is 3,000 x players + 300 x the party's total level. Each rite's wave and the honour guard grow with the number of players.
 
 ![Boss card](assets/img/title/boss.jpg)
+
+## Loot screen <span class="tag decided">In prototype</span> { #loot-screen }
+
+When the fight ends, a loot screen shows all four seats before everyone returns to the lobby.
+
+- Each seat shows the player's portrait, level change, status (Survived, Fallen, Left), coins banked, best find, companion and items.
+- **Players who were killed get nothing**, and neither do players who left.
+- Survivors bank their coins, and their companion comes back to the lobby with them.
+- Each player has a **Back to lobby** button. A timer sends the rest back <span class="tag draft">Draft</span> 45 s.
+- On a wipe the title reads **The Hollow King Endures**.
 
 ## Other boss options <span class="tag draft">Draft</span>
 
 ![Boss lineup](assets/img/boss/boss_lineup.jpg)
 
-Three more concepts sit beside Morrakhet. None of them is picked yet.
+Three more boss concepts. None of them is built yet.
 
 - **Gorehorn, the Tusk Chief** (mounted). The orc war chief on a giant armoured Tusk Hog, two fights in one. The hog's Hog Charge can't be parried, so dodge it; charging into a pillar stuns it, and each pillar breaks after one charge. Break both front legs or kill the hog and he's thrown, then fights on foot with a Blood Horn that calls Goblin Scrappers.
 - **The Silk Mother, Queen of the Webspinners** (hanging). She hangs high on four silk lines tied to floor posts near the walls, dropping on players, lobbing webs and laying egg sacs. Break all four posts and she falls for good, then grabs players in her pincers (mash Q). Her egg clutch takes x2 damage.
@@ -89,14 +116,14 @@ Three more concepts sit beside Morrakhet. None of them is picked yet.
 
 ## Open
 
-??? question "Which boss, or a pool?"
-    Morrakhet is the lead concept. Gorehorn, the Silk Mother and Greedmaw are options. Which ones go in is not picked yet.
+??? question "Which bosses come next?"
+    Morrakhet is the first boss. Gorehorn, the Silk Mother and Greedmaw are concepts, and which ones go in is open.
 
 ??? question "Can teammates trade gear during the respite?"
     Not in the first build. Each player can only move their own gear.
 
-??? question "Does the PvP finale still happen?"
-    The original pitch ends with players fighting each other using the gear they gathered. The current draft has the boss **before** PvP, with survivors carrying his drop into the arena. This is not confirmed yet.
+??? question "Does PvP come back?"
+    The original pitch ended with players fighting each other. For now there's no PvP: the boss is the end of the match.
 
 ??? question "Do companions fight in the finale?"
-    Open in the companion draft, along with whether a human companion could betray you or be bribed.
+    Open, along with whether a human companion could betray you or be bribed.

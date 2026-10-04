@@ -1,10 +1,10 @@
 # Controls
 
-What each input does. The **In prototype** tag means it already works in the Roblox Studio prototype. The **Planned** tag means it comes from the design docs and isn't built yet.
+What each input does. The **In prototype** tag means it already works in the prototype. The **Planned** tag means it comes from the design docs and isn't built yet.
 
 | Tag | Meaning |
 |-|-|
-| <span class="tag decided">In prototype</span> | Works in the Studio prototype today |
+| <span class="tag decided">In prototype</span> | Works in the prototype today |
 | <span class="tag draft">Planned</span> | Designed, not built yet |
 | <span class="tag open">Open</span> | Not decided |
 
@@ -28,8 +28,7 @@ What each input does. The **In prototype** tag means it already works in the Rob
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
 - **Gamepad:** see [Gamepad](#gamepad). **Touch:** three stance buttons on the right edge.
 - **Q high guard is removed**; Q now throws off a latched spider.
-- **Jump is off.**
-- **Cursor**: a custom gold arrow in the project colours wherever the mouse is free, the shop included. It's hidden in first person and in cutscenes, except at the hostage choice.
+- **Cursor**: a custom gold arrow in the project colours wherever the mouse is free, the shop included. It's hidden in first person and in cutscenes, except at the hostage choice and once you skip a scene.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
 - **Disarmed:** a parry can knock your sword 4 to 6 studs away (10% when an enemy guard parries your light). Until you get it back you can only dodge. **Walk over it** to pick it up; it returns to its active weapon slot. See [Combat](combat.md#disarms).
 
@@ -42,13 +41,13 @@ Melee is **stance combat**. It replaces the attack hub ring entirely; there's no
 - A **red flush** on the screen edge shows where an enemy attack is coming from: **top** for high, **bottom** for low, **left or right** for side swings. It brightens in the parry window.
 - **Fliers and spiders have no stance**, so any guard works on them.
 
-<span class="tag draft">Draft</span> Studio's defaults, not confirmed yet: a high attack is the overhead, middle attacks alternate left and right slashes, and a low attack is the low sweep. There's no thrust for now.
+<span class="tag draft">Draft</span> Prototype defaults, not confirmed yet: a high attack is the overhead, middle attacks alternate left and right slashes, and a low attack is the low sweep. There's no thrust for now.
 
 The view never moves on its own in the low stance. See [Combat](combat.md#fighting-skill) for damage, stamina and timing.
 
 ### Ranged <span class="tag decided">In prototype</span>
 
-Built in the Studio place; untested in play. See [Ranged weapons](ranged.md).
+See [Ranged weapons](ranged.md).
 
 | Input | Action |
 |-|-|
@@ -58,7 +57,7 @@ Built in the Studio place; untested in play. See [Ranged weapons](ranged.md).
 | Space + direction | Dodge, which cancels a draw |
 | Walk over a missed arrow, bolt or axe | Pick it up. Misses stay where they land |
 
-### Moment of respite <span class="tag draft">Planned</span>
+### Moment of respite <span class="tag decided">In prototype</span>
 
 | Input | Action |
 |-|-|
@@ -75,7 +74,7 @@ See [Boss and finale](boss.md#moment-of-respite).
 | Input | Action |
 |-|-|
 | B | Open or close the bag (inventory). A Bag hint sits at the bottom centre of the HUD |
-| I | Backup for B. Roblox Studio catches I before the game sees it, so use B when testing in Studio; I works in a real Roblox client |
+| I | Also opens or closes the bag |
 | Drag an item | Move it |
 | R while dragging | Rotate the item |
 | Drag a weapon to the active slot under the grid | Wield it. Any size fits; a weapon already there swaps back to the grid |
@@ -134,7 +133,7 @@ From the HUD design ([Map and HUD](ui.md#hud-draft)):
 
 ## Gamepad <span class="tag decided">In prototype</span> { #gamepad }
 
-Built in the Studio prototype; untested in play. Buttons use Xbox names; PlayStation uses the same positions. On-screen prompts switch to pad button names while a pad is in use.
+Buttons use Xbox names; PlayStation uses the same positions. On-screen prompts switch to pad button names while a pad is in use.
 
 ### Fighting and moving { #gamepad-fighting }
 

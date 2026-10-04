@@ -22,7 +22,7 @@
 
 ## In the prototype <span class="tag decided">In prototype</span> { #prototype }
 
-Built in Studio 2026-10-02; untested in play.
+In the prototype since 2026-10-02.
 
 | Companion | Kind | What it does |
 |-|-|-|
@@ -36,7 +36,7 @@ Built in Studio 2026-10-02; untested in play.
 
 ### Prototype defaults <span class="tag draft">Draft</span> { #defaults }
 
-Picked in Studio, not confirmed yet:
+Prototype defaults, not confirmed yet:
 
 - Cages hold a **Squire 50%** of the time, a **hound 17%**, an **owl 17%** and a **Goblin Scout 16%**.
 - The **Goblin Scout** picks up floor coins and smashes small breakables (crates, barrels, pots) for silverlings, then brings his purse back to you. He never fights and runs back to you when enemies get close. If he's lost for good, his purse spills on the floor.
@@ -56,7 +56,7 @@ A companion's health **drains if you don't heal him**, and while he's attacked h
 ## How it works <span class="tag draft">Draft</span>
 
 - **One companion slot.** A full slot means dismissing the current companion to take a new one.
-- Drawn in the player style. Humans are 84% of player height so they never read as another player. A violet bond ring under each companion shows whose it is, to enemies in PvP too.
+- Drawn in the player style. Humans are 84% of player height so they never read as another player. A violet bond ring under each companion shows whose it is, to enemies too.
 - **Getting one:** free a caged hostage, then pick "Join me" (takes the slot) or "Go home" (the usual +1 loot luck next round). Keeping one costs you that bonus. Pets can also be bought from shopkeepers <span class="tag assumed">Assumed</span>.
 - **Commands:** Follow, Hold, Fetch (grab nearby loot), Attack (your target). In the prototype, G cycles them and the bottom-left panel has tap buttons.
 - Companions have HP and body-zone hits like players. A downed companion gives you 30 s to revive it, else it's gone and its pack drops.
@@ -94,7 +94,7 @@ See [Map and HUD](ui.md#companion-map-perks) for the board.
     Is that the right split between the two kinds?
 
 ??? question "Companions in the finale"
-    Do companions fight in PvP or the boss? Can a human companion betray you or be bribed?
+    Do companions fight in the boss fight? Can a human companion betray you or be bribed?
 
 ??? question "Does gear show on the companion?"
     Does gear in a companion's grid show on its body, like the player's armor tiers?

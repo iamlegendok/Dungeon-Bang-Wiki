@@ -1,9 +1,6 @@
 site_name: Dungeon Bang Wiki
 site_description: How Dungeon Bang works, system by system. Decided rules, drafts and open questions.
 site_url: https://theverycob.github.io/Dungeon-Bang-Wiki/
-repo_url: https://github.com/theverycob/Dungeon-Bang-Wiki
-repo_name: Dungeon-Bang-Wiki
-edit_uri: edit/main/docs/
 copyright: Dungeon Bang design wiki. Draft numbers are playtest starting points.
 
 theme:
@@ -27,8 +24,6 @@ theme:
     - search.highlight
     - search.suggest
     - content.code.copy
-  icon:
-    repo: fontawesome/brands/github
 
 extra_css:
   - assets/css/dungeon.css

@@ -44,7 +44,7 @@ Values are for tiers I / II / III / IV.
 | Salt Pouch | 1x1 | Food in your grid rots slower | -25 / -40 / -55 / -75% |
 | Mender's Knot | 1x1 | Hurt body parts heal sooner out of combat (normally after 45 s). IV also turns one Broken body part into Hurt at each round start | After 36 s / 28 s / 20 s / 12 s |
 | Heartstone | 1x2 | Max HP | +5 / +10 / +15 / +25 |
-| Duelist's Ring | 1x1 | Wider parry window (normally 0.20 s) | 0.22 / 0.24 / 0.27 / 0.30 s |
+| Duelist's Ring | 1x1 | Wider parry window (normally 0.40 s) | 0.42 / 0.44 / 0.47 / 0.50 s |
 | Tar Grip | 1x1 | Less chance to be disarmed | -25 / -45 / -65 / -90% |
 | Candle Stub | 1x1 | Bigger trail map reveal (normally 1 tile; still no light through walls) | 1.5 / 2 / 2.5 / 3 tiles |
 
@@ -73,4 +73,4 @@ Values are for tiers I / II / III / IV.
 
 ## Status
 
-The trinket rules exist as a Roblox module but aren't in the Studio prototype yet <span class="tag draft">Planned</span>.
+Trinkets aren't in the prototype yet <span class="tag draft">Planned</span>.
