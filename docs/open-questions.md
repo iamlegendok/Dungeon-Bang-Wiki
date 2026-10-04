@@ -1,6 +1,6 @@
 # Open questions
 
-Everything waiting on Cob, grouped by system. Each page also lists its own questions at the bottom.
+Everything waiting on a decision, grouped by system. Each page also lists its own questions at the bottom.
 
 ## Game loop
 - **Does the boss replace the PvP finale,** or do players still fight each other too? ([Boss](boss.md))

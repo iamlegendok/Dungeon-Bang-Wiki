@@ -2,14 +2,14 @@
 
 ![Boss fight](assets/img/boss/boss_fight.jpg)
 
-!!! success "Decided (Cob, 2026-10-01)"
+!!! success "Decided"
     The match ends with a boss that scales with **how many players** are in it **and the total dungeon level of the whole party**. Bring friends, and better gear.
 
 ## Moment of respite <span class="tag decided">Decided</span> { #moment-of-respite }
 
 ![Moment of respite](assets/img/boss/respite.jpg)
 
-!!! success "Decided (Cob, 2026-10-02)"
+!!! success "Decided"
     After round 6 the boss chamber seals and the party gets **30 seconds** to rearrange gear before the boss. Everyone sees **every inventory**, and every change shows up live.
 
 - **The clock** reads `30s`, `29s`… inside a ring of beads that empties as time runs out, and turns red at 10 s.
@@ -28,13 +28,13 @@
 
 ## Where the boss sits <span class="tag draft">Draft</span>
 
-After round 6 and the moment of respite, the whole party fights the boss together. The survivors then take their gear and his drop into the PvP arena, so the boss comes **before** PvP rather than replacing it. There's one boss per match, rolled at the start. Cob hasn't confirmed this order yet.
+After round 6 and the moment of respite, the whole party fights the boss together. The survivors then take their gear and his drop into the PvP arena, so the boss comes **before** PvP rather than replacing it. There's one boss per match, rolled at the start. This order is not confirmed yet.
 
 ## Morrakhet, the Hollow King <span class="tag draft">Draft</span>
 
 ![Morrakhet, the Hollow King](assets/img/boss/hollow_king.jpg)
 
-**Morrakhet, the Hollow King, First of the Unburied.** He is the lich Cob asked for, and the dungeon's first king. His court buried him alive under his own throne, and he dragged them all back up with him. The [Hollow Legion](enemies.md#hollow-legion-depth-3-to-4) you fight from round 3 are his courtiers, so his adds reuse their models. He stands about 11 studs tall.
+**Morrakhet, the Hollow King, First of the Unburied.** He is the lich boss, and the dungeon's first king. His court buried him alive under his own throne, and he dragged them all back up with him. The [Hollow Legion](enemies.md#hollow-legion-depth-3-to-4) you fight from round 3 are his courtiers, so his adds reuse their models. He stands about 11 studs tall.
 
 | Move | Stance | What happens |
 |-|-|-|
@@ -49,7 +49,7 @@ After round 6 and the moment of respite, the whole party fights the boss togethe
 
 ### The Hall of the Unburied <span class="tag draft">Draft</span>
 
-His room is huge (Cob asked for room to leap and crawl on the roof): 130 studs wide, 182 long, walls 42 high and a bone vault peaking at 72.
+His room is huge, with room to leap and crawl on the roof: 130 studs wide, 182 long, walls 42 high and a bone vault peaking at 72.
 
 - **One shared entryway:** a 30-stud gate, wide enough for 4 players and their companions side by side. A bone portcullis drops behind the last of you and lifts when he dies.
 - **The Terrace:** a raised landing inside the gate, safe while his reveal plays. He wakes when someone steps off it, or after 10 s.
@@ -80,7 +80,7 @@ Bosses use the same body zones as everyone else, so breaking the boss's legs slo
 
 ![Boss lineup](assets/img/boss/boss_lineup.jpg)
 
-Three more concepts sit beside Morrakhet. Cob hasn't picked any of them yet.
+Three more concepts sit beside Morrakhet. None of them is picked yet.
 
 - **Gorehorn, the Tusk Chief** (mounted). The orc war chief on a giant armoured Tusk Hog, two fights in one. The hog's Hog Charge can't be parried, so dodge it; charging into a pillar stuns it, and each pillar breaks after one charge. Break both front legs or kill the hog and he's thrown, then fights on foot with a Blood Horn that calls Goblin Scrappers.
 - **The Silk Mother, Queen of the Webspinners** (hanging). She hangs high on four silk lines tied to floor posts near the walls, dropping on players, lobbing webs and laying egg sacs. Break all four posts and she falls for good, then grabs players in her pincers (mash Q). Her egg clutch takes x2 damage.
@@ -90,13 +90,13 @@ Three more concepts sit beside Morrakhet. Cob hasn't picked any of them yet.
 ## Open
 
 ??? question "Which boss, or a pool?"
-    Morrakhet is the lead concept. Gorehorn, the Silk Mother and Greedmaw are options. Cob hasn't picked which go in.
+    Morrakhet is the lead concept. Gorehorn, the Silk Mother and Greedmaw are options. Which ones go in is not picked yet.
 
 ??? question "Can teammates trade gear during the respite?"
     Not in the first build. Each player can only move their own gear.
 
 ??? question "Does the PvP finale still happen?"
-    The original pitch ends with players fighting each other using the gear they gathered. The current draft has the boss **before** PvP, with survivors carrying his drop into the arena. Cob hasn't confirmed it.
+    The original pitch ends with players fighting each other using the gear they gathered. The current draft has the boss **before** PvP, with survivors carrying his drop into the arena. This is not confirmed yet.
 
 ??? question "Do companions fight in the finale?"
     Open in the companion draft, along with whether a human companion could betray you or be bribed.

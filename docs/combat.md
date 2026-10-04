@@ -1,9 +1,9 @@
 # Combat and injuries
 
-!!! success "Cob's brief (2026-10-01)"
+!!! success "Brief"
     Very skill based and survival strained. Per-body-part damage is part of it: a broken hand means a weaker weapon, both hands broken means occasional missed swings, legs make you slower, feet make you stumble, and a head injury causes random blackouts or needing more food.
 
-**Decided by Cob (2026-10-01):**
+**Decided:**
 
 1. Hunger is a draining meter: you need food. Food lives on inventory layer 1.
 2. Broken bones carry into the next round, not into the next match.
@@ -82,11 +82,11 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ![Fighting skill](assets/img/combat/fighting_skill.jpg)
 
-- **Stances** (Cob, 2026-10-02): you fight from a **high**, **middle** or **low** stance and attack and guard from it. A guard only blocks a blow from the **same** stance, and a red flush on the screen edge shows where an enemy attack comes from (top high, bottom low, left or right for side swings), brightening in the parry window. Fliers and spiders have no stance, so any guard works on them. Click for a light attack or hold for a heavy: +60% damage, 2x injury, but parryable. This replaces the attack hub. See [Controls](controls.md#stances).
+- **Stances**: you fight from a **high**, **middle** or **low** stance and attack and guard from it. A guard only blocks a blow from the **same** stance, and a red flush on the screen edge shows where an enemy attack comes from (top high, bottom low, left or right for side swings), brightening in the parry window. Fliers and spiders have no stance, so any guard works on them. Click for a light attack or hold for a heavy: +60% damage, 2x injury, but parryable. This replaces the attack hub. See [Controls](controls.md#stances).
 - **Which cut each stance throws** <span class="tag draft">Draft</span>: high is the overhead (head or chest), middle alternates left and right slashes (that side's arm, hand or torso), low is the low sweep (legs and feet). No thrust for now.
 - **Desktop:** scroll up, middle click and scroll down pick the stance; left click attacks; hold right mouse to guard; Space plus a direction to dodge; F to focus.
 - **Mobile:** three stance buttons on the right edge <span class="tag decided">In prototype</span>; attack, guard and dodge buttons are still planned.
-- **Combat tuning** (Cob, 2026-10-02): harder to evade, enemies swing longer and hit harder, parries are easier to read, and the red flush is bolder. <span class="tag draft">Draft</span> numbers: enemy wind-ups x1.5, enemies stop tracking you 0.25 s before the hit, parry window 0.2 s, enemy damage x1.5, chase speed x1.2, dodge cooldown 0.8 s, dodge invincibility 0.15 s.
+- **Combat tuning**: harder to evade, enemies swing longer and hit harder, parries are easier to read, and the red flush is bolder. <span class="tag draft">Draft</span> numbers: enemy wind-ups x1.5, enemies stop tracking you 0.25 s before the hit, parry window 0.2 s, enemy damage x1.5, chase speed x1.2, dodge cooldown 0.8 s, dodge invincibility 0.15 s.
 - **Enemy swing timing** (before the tuning above): 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is guard pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
 - Block stops 80% from the front; the rest chips the shield arm.
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
@@ -94,7 +94,7 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 ### Special abilities <span class="tag decided">In prototype</span> { #abilities }
 
-Cob, 2026-10-02: each class has **one powerful ability**, charged by **parrying**, to reward good guarding. Cob approved the cinematic look (an impact frame and a short hitstop when it lands; the camera never moves). Press **X** (Y on a gamepad) when the **Resolve** bar in the HUD is full.
+Each class has **one powerful ability**, charged by **parrying**, to reward good guarding. It has a cinematic look: an impact frame and a short hitstop when it lands; the camera never moves. Press **X** (Y on a gamepad) when the **Resolve** bar in the HUD is full.
 
 | Class | Ability | What it does <span class="tag draft">Draft</span> numbers |
 |-|-|-|
@@ -108,7 +108,7 @@ Cob, 2026-10-02: each class has **one powerful ability**, charged by **parrying*
 
 ### Enemy injuries <span class="tag decided">Decided</span> { #enemy-injuries }
 
-!!! success "Cob, 2026-10-02"
+!!! success "Decided"
     Humanoid enemies take body-part damage like players, and hitting the same limb again (for example the right arm) hurts them more each time, just like it does for players.
 
 In the Studio prototype <span class="tag decided">In prototype</span>:
@@ -117,7 +117,7 @@ In the Studio prototype <span class="tag decided">In prototype</span>:
 - **Legs** slow them, a **broken foot** makes them stumble, **arm** injuries weaken their hits, **two broken arms** make some swings miss, and **head** hits daze them.
 - **Fliers** take no limb injuries.
 
-**Hurt parts flash red** <span class="tag decided">Decided</span> (Cob, 2026-10-02), so you can see where an enemy is hurt:
+**Hurt parts flash red** <span class="tag decided">Decided</span>, so you can see where an enemy is hurt:
 
 - A **Hurt** limb pulses red, on that part only.
 - A **Broken** limb pulses a deeper red.
@@ -139,7 +139,7 @@ The timings and multiplier are prototype values from the Studio build and may ch
 
 ### Parries and disarms <span class="tag decided">In prototype</span> { #disarms }
 
-!!! success "Cob, 2026-10-01"
+!!! success "Decided"
     Parried enemies reel, and a parry can randomly knock the weapon out of their hands. It works both ways. A dropped weapon goes back into the same inventory slot when picked up, or the player is told they don't have room.
 
 | You parry | The enemy | Disarm chance |
@@ -166,9 +166,9 @@ All numbers are prototype values.
 - Enemies **aim at your broken limbs**: +25% damage on an already-broken limb.
 - Goblins only rarely go for a heavy head swing (8 s heavy cooldown).
 - **Weaker enemies back off when hurt.**
-- **No stacking** (Cob, 2026-10-02): once in fighting range, an enemy blocked by another one strafes around it instead of waiting behind it.
-- **Every enemy has a health bar** and flashes red when hit (Cob, 2026-10-02).
-- **Brain v5** <span class="tag draft">Draft</span>, until Cob plays it: enemies attack the stance you **aren't** guarding, and their own guard covers the stance you're in. They pull hard toward a healer who is reviving someone. Spiders: see [Enemies](enemies.md#spiders).
+- **No stacking**: once in fighting range, an enemy blocked by another one strafes around it instead of waiting behind it.
+- **Every enemy has a health bar** and flashes red when hit.
+- **Brain v5** <span class="tag draft">Draft</span>, untested in play: enemies attack the stance you **aren't** guarding, and their own guard covers the stance you're in. They pull hard toward a healer who is reviving someone. Spiders: see [Enemies](enemies.md#spiders).
 
 Timings are prototype values.
 

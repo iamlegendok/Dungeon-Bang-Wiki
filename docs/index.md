@@ -22,7 +22,7 @@ A first-person Roblox dungeon crawler. Parties of up to four drop into small ran
 [**Dungeon floors** <span>Generator, room counts, shops, events, hostages</span>](dungeon.md)
 [**Boss and finale** <span>Party-scaled boss, PvP question</span>](boss.md)
 [**Lobby, queue and shop** <span>Vault, invite codes, silverlings, goldlings and Robux</span>](lobby.md)
-[**Controls** <span>Keys, mouse and touch, what works today</span>](controls.md)
+[**Controls** <span>Keys, mouse, gamepad and touch, what works today</span>](controls.md)
 [**Combat and injuries** <span>Body zones, hunger, parries, stamina</span>](combat.md)
 [**Ranged weapons** <span>Bows, crossbow, throwing axes, swaying reticle</span>](ranged.md)
 [**Inventory** <span>Three layers, islands, backpacks</span>](inventory.md)
@@ -34,7 +34,7 @@ A first-person Roblox dungeon crawler. Parties of up to four drop into small ran
 [**Map and HUD** <span>Trail map, desktop and phone HUD</span>](ui.md)
 [**Classes and characters** <span>Five classes, Roblox rigs, animations</span>](characters.md)
 [**Art direction** <span>Arcane over earth, shared palette, title cards</span>](art.md)
-[**Decisions log** <span>Everything Cob has decided, by date</span>](decisions.md)
+[**Decisions log** <span>Everything decided, by date</span>](decisions.md)
 </div>
 
 ## How to read this wiki
@@ -43,9 +43,9 @@ Every rule carries a tag so you can tell what is settled.
 
 | Tag | Meaning |
 |-|-|
-| <span class="tag decided">Decided</span> | Cob has confirmed it. Build on it. |
+| <span class="tag decided">Decided</span> | Confirmed. Build on it. |
 | <span class="tag draft">Draft</span> | Proposed by a design thread, numbers are playtest starting points. Not confirmed. |
-| <span class="tag assumed">Assumed</span> | A working assumption so other systems can move. Needs Cob's answer. |
+| <span class="tag assumed">Assumed</span> | A working assumption so other systems can move. Needs an answer. |
 | <span class="tag open">Open</span> | Nobody has decided yet. Listed on [Open questions](open-questions.md). |
 
 Most of the design is still moving, so most numbers are drafts. When something is decided it lands in the [Decisions log](decisions.md) and the tag on its page changes.
