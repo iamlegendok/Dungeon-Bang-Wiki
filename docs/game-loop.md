@@ -15,10 +15,7 @@
 
 ### Moving between floors
 
-<span class="tag decided">Decided</span> by Cob, 2026-10-01: One round is a single 3:00 clock. Taking the stairs to a new depth **does not reset the timer or add time**, so every depth you reach in a round shares that 3:00.
-
-!!! success "Cob, 2026-10-01"
-    "Whole round is 1 round, no extra time." New depths must not reset the timer.
+<span class="tag decided">Decided</span> One round is a single 3:00 clock. Taking the stairs to a new depth **does not reset the timer or add time**, so every depth you reach in a round shares that 3:00.
 
 <span class="tag open">Open</span> What happens when the 3:00 runs out (do you keep your loot, and where does the next round start)? How the 6 depths split across rounds is also not pinned down yet.
 
@@ -26,7 +23,7 @@
 
 ![Persistent loop](assets/img/loop/persistent_loop.jpg)
 
-<span class="tag decided">Decided</span> by Cob, 2026-10-01:
+<span class="tag decided">Decided</span>
 
 - **The game is persistent.** Surviving a match carries you, your gear and your companion into the next match.
 - **Level = dungeon runs survived.** Matchmaking groups players by level and the boss scales with the party's total level.
@@ -46,7 +43,7 @@ See [Lobby, queue and shop](lobby.md) for the queue rules, [Combat](combat.md) f
 ## Still open
 
 ??? question "Does the boss replace the PvP finale?"
-    The pitch says players fight each other at the end. Cob later asked for a boss that scales with the party. The prototype assumes the boss replaces PvP; the lobby draft keeps the question open.
+    The pitch says players fight each other at the end. A later decision added a boss that scales with the party. The prototype assumes the boss replaces PvP; the lobby draft keeps the question open.
 
 ??? question "Does a surviving companion level up too?"
     The companion draft assumes it carries over and gains a level. Unconfirmed.

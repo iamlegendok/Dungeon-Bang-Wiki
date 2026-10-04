@@ -2,8 +2,8 @@
 
 ![All 21 trinkets at every tier](assets/img/trinkets/trinket_board.jpg)
 
-!!! success "Cob, 2026-10-02"
-    Trinkets you find through the rounds, getting better as the rounds go on, some of them class specific. Trinkets level up while you carry them. Cob asked for this lineup to go on the wiki.
+!!! success "Decided"
+    Trinkets you find through the rounds, getting better as the rounds go on, some of them class specific. Trinkets level up while you carry them.
 
 <span class="tag decided">Decided</span> unless tagged otherwise. Exact numbers are starting values and may be tuned.
 

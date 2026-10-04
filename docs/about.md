@@ -6,14 +6,14 @@ This wiki tracks how Dungeon Bang works, system by system. The game itself lives
 
 | Tag | Meaning |
 |-|-|
-| <span class="tag decided">Decided</span> | Cob has confirmed it. |
+| <span class="tag decided">Decided</span> | Confirmed. |
 | <span class="tag draft">Draft</span> | Proposed, with playtest starting numbers. Not confirmed. |
 | <span class="tag assumed">Assumed</span> | A working assumption so other systems can move. |
 | <span class="tag open">Open</span> | Not decided yet. |
 
 ## How it's kept
 
-- Design work happens in project threads. When a thread lands a change, the wiki page for that system is updated, and anything Cob decides goes into the [Decisions log](decisions.md) with its date.
+- Design work happens in project threads. When a thread lands a change, the wiki page for that system is updated, and every decision goes into the [Decisions log](decisions.md) with its date.
 - When a draft gets confirmed, its tag changes and the question leaves [Open questions](open-questions.md).
 - Pages show the latest render boards from each design thread.
 

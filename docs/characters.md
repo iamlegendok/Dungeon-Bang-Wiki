@@ -4,8 +4,6 @@
 
 ## Look <span class="tag decided">Decided</span>
 
-From Cob, 2026-10-01:
-
 - Mobile-first but fun on desktop.
 - Detailed heads and adornments on simpler bodies. Flexible joints. Per-body-part damage.
 - Style **"D", the Glowing Brute**: chunky toy build, big block head at its original size, toy skin, fitted hair, helmets shaped to hug the head, and armor that grows in visible tiers.

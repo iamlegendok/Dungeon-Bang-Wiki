@@ -1,6 +1,11 @@
 # Decisions log
 
-Everything Cob has confirmed, newest first. Drafts and assumptions are not here until Cob confirms them.
+Everything confirmed, newest first. Drafts and assumptions are not here until they are confirmed.
+
+## 2026-10-04
+
+### Controls
+- **Gamepad support** is in the prototype: RT attacks (tap light, hold heavy), LT guards and parries, the D-pad sets the stance, B dodges, A jumps, Y is the ability, X interacts, RB swaps melee and ranged, LB opens the bag. The bag and the respite use a gold ring cursor. See [Controls](controls.md#gamepad).
 
 ## 2026-10-02 (evening)
 
@@ -32,7 +37,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - The **"Stairs taken"** banner clears once the new floor loads.
 
 ### Boss
-- Cob asked for a **lich who portals in enemies** and is invincible until they're dead, with a **chain hook that never misses**, curves around things and is broken with Q, in a **huge room** with roof routes and one wide entryway. The design is **Morrakhet, the Hollow King**; which boss goes in is still open. See [Boss and finale](boss.md).
+- The boss is a **lich who portals in enemies** and is invincible until they're dead, with a **chain hook that never misses**, curves around things and is broken with Q, in a **huge room** with roof routes and one wide entryway. The design is **Morrakhet, the Hollow King**; which boss goes in is still open. See [Boss and finale](boss.md).
 
 ## 2026-10-02
 
@@ -44,7 +49,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **More weapons and armour**, and **drops roll their own stats** so the same item rarely repeats the same numbers. See [Weapons and armour](gear.md); the lineup and numbers there are drafts.
 
 ### Combat
-- **Stance combat** (15:48, Cob's design) replaces the attack hub. Scroll up, middle click and scroll down pick the high, middle and low stance (d-pad on gamepad, three stance buttons on touch). Left click attacks from your stance (click light, hold heavy); right mouse guards it, timed to parry. **F** alone focuses.
+- **Stance combat** (15:48) replaces the attack hub. Scroll up, middle click and scroll down pick the high, middle and low stance (d-pad on a gamepad: up high, down low, left or right middle; three stance buttons on touch). Left click attacks from your stance (click light, hold heavy); right mouse guards it, timed to parry. **F** alone focuses.
 - **A guard only blocks a blow from the same stance.** A red flush on the screen edge shows where an attack comes from and brightens in the parry window. Fliers and spiders have no stance, so any guard works.
 - **Humanoid enemies take per-body-part injuries like players**, and repeated hits to the same limb make it worse.
 - **Hurt enemy body parts flash red** (deeper red when broken).
@@ -53,7 +58,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - **One companion slot**; your companion dies with you. Enemies treat companions like another player.
 - **Survive a run and your companion survives too:** it follows you in the lobby, stands beside your preview and joins your next match. A hard death still loses it.
 - A **companion portrait** sits right of the HP and stamina panel, with a red ring that drains with damage and pulses while it's down.
-- **Goblin Scout** companion (Cob's design, approved 18:08): a small friendly goblin who runs around finding gold for you; the trail map lights up the tiles he runs over and a copper dot shows where he is.
+- **Goblin Scout** companion (approved 18:08): a small friendly goblin who runs around finding gold for you; the trail map lights up the tiles he runs over and a copper dot shows where he is.
 - A healing human companion allows a downed state. "Join me" on a freed hostage recruits them. The Dragon's Egg hatches a Dragon Whelp.
 
 ### Enemies
@@ -77,9 +82,9 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Dragging an item off the grid drops it at your feet **only during a round in the dungeon**, never in the lobby or on a loading screen.
 - The sword's swing aid should not show while a bow is drawn.
 - **Attack hub** (replaced the same day by stance combat): hold left click for a small ring around the crosshair and drag toward the attack direction (up = overhead, down = low sweep, sides = slashes, no drag = thrust). It replaced the mouse-flick swing.
-- **Q high guard retired.** Q is now mashed to throw off a latched spider (Cob's idea; in the prototype).
+- **Q high guard retired.** Q is now mashed to throw off a latched spider (in the prototype).
 - **The HUD is one bottom-left panel:** body doll, then a column (HP with poison overlay, eating bar, stamina, damage and armour, coins and vault, status icons), then the companion ring. Companion buttons sit above it; the Bag hint is bottom centre.
-- **The view never moves on its own in the low stance** (Cob rejected the camera dip).
+- **The view never moves on its own in the low stance** (the camera dip is rejected).
 - **Damage and armour** show under the health and stamina bars. Compared items show green with an up arrow when better and red with a down arrow when worse (weapons against your active weapon, armour against your best piece of that kind).
 - **Failed pickups** show their reason under the crosshair; arrows need a quiver and bolts a bolt case.
 - **Shop screen:** holding E on a keeper frames the keeper and stall; a tall card on the right shows wares above your pack. Wheel, arrows, L1/R1 or d-pad move between wares; the focused ware gets a gold chevron and compare hint. The clock keeps running.
@@ -95,7 +100,7 @@ Everything Cob has confirmed, newest first. Drafts and assumptions are not here 
 - Floors grow linearly: 3 x (3, 5, 7, 9, 11, 13) = **9, 15, 21, 27, 33, 39 rooms**. "3x larger" is not exponential.
 - A **story** is a promise that a certain special event will happen in one room **of the next round**. Not a storyline or an extra floor.
 - Dungeon **rooms are bigger and polygon-shaped**, **corridors longer**. Walls use **PBR materials**, **never intersect**, and **vary in shape** (pillars, trim) instead of plain boxes.
-- Cob approved the Studio rework: rooms **36 to 60 studs** across with **16-stud ceilings**, octagon, hexagon, cut-corner or slanted shapes, and corridors up to about **4x longer** with their own lamps. Each round's map should **feel big, with a lot to explore**.
+- The Studio rework is approved: rooms **36 to 60 studs** across with **16-stud ceilings**, octagon, hexagon, cut-corner or slanted shapes, and corridors up to about **4x longer** with their own lamps. Each round's map should **feel big, with a lot to explore**.
 - Every map has **shopkeepers**, **mini events** and **hostage rescues**; rescues increase the next round's loot.
 - The finale has a **boss that scales with player count and the party's total dungeon level**.
 - The game is **persistent**. Surviving carries you into the next match. **Level = dungeon runs survived.**

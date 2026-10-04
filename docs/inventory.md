@@ -39,36 +39,34 @@ Your inventory is three stacked grids. Space is the main limit: big armor eats l
 
 ## Items on the floor <span class="tag decided">Decided</span> { #dropped-items }
 
-From Cob, 2026-10-02:
-
 - A dropped item shows its **real 3D mesh** in the world.
 - If it has no mesh, it shows a **coloured orb** with the item's icon floating above it: **red** for weapons, **green** for food, **blue** for armor.
 - Every item in the game has an inventory icon. The old prototype placeholder items that had none (Short Sword, War Axe and the old runes) have been removed.
 
-**Better-drop gleam** (Cob, 2026-10-02): floor gear that beats what you have gets a slow gold rim. It's per player, so each of you sees your own upgrades.
+**Better-drop gleam**: floor gear that beats what you have gets a slow gold rim. It's per player, so each of you sees your own upgrades.
 
 ## Using items <span class="tag decided">In prototype</span> { #using-items }
 
-Cob, 2026-10-02: using an item plays a real animation, so you can't spam them mid-fight. Food is eaten, a potion is drunk from the bottle, and a bandage wraps the arm.
+Using an item plays a real animation, so you can't spam them mid-fight. Food is eaten, a potion is drunk from the bottle, and a bandage wraps the arm.
 
 <span class="tag draft">Draft</span>: the full clip has to play, at 40% move speed. Any hit, Space or click cancels it and you get no heal. Cooldowns are 8 s for potions, 6 s for bandages and 4 s for food.
 
 ## Active weapon <span class="tag decided">Decided</span> { #active-weapon }
 
-From Cob, 2026-10-02: under the bag grid sits an **active weapon** slot. Drag a weapon there and it becomes the weapon in your hands.
+Under the bag grid sits an **active weapon** slot. Drag a weapon there and it becomes the weapon in your hands.
 
 - It takes a weapon of **any size**; there's no footprint limit.
 - A weapon in the active slot **doesn't use grid space**, but it stays visible in the bag so you can drag enchants onto it.
 - Dropping a weapon onto a filled active slot **swaps** them: the old weapon goes back to the grid.
 - A [disarmed](combat.md#disarms) weapon returns to its active slot when you pick it up.
 
-There are **two** active slots, **Active melee** and **Active ranged**, and **R** swaps between them (Cob, 2026-10-02).
+There are **two** active slots, **Active melee** and **Active ranged**, and **R** swaps between them.
 
 <span class="tag assumed">Assumed</span> Dropping onto a filled slot swaps the weapons; that's the prototype's choice, not yet confirmed.
 
 ### Weapon families <span class="tag draft">Draft</span> { #weapon-families }
 
-Weapons share animations by family, so a new weapon only needs a family to swing. Built in Studio; Cob hasn't seen it in game yet.
+Weapons share animations by family, so a new weapon only needs a family to swing. Built in Studio; untested in play.
 
 | Family | Weapons | Notes |
 |-|-|-|
@@ -94,7 +92,7 @@ Every melee family has the same high, middle and low [stance](controls.md#stance
 | Nobleman | 1 island 8x5, 40 cells | Two 1x6 longsword strips, 12 cells | 1 island 4x1, 4 cells (spans both swords) |
 | Witcher | 2 islands, 44 cells | 3 islands spread apart, 16 cells | 3 islands, 16 cells |
 
-Cob's direction for the newer classes <span class="tag decided">Decided</span>: the **Nobleman** has two longswords, a larger armor area and a smaller third layer; the **Witcher** has large armor, modest separated weapon slots and a decent third layer.
+The newer classes <span class="tag decided">Decided</span>: the **Nobleman** has two longswords, a larger armor area and a smaller third layer; the **Witcher** has large armor, modest separated weapon slots and a decent third layer.
 
 ![Layer sizes per class](assets/img/inventory/class_layers.jpg)
 

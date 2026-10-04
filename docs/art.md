@@ -1,6 +1,6 @@
 # Art direction and palette
 
-!!! success "Cob's direction (2026-10-01)"
+!!! success "Direction"
     Arcane colours mixed with earthy tones, from the inventory mockups. **All UI uses the shared palette.** This wiki uses it too.
 
 ![Palette swatches](assets/img/style/swatches.jpg)
@@ -50,7 +50,7 @@ The full table of roles (bars, injuries, inventory layers, states) lives with th
 
 ## Loading screen and cards <span class="tag decided">Decided</span> { #loading-cards }
 
-!!! success "Cob, 2026-10-02"
+!!! success "Decided"
     Use a loading screen while the dungeon loads in, built from the title cards **with tips**. This replaces the earlier logo-only, no-tip rule.
 
 The four cards below are the art. The loading screen shows the card art, the logo and a **rotating tip**, with **no loading bar**. The tip list itself is <span class="tag draft">Draft</span>.

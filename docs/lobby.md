@@ -4,8 +4,6 @@
 
 ## Decided <span class="tag decided">Decided</span>
 
-From Cob, 2026-10-01:
-
 - Parties of **4**.
 - The lobby shop sells with in-game currency (**silverlings and goldlings**) **or Robux**.
 - Gear can be moved between your pack and the vault in the lobby before a match, and you can rearrange your inventory there.
@@ -16,7 +14,7 @@ From Cob, 2026-10-01:
 
 ## Currency <span class="tag decided">Decided</span> { #currency }
 
-!!! success "Cob, 2026-10-01"
+!!! success "Decided"
     The currency is **silverlings** and **goldlings**. There is no bronze. **10 silverlings make 1 goldling.**
 
 - **Smashed props** (barrels, crates, pots, bone piles) occasionally drop silverlings. The exact drop odds are <span class="tag draft">Draft</span>.

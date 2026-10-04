@@ -1,14 +1,14 @@
 # Enemies
 
-!!! success "Cob's ask (2026-10-01)"
-    Depth 1 should have **skeletons, slimes, orcs, goblins and some folktale creatures**.
+!!! success "Depth 1"
+    Depth 1 has **skeletons, slimes, orcs, goblins and some folktale creatures**.
 
 !!! warning "Being redesigned"
-    The enemy roster is a <span class="tag draft">Draft</span> and the first level is being reworked to Cob's list right now. Numbers are playtest starting points. HP and damage are for the first depth of each band; the second depth adds +20%. Player HP is 100, and "hits" means torso hits with a starter sword (about 15 damage).
+    The enemy roster is a <span class="tag draft">Draft</span> and the first level is being reworked to that list right now. Numbers are playtest starting points. HP and damage are for the first depth of each band; the second depth adds +20%. Player HP is 100, and "hits" means torso hits with a starter sword (about 15 damage).
 
 ## Ground rules <span class="tag draft">Draft</span>
 
-- Every humanoid enemy uses the same 15-part R15 rig as the players, so it has the same 10 hit zones and [injury rules](combat.md#enemy-injuries), with repeated hits to one limb making it worse (Cob, 2026-10-02 <span class="tag decided">Decided</span>). It can also reuse player animations. Beasts map their parts onto the same zone names.
+- Every humanoid enemy uses the same 15-part R15 rig as the players, so it has the same 10 hit zones and [injury rules](combat.md#enemy-injuries), with repeated hits to one limb making it worse <span class="tag decided">Decided</span>. It can also reuse player animations. Beasts map their parts onto the same zone names.
 - Every attack has a visual tell (a warm glint on the weapon) plus a sound. Standard wind-up is 0.45 s; heavier attacks are longer; nothing is ever faster than 0.35 s so parries stay fair on phones.
 - Each role has its own silhouette so you can read a room at a glance: rushers small, ranged hold weapons up, tanks wide, supports in tall hats, ambushers disguised.
 - At most 2 enemies swing at the same player at once; the rest circle.
@@ -27,7 +27,7 @@ Older families keep showing up deeper as veterans with one armor piece: depth 3 
 
 ## Gated by round <span class="tag decided">Decided</span> { #by-round }
 
-Cob counts the match in **rounds 1 to 6**; depth only rises when you take the stairs. Some enemies unlock by round, whatever depth you're at:
+The match counts in **rounds 1 to 6**; depth only rises when you take the stairs. Some enemies unlock by round, whatever depth you're at:
 
 | From round | Enemy |
 |-|-|
@@ -41,7 +41,7 @@ Fliers take no limb injuries.
 
 ## Spiders and mounted enemies <span class="tag draft">Draft</span> { #spiders }
 
-Built in Studio 2026-10-02. Q to break free is Cob's own idea and is in the prototype (see [Controls](controls.md#fighting)); the rest is draft. The round gates are defaults and Cob hasn't seen these in game yet.
+Built in Studio 2026-10-02. Q to break free is decided and in the prototype (see [Controls](controls.md#fighting)); the rest is draft. The round gates are defaults and untested in play.
 
 | Enemy | From round | What it does |
 |-|-|-|
@@ -51,15 +51,15 @@ Built in Studio 2026-10-02. Q to break free is Cob's own idea and is in the prot
 
 **Latched on.** A camera cut shows the Skitterling clinging and a big **Q** pulses (tap on phone, X on a pad). Mash Q **6 times every 2 s** to throw it off. Each missed window is a bite; the 3rd miss poisons you and it drops off. A Skitterling you throw off lies **dazed** for a moment and takes extra damage. Space, attacks and dodge do nothing while it's on you, and other enemies hold back.
 
-**Movement** (Cob, 2026-10-02): spiders walk with real legs instead of sliding.
+**Movement**: spiders walk with real legs instead of sliding.
 
-**Eggs** (Cob, 2026-10-02): big web-lobbing spiders lay eggs that hatch Skitterlings after 30 s. The timer only counts while a player is near.
+**Eggs**: big web-lobbing spiders lay eggs that hatch Skitterlings after 30 s. The timer only counts while a player is near.
 
 **No stance.** Spiders (like fliers) have no stance, so any guard works on them. A leaping Skitterling is swatted away by a **high guard**, or dodge it. Webspinners hang back and lob webs where you're heading <span class="tag draft">Draft</span>.
 
 **Webs.** A hit slows you hard; a dodge shakes it off. A miss leaves a sticky floor patch for a few seconds. Block or parry catches the web on your weapon.
 
-**Mounted.** The rider sits upright (Cob, 2026-10-02). Kill the spider and the goblin falls off with a real fall-off animation, then fights on foot. Kill the goblin, or knock it off with a heavy hit, and the spider fights on alone and starts lobbing webs.
+**Mounted.** The rider sits upright. Kill the spider and the goblin falls off with a real fall-off animation, then fights on foot. Kill the goblin, or knock it off with a heavy hit, and the spider fights on alone and starts lobbing webs.
 
 **Injuries.** Spider legs break and make it limp. With 3 broken legs it can't leap; a broken fang means it can't latch.
 

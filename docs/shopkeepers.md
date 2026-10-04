@@ -2,8 +2,8 @@
 
 ![Shop stalls for rounds 1 to 3](assets/img/shops/upper.jpg)
 
-!!! success "Cob, 2026-10-02"
-    Many shopkeepers, with the later ones grislier and more armoured, and shops that vary. Cob approved this lineup ("these are good").
+!!! success "Decided"
+    Many shopkeepers, with the later ones grislier and more armoured, and shops that vary.
 
 <span class="tag decided">Decided</span>: the eight keepers, the rounds they appear in, their stalls and what they offer. **Prices, Robux amounts and robbery numbers are <span class="tag draft">Draft</span>** starting points for playtesting.
 
@@ -35,14 +35,12 @@
 
 ## Paying
 
-- Every shop takes **silverlings, goldlings or Robux** (Cob, 2026-10-02). The Iron Tithe takes goldlings or Robux, never silverlings. Mother Marrow also takes max HP.
+- Every shop takes **silverlings, goldlings or Robux**. The Iron Tithe takes goldlings or Robux, never silverlings. Mother Marrow also takes max HP.
 - Silverlings are spent first; goldlings are broken with change (10 silverlings = 1 goldling).
 - <span class="tag draft">Draft</span> **Coin price** = base price x the keeper's multiplier x (1 + 15% for each round after round 1). The [Signet Ring](trinkets.md) lowers it.
 - <span class="tag draft">Draft</span> **Robux price** comes from a bucket by coin price: up to 10 silverlings = 5 R$, up to 30 = 15, up to 60 = 25, up to 120 = 49, up to 250 = 99, up to 500 = 199, more = 399.
 
 ## The shop screen <span class="tag decided">In prototype</span> { #shop-screen }
-
-Cob, 2026-10-02:
 
 - Holding E on a keeper eases the camera to a framed shot of the keeper and their stall.
 - The shop card is a tall column on the right: the **wares** on top and **your pack** below.
@@ -51,7 +49,7 @@ Cob, 2026-10-02:
 - The round clock keeps running in shops.
 - **You can't move** while the shop is open, and your first-person arms are hidden.
 
-**Every keeper is animated** (Cob, 2026-10-02): idle, greet, talk, sale and refuse. The four early keepers can also startle and flee. Keepers **die like other NPCs**, with a death clip and a sinking body; they never fade out.
+**Every keeper is animated**: idle, greet, talk, sale and refuse. The four early keepers can also startle and flee. Keepers **die like other NPCs**, with a death clip and a sinking body; they never fade out.
 
 ## At any shop
 

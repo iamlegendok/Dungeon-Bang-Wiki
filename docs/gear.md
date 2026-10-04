@@ -2,11 +2,8 @@
 
 ![Every weapon and armour piece at its inventory size](assets/img/gear/gear_board.jpg)
 
-!!! success "Cob, 2026-10-02"
-    "can you also add new weapons and armor? i keep coming across the same stuff that repeats my stats"
-
 <span class="tag decided">Decided</span> More weapons and armour, and drops that don't keep repeating the same stats.
-<span class="tag draft">Draft</span> Everything else on this page (the lineup, the numbers, the odds and the bonuses) is a starting point that Cob hasn't judged in play yet.
+<span class="tag draft">Draft</span> Everything else on this page (the lineup, the numbers, the odds and the bonuses) is a starting point, untested in play.
 
 ## How drops roll
 

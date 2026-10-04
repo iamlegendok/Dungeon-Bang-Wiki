@@ -15,12 +15,12 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 | Going deeper | Stairs take you straight to the next depth, on the same clock | <span class="tag decided">Decided</span> |
 | Clock runs out | What you keep and where the next round starts | <span class="tag open">Open</span> |
 
-!!! success "How floors grow (Cob, 2026-10-01)"
+!!! success "How floors grow"
     "3x larger" means a linear base of 3, 5, 7, 9, 11, 13 rooms, multiplied by 3. It is **not** exponential growth.
 
 ## Rooms, corridors and walls <span class="tag decided">Decided</span> { #rooms-and-walls }
 
-From Cob, 2026-10-01, while building the Roblox Studio prototype:
+Set while building the Roblox Studio prototype:
 
 - **Rooms are bigger and polygon-shaped**, not plain rectangles.
 - **Corridors are longer.**
@@ -28,12 +28,12 @@ From Cob, 2026-10-01, while building the Roblox Studio prototype:
 - **Walls never intersect** each other.
 - **Walls vary in shape**, with pillars and trim, rather than being plain boxes.
 
-!!! success "Cob, 2026-10-01, on the Studio rework"
-    "Now that is a dungeon." The point is that each round's map feels big, with a lot to explore.
+!!! success "Studio rework"
+    Each round's map should feel big, with a lot to explore.
 
 ### Studio prototype values
 
-These are the values Cob approved in the Roblox Studio prototype.
+These are the approved values in the Roblox Studio prototype.
 
 | Part | Value |
 |-|-|
@@ -84,7 +84,7 @@ These are the values Cob approved in the Roblox Studio prototype.
 
 ### Stories <span class="tag decided">Decided</span> { #stories }
 
-!!! success "Cob, 2026-10-01"
+!!! success "Decided"
     A **story** is a promise that a certain special event will happen in one room **of the next round**. It is not a storyline and not an extra floor.
 
 #### How stories play out <span class="tag draft">Draft</span>
