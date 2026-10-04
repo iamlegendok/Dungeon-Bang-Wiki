@@ -23,7 +23,7 @@
 | 5 | 18% | 32% | 30% | 16% | 4% |
 | 6 | 10% | 28% | 34% | 21% | 7% |
 
-Each point of loot luck moves 30% of every tier's chance up one tier. Events keep their rules: the Cursed Altar gives Epic or better, the Collapsing Vault one rarity better, the Lost Caravan Legendaries. Shops stock rolled items too. <span class="tag open">Open</span> How shops price rolled gear isn't settled yet.
+Each point of loot luck moves 30% of every tier's chance up one tier. Events keep their rules: the Cursed Altar gives Epic or better, the Collapsing Vault one rarity better, the Lost Caravan Legendaries. Shops stock rolled items too. <span class="tag decided">Decided</span> A rolled item's shop price is its worth times the shopkeeper's own price multiplier, so the same item costs more at grislier keepers. Named bows keep their fixed prices. See [Shopkeepers](shopkeepers.md#paying).
 
 **Comparing:** the green and red arrows and the better-drop gleam work as before: melee by damage, armour against your best piece of the same kind, ranged by rarity.
 
