@@ -27,6 +27,10 @@ theme:
 
 extra_css:
   - assets/css/dungeon.css
+  - assets/css/widgets.css
+
+extra_javascript:
+  - assets/js/widgets.js
 
 markdown_extensions:
   - admonition

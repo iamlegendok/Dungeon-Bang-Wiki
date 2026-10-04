@@ -55,6 +55,24 @@ The companion command buttons sit above the panel, and the **Bag** hint is at th
 
 **Enemy status icons** <span class="tag decided">In prototype</span>: small icons under an enemy's health bar show what's affecting it: Stunned, Reeling, Pinned, Grounded, Disarmed, Slowed, Bleeding, Burning, Poisoned, Broken Arm, Broken Leg, Concussed, Downed, Warded or Exposed. The rim colour gives the kind: amber for control, red for damage over time and injuries, arcane for wards, gold for Exposed. Above each enemy, from the top, sit a warning icon (when it has one), its name, its health bar and its status icons, so nothing overlaps.
 
+<div class="db-status" markdown="0">
+<div><img src="../assets/img/icons/status/Stunned.png" alt="Stunned"><p><b>Stunned</b>Can't move or act. Every stun on Morrakhet lasts 10 s.</p></div>
+<div><img src="../assets/img/icons/status/Reeling.png" alt="Reeling"><p><b>Reeling</b>Staggered after you parry it: 0.8 s from a light, 1.2 s from a heavy.</p></div>
+<div><img src="../assets/img/icons/status/Pinned.png" alt="Pinned"><p><b>Pinned</b>Held in place by the Ranger's Pinning Shot for 3 s.</p></div>
+<div><img src="../assets/img/icons/status/Grounded.png" alt="Grounded"><p><b>Grounded</b>A flier knocked out of the air.</p></div>
+<div><img src="../assets/img/icons/status/Disarmed.png" alt="Disarmed"><p><b>Disarmed</b>Its weapon was knocked away by a parry.</p></div>
+<div><img src="../assets/img/icons/status/Slowed.png" alt="Slowed"><p><b>Slowed</b>Moving slower, from a Hexed weapon or a leg injury.</p></div>
+<div><img src="../assets/img/icons/status/Bleeding.png" alt="Bleeding"><p><b>Bleeding</b>Losing health over time from a Serrated hit.</p></div>
+<div><img src="../assets/img/icons/status/Burning.png" alt="Burning"><p><b>Burning</b>Losing health over time from a Searing hit or fire.</p></div>
+<div><img src="../assets/img/icons/status/Poisoned.png" alt="Poisoned"><p><b>Poisoned</b>Losing health over time from poison.</p></div>
+<div><img src="../assets/img/icons/status/BrokenArm.png" alt="Broken Arm"><p><b>Broken Arm</b>Weaker hits; two broken arms make some swings miss.</p></div>
+<div><img src="../assets/img/icons/status/BrokenLeg.png" alt="Broken Leg"><p><b>Broken Leg</b>Moves slower; a broken foot makes it stumble.</p></div>
+<div><img src="../assets/img/icons/status/Concussed.png" alt="Concussed"><p><b>Concussed</b>Dazed by a head hit.</p></div>
+<div><img src="../assets/img/icons/status/Downed.png" alt="Downed"><p><b>Downed</b>On the floor at 0 HP.</p></div>
+<div><img src="../assets/img/icons/status/Warded.png" alt="Warded"><p><b>Warded</b>Soaks the next hits, like the Arcanist's Rune Nova ward.</p></div>
+<div><img src="../assets/img/icons/status/Exposed.png" alt="Exposed"><p><b>Exposed</b>Takes extra damage, for example after its guard breaks.</p></div>
+</div>
+
 **Better-drop gleam** <span class="tag decided">In prototype</span>: floor gear that beats yours gets a slow gold rim, per player.
 
 **Cursor** <span class="tag decided">In prototype</span>: a custom gold arrow wherever the mouse is free (menus and the shop); hidden in first person and cutscenes, except at the hostage choice and once you skip a scene.

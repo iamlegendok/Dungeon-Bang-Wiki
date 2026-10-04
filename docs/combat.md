@@ -92,6 +92,12 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
 - Enemies and the boss use the same zones.
 
+### Parry trainer { #parry-trainer }
+
+Practise reading the red flush. Match your stance to the edge that lights up (top high, sides middle, bottom low), then guard as it brightens. **Easy** gives you a 0.8 s window and slower swings; **Game** uses the real 0.4 s window. Four parries fill Resolve for Bastion.
+
+<div class="db-widget" data-widget="parry"></div>
+
 ### Special abilities <span class="tag decided">In prototype</span> { #abilities }
 
 Each class has **one powerful ability**, charged by **parrying**, to reward good guarding. It has a cinematic look: an impact frame and a short hitstop when it lands; the camera never moves. Press **X** (Y on a gamepad) when the **Resolve** bar in the HUD is full.

@@ -33,7 +33,9 @@
 
 ## Lineup
 
-Values are for tiers I / II / III / IV.
+Tap a trinket to see what it does. The tier buttons switch every icon and value between I Worn, II Fine, III Rare and IV Relic. The full tables are under **Table view**.
+
+<div class="db-widget" data-widget="trinkets"></div>
 
 ### Anyone
 
