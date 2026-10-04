@@ -17,7 +17,7 @@ A cutscene is a short scripted camera moment: letterbox bars and a subtitle or t
 
 ### Getting out
 
-- **Skip:** hold **E** for 0.6 s (phone: hold the Skip button), from 1 s in.
+- **Skip:** hold **E** for 0.6 s (hold X on a gamepad, or the Skip button on a phone), from 1 s in. Your mouse cursor only shows up once you skip.
 - **Steady:** when the camera comes back you get control at once but stay Sheltered for **1.5 s**. Enemies closer than 8 studs step back to 8 studs, and Held enemies wake when Steady ends. Swinging, shooting or throwing ends Steady early.
 - **Hard stop:** a scene always ends at its length + 2 s, if the player leaves, or when the round ends.
 
@@ -26,15 +26,15 @@ A cutscene is a short scripted camera moment: letterbox bars and a subtitle or t
 - **Not mid-fight.** A scene only starts when nobody has hit, swung at or aimed at you in the last 2 s and no enemy within 12 studs is mid-attack. Otherwise it waits: a cage says "Not while fighting", and a room scene plays as soon as you're clear.
 - **Once each.** Every scene plays once per player per match.
 - **Round end wins.** Clock at 0 or taking the stairs ends any scene.
-- **No cutscenes in the finale fight**, except the boss or PvP intro, where everyone is Sheltered.
+- **No cutscenes in the finale fight**, except the boss intro, where everyone is Sheltered.
 
 ### How it looks <span class="tag decided">Decided</span> { #cinematic }
 
 Cutscenes are **cinematic**: shots cut and slowly push in, the camera closes on the speaker's face, and there are letterbox bars and **typed subtitles** with the speaker's name in gold. No sparkles. Two to four shots, ending back on your own view.
 
-The Storyteller tells a two-line tale for each story, and the hostage, the Prince, the Fallen Knight, the altar and the thief speak too. It's **text only** until audio uploads reopen on 28 October.
+The Storyteller tells a two-line tale for each story, and the hostage, the Prince, the Fallen Knight, the altar and the thief speak too. It's **text only** for now; voices come later.
 
-During cutscenes and in shops there are **no first-person arms**. Shopkeepers and cutscene NPCs **die like other NPCs**: a death clip, then the body sinks; they never just fade out. The HUD hides except the clock, which shows a small pause mark. Party members outside the scene see "*Name* is watching a scene" under the clock.
+During cutscenes and in shops there are **no first-person arms**. Shopkeepers and cutscene NPCs **die like other NPCs**: a death clip, then the body sinks; they never just fade out. **No HUD and no mouse cursor** during any cutscene; the HUD comes back when you get control again. Party members outside the scene see "*Name* is watching a scene" under the clock.
 
 ## Events <span class="tag draft">Draft</span> { #events }
 
@@ -73,7 +73,7 @@ A **Storyteller** appears **once per match**, in one random round from 1 to 3, n
 
 ## Loot luck <span class="tag draft">Draft</span> { #loot-luck }
 
-Luck you earn this round pays out **next round** (capped at +5) and counts for the chests you open. With no luck in round 1, chests roll 50% common, 30% uncommon, 14% rare, 5% epic and 1% legendary. Each point of luck moves the odds about as much as 0.8 of a round. It's the same formula as the Blender prototype.
+Luck you earn this round pays out **next round** (capped at +5) and counts for the chests you open. With no luck in round 1, chests roll 50% common, 30% uncommon, 14% rare, 5% epic and 1% legendary. Each point of luck moves the odds about as much as 0.8 of a round.
 
 ## Open
 

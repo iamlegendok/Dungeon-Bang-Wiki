@@ -9,9 +9,10 @@
 | Lobby | Pick a class, rearrange your pack, move gear and coin between pack and vault, shop. | <span class="tag decided">Decided</span> |
 | Queue | Auto queue near your level, or launch your own party with a 5-character invite code. Parties of up to 4. | <span class="tag decided">Decided</span> |
 | Depths 1 to 6 | Freshly generated floors, one per depth. A round is one 3:00 clock shared by every depth you reach; the stairs never reset or add time. | <span class="tag decided">Decided</span> |
-| Finale | A boss scaled to player count and the party's total level. | <span class="tag decided">Decided</span> that the boss exists; formula is <span class="tag draft">Draft</span> |
-| PvP | The original pitch ends with players fighting each other with the gear they gathered. | <span class="tag open">Open</span> whether it still happens alongside the boss |
-| Out | Survivors keep everything and gain a level. | <span class="tag decided">Decided</span> |
+| Moment of respite | 30 s to rearrange gear before the boss. | <span class="tag decided">In prototype</span> |
+| Boss | A boss scaled to player count and the party's total level. No clock: it ends on a win or a wipe. | <span class="tag decided">In prototype</span>; formula is <span class="tag draft">Draft</span> |
+| Loot screen | All four seats and what each survivor carried out, then back to the lobby. | <span class="tag decided">In prototype</span> |
+| Out | Survivors keep everything and gain a level. There's no PvP after the boss for now. | <span class="tag decided">Decided</span> |
 
 ### Moving between floors
 
@@ -32,6 +33,8 @@
 - **Paid revive.** You can pay with gear to be revived for the next match, and a friend can pay that gear for you.
 - **Leaving early.** Leaving a match early twice in one progression costs a small coin penalty, which can be cleared with Robux.
 
+<span class="tag draft">Planned</span> Saving between sessions and levels aren't in the prototype yet.
+
 ### Inside a match
 
 - Broken bones carry into the next round but not into the next match. Surviving a match heals everything. <span class="tag decided">Decided</span>
@@ -42,8 +45,8 @@ See [Lobby, queue and shop](lobby.md) for the queue rules, [Combat](combat.md) f
 
 ## Still open
 
-??? question "Does the boss replace the PvP finale?"
-    The pitch says players fight each other at the end. A later decision added a boss that scales with the party. The prototype assumes the boss replaces PvP; the lobby draft keeps the question open.
+??? question "Does PvP come back?"
+    The original pitch ended with players fighting each other. For now the boss ends the match and there's no PvP.
 
 ??? question "Does a surviving companion level up too?"
     The companion draft assumes it carries over and gains a level. Unconfirmed.

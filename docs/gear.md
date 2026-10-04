@@ -3,7 +3,7 @@
 ![Every weapon and armour piece at its inventory size](assets/img/gear/gear_board.jpg)
 
 <span class="tag decided">Decided</span> More weapons and armour, and drops that don't keep repeating the same stats.
-<span class="tag draft">Draft</span> Everything else on this page (the lineup, the numbers, the odds and the bonuses) is a starting point, untested in play.
+<span class="tag draft">Draft</span> Everything else on this page (the lineup, the numbers, the odds and the bonuses) is a starting point.
 
 ## How drops roll
 
@@ -128,7 +128,7 @@ Values are the Uncommon range. Each rarity above that adds 25%. Weapon bonuses w
 | Hexing | Hexed … of Binding | Hits slow the target for 2 s | 12–22% | Melee, ranged |
 | Thirsting | Thirsting … of the Leech | Heal part of the damage you deal | 4–8% | Melee |
 | Disarming | Twisting … of Disarming | Better disarm chance when your parry lands | +5–10 points | Melee |
-| Steady | Steady … of Parrying | Wider parry window (0.20 s base) | +0.02–0.05 s | Shields, melee |
+| Steady | Steady … of Parrying | Wider parry window (0.40 s base) | +0.02–0.05 s | Shields, melee |
 | Sturdy | Sturdy … of the Wall | More armour | +8–16% | Armour, shields |
 | Padded | Padded … of Cushioning | Less injury to the part it covers | −10–20% | Helmet, chest, boots |
 | Fleet | Fleet … of the Hare | Faster movement | +3–6% | Boots |

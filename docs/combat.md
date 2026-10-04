@@ -86,8 +86,8 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 - **Which cut each stance throws** <span class="tag draft">Draft</span>: high is the overhead (head or chest), middle alternates left and right slashes (that side's arm, hand or torso), low is the low sweep (legs and feet). No thrust for now.
 - **Desktop:** scroll up, middle click and scroll down pick the stance; left click attacks; hold right mouse to guard; Space plus a direction to dodge; F to focus.
 - **Mobile:** three stance buttons on the right edge <span class="tag decided">In prototype</span>; attack, guard and dodge buttons are still planned.
-- **Combat tuning**: harder to evade, enemies swing longer and hit harder, parries are easier to read, and the red flush is bolder. <span class="tag draft">Draft</span> numbers: enemy wind-ups x1.5, enemies stop tracking you 0.25 s before the hit, parry window 0.2 s, enemy damage x1.5, chase speed x1.2, dodge cooldown 0.8 s, dodge invincibility 0.15 s.
-- **Enemy swing timing** (before the tuning above): 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is guard pressed in the 0.2 s before impact: no damage, no stamina, and the attacker is staggered for 0.8 s.
+- **Combat tuning**: harder to evade, enemies swing longer and hit harder, parries are easier to read, and the red flush is bolder. <span class="tag draft">Draft</span> numbers: enemy wind-ups x1.5, enemies stop tracking you 0.25 s before the hit, parry window 0.4 s, enemy damage x1.5, chase speed x1.2, dodge cooldown 0.8 s, dodge invincibility 0.15 s. Every enemy blow shows the red flush at least **0.6 s** before it lands.
+- **Enemy swing timing** (before the tuning above): 0.45 s wind-up with a glint, 0.15 s hit, 0.40 s recovery. A **parry** is guard pressed in the 0.4 s before impact (0.2 s before the tuning): no damage, no stamina, and the attacker is staggered for 0.8 s.
 - Block stops 80% from the front; the rest chips the shield arm.
 - **Stamina** 100, refills 20/s after 0.8 s idle. Light swing 10 to 15, heavy 30, blocked hit 15, dodge 25, sprint 8/s, parry free. Empty stamina means no block or dodge and swings 30% slower.
 - Enemies and the boss use the same zones.
@@ -96,9 +96,11 @@ Food: bread +30, dried meat +50, hearty stew +80 with 2x healing (shop), monster
 
 Each class has **one powerful ability**, charged by **parrying**, to reward good guarding. It has a cinematic look: an impact frame and a short hitstop when it lands; the camera never moves. Press **X** (Y on a gamepad) when the **Resolve** bar in the HUD is full.
 
+**Hints under the reticle:** a small pill reads **PRESS X · *NAME* READY** only while the ability is ready. While it runs, a how-to line shows instead, for example **HOLD RIGHT CLICK TO GUARD** for Bastion. Otherwise nothing shows.
+
 | Class | Ability | What it does <span class="tag draft">Draft</span> numbers |
 |-|-|-|
-| Knight | **Bastion** | Slams the shield: a shockwave and a dome over nearby allies (12 studs, 30% less damage). For 8 s your guard covers all three stances and every blow on it counts as a timed parry. You move at 85% |
+| Knight | **Bastion** | Slams the shield: a shockwave and a dome over nearby allies (12 studs, 30% less damage). For 8 s, holding guard blocks **every stance and direction, even at 0 stamina**, and every blow on it counts as a timed parry. It stops the boss's blows too. You move at 85% |
 | Nobleman | **Gilded Reprisal** | Both blades flare gold and he dashes 14 studs through the line, untouchable for 0.45 s. A beat after he lands, every cut opens: 2.5x your heavy on each enemy, and they reel 1.2 s |
 | Ranger | **Pinning Shot** | A beam charges on the bow for 0.8 s (aim follows you), then tears down the line: 80 studs long, 4 wide, 3x a heavy shot on each enemy. Each one is pinned for 3 s; fliers are knocked down |
 | Arcanist | **Rune Nova** | The runes spin up over a floor glyph, then a 14-stud dome of force blasts out: 2x your heavy, 10 studs of knockback and a 1.5 s stagger. The runes then orbit as a ward that soaks the next 3 hits (8 s) |
@@ -111,7 +113,7 @@ Each class has **one powerful ability**, charged by **parrying**, to reward good
 !!! success "Decided"
     Humanoid enemies take body-part damage like players, and hitting the same limb again (for example the right arm) hurts them more each time, just like it does for players.
 
-In the Studio prototype <span class="tag decided">In prototype</span>:
+In the prototype <span class="tag decided">In prototype</span>:
 
 - **Goblins, orcs (elites included) and skeletons** use the player injury steps: hurt, then broken, scaled to their health.
 - **Legs** slow them, a **broken foot** makes them stumble, **arm** injuries weaken their hits, **two broken arms** make some swings miss, and **head** hits daze them.
@@ -124,8 +126,6 @@ In the Studio prototype <span class="tag decided">In prototype</span>:
 - A hit that newly hurts a part gives one quick, bright flash.
 - Fliers take no limb injuries, so they never flash.
 
-The exact look is being built in Studio and isn't tested yet.
-
 ### Enemy guard <span class="tag decided">In prototype</span> { #enemy-guard }
 
 Enemies can raise a guard. The tell is obvious: the weapon comes up across the body, a steel-white outline appears and a soft clink plays. The guard lasts about 0.7 to 0.9 s.
@@ -135,7 +135,7 @@ Enemies can raise a guard. The tell is obvious: the weapon comes up across the b
 | A light swing | You get parried: pushed back, no swings for 0.8 s, and the enemy gets a free counter |
 | A heavy (hold left click, then release) | The guard breaks: the enemy reels and takes 1.5x damage for a moment |
 
-The timings and multiplier are prototype values from the Studio build and may change.
+The timings and multiplier are prototype values and may change.
 
 ### Parries and disarms <span class="tag decided">In prototype</span> { #disarms }
 
@@ -168,7 +168,7 @@ All numbers are prototype values.
 - **Weaker enemies back off when hurt.**
 - **No stacking**: once in fighting range, an enemy blocked by another one strafes around it instead of waiting behind it.
 - **Every enemy has a health bar** and flashes red when hit.
-- **Brain v5** <span class="tag draft">Draft</span>, untested in play: enemies attack the stance you **aren't** guarding, and their own guard covers the stance you're in. They pull hard toward a healer who is reviving someone. Spiders: see [Enemies](enemies.md#spiders).
+- **Brain v5** <span class="tag draft">Draft</span>: enemies attack the stance you **aren't** guarding, and their own guard covers the stance you're in. They pull hard toward a healer who is reviving someone. Spiders: see [Enemies](enemies.md#spiders).
 
 Timings are prototype values.
 

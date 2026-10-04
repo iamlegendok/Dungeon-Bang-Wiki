@@ -4,8 +4,28 @@ Everything confirmed, newest first. Drafts and assumptions are not here until th
 
 ## 2026-10-04
 
+### Combat
+- **Bastion:** X starts it; while it runs, holding guard blocks every stance and direction, even at 0 stamina.
+- **Ability hints** sit under the reticle: the ready prompt only when the ability is full, the how-to only while it runs.
+
 ### Controls
 - **Gamepad support** is in the prototype: RT attacks (tap light, hold heavy), LT guards and parries, the D-pad sets the stance, B dodges, A jumps, Y is the ability, X interacts, RB swaps melee and ranged, LB opens the bag. The bag and the respite use a gold ring cursor. See [Controls](controls.md#gamepad).
+
+## 2026-10-03
+
+### Boss and finale
+- **Morrakhet, the Hollow King** is the first boss, with the Unburied Court of chess pieces, a chessboard hall and the attacks Checkmate, Castling, the Toll and Gambit. More bosses are planned. See [Boss and finale](boss.md#morrakhet).
+- **The boss round has no clock.** It ends on a win or a wipe.
+- **Every stun on the boss lasts 10 s**, in every phase.
+- **Loot screen** after the boss: all four seats, players who were killed get nothing, then back to the lobby. No PvP after the boss for now.
+
+### Combat
+- **Every enemy blow warns first:** the red flush shows at least 0.6 s before it lands. The parry window is **0.4 s**.
+- **Enemy status icons** show what's affecting each enemy, stacked over its head with its name and health bar so nothing overlaps.
+- **No NPC falls over or wobbles**, and mounted riders stay upright until their mount dies.
+
+### Dungeon
+- **Rounds 4 to 6 get twists** (in development): Looking-Glass Halls, the Delver and the Snuffer, one per round in a random order. See [Dungeon floors](dungeon.md#twists).
 
 ## 2026-10-02 (evening)
 
@@ -88,7 +108,7 @@ Everything confirmed, newest first. Drafts and assumptions are not here until th
 - **Damage and armour** show under the health and stamina bars. Compared items show green with an up arrow when better and red with a down arrow when worse (weapons against your active weapon, armour against your best piece of that kind).
 - **Failed pickups** show their reason under the crosshair; arrows need a quiver and bolts a bolt case.
 - **Shop screen:** holding E on a keeper frames the keeper and stall; a tall card on the right shows wares above your pack. Wheel, arrows, L1/R1 or d-pad move between wares; the focused ware gets a gold chevron and compare hint. The clock keeps running.
-- **Cutscenes are cinematic:** cuts with a slow push-in, close on the speaker's face, letterbox bars and typed subtitles with the name in gold (text only until audio uploads reopen 28 October).
+- **Cutscenes are cinematic:** cuts with a slow push-in, close on the speaker's face, letterbox bars and typed subtitles with the name in gold (text only for now).
 - **Interact prompts** are our own E tags that fill while you hold E, not the Roblox popup.
 - **Eating takes time:** a bite slows you and you can't attack during it, so you can't spam-eat mid-fight.
 
@@ -100,7 +120,7 @@ Everything confirmed, newest first. Drafts and assumptions are not here until th
 - Floors grow linearly: 3 x (3, 5, 7, 9, 11, 13) = **9, 15, 21, 27, 33, 39 rooms**. "3x larger" is not exponential.
 - A **story** is a promise that a certain special event will happen in one room **of the next round**. Not a storyline or an extra floor.
 - Dungeon **rooms are bigger and polygon-shaped**, **corridors longer**. Walls use **PBR materials**, **never intersect**, and **vary in shape** (pillars, trim) instead of plain boxes.
-- The Studio rework is approved: rooms **36 to 60 studs** across with **16-stud ceilings**, octagon, hexagon, cut-corner or slanted shapes, and corridors up to about **4x longer** with their own lamps. Each round's map should **feel big, with a lot to explore**.
+- The bigger dungeon is approved: rooms **36 to 60 studs** across with **16-stud ceilings**, octagon, hexagon, cut-corner or slanted shapes, and corridors up to about **4x longer** with their own lamps. Each round's map should **feel big, with a lot to explore**.
 - Every map has **shopkeepers**, **mini events** and **hostage rescues**; rescues increase the next round's loot.
 - The finale has a **boss that scales with player count and the party's total dungeon level**.
 - The game is **persistent**. Surviving carries you into the next match. **Level = dungeon runs survived.**

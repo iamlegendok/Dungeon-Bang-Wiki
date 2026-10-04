@@ -35,22 +35,7 @@ All classes share the same 15 R15 parts, joints and hit zones; only proportions 
 
 Each R15 part is its own Roblox part, so a hit already knows what it struck. Layer-1 armor protects only the zone it's mounted on. Damage rules are on [Combat](combat.md#health-model).
 
-## Roblox rigs and animations
-
-![Base builds](assets/img/characters/base_builds.jpg)
-
-Built to Roblox's character body spec, per class:
-
-| File | What it is |
-|-|-|
-| `<Class>_Base.fbx` | The starter you respawn in after a hard death: body, face, hair, tunic, trousers, shoes. 1,480 tris. |
-| `<Class>_Starter.fbx` | The same rig with the class kit. Held weapons are left out; they become Tools on the grip attachments. |
-| `Animations/<Class>_<Anim>.fbx` | One animation per file on that class's rig. |
-
-- R15 bone layout, 15 rigid-skinned meshes, 19 attachments, origin at the hip, every bone pointing up so joints import with identity orientation. All 70 FBX files pass the spec check.
-- Tri budget: about 4,000 per fully geared character (largest is the Knight starter at 3,692 of Roblox's 10,742 cap).
-- One shared 64 px palette texture, plus metalness, roughness and emissive maps for a SurfaceAppearance.
-- **Not yet tested in Roblox Studio.**
+## Animations
 
 ![Animation contact sheet](assets/img/characters/roblox_anims.jpg)
 
@@ -64,8 +49,3 @@ Built to Roblox's character body spec, per class:
 | Stagger | 0 to 56 | no | Being reworked: fall back and catch yourself, impact, recovery, feet planted |
 
 No attack animations: each weapon brings its own.
-
-## Open
-
-??? question "Studio import"
-    The rigs have only been validated by re-importing in Blender. First real test is importing into Roblox Studio as per-class StarterCharacters.

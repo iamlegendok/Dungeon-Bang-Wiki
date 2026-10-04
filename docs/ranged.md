@@ -2,7 +2,7 @@
 
 ![Ranged test range](assets/img/ranged/test_range.jpg)
 
-Ranged weapons are built into the Studio prototype (untested in play) and playable in a browser test range. The controls are <span class="tag decided">In prototype</span>; numbers and the rest are <span class="tag draft">Draft</span> unless tagged otherwise.
+Ranged weapons are in the prototype. The controls are <span class="tag decided">In prototype</span>; numbers and the rest are <span class="tag draft">Draft</span> unless tagged otherwise.
 
 !!! success "Decided"
     A ranged weapon system where the reticle is constantly shifting, shots are real projectiles (not instant hit rays, and not super fast), and some weapons drop more than others. **R swaps between melee and ranged.**

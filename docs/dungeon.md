@@ -2,7 +2,7 @@
 
 ![Depth 1 floor with route, rooms and pacing](assets/img/dungeon/depth1.jpg)
 
-Every floor is generated from a seed by a small, engine-free generator (`dungeon_gen.py`, Roblox stud units), so the same data can drive Roblox Parts later.
+Every floor is generated from a seed.
 
 ## Floor rules
 
@@ -20,7 +20,7 @@ Every floor is generated from a seed by a small, engine-free generator (`dungeon
 
 ## Rooms, corridors and walls <span class="tag decided">Decided</span> { #rooms-and-walls }
 
-Set while building the Roblox Studio prototype:
+In the prototype:
 
 - **Rooms are bigger and polygon-shaped**, not plain rectangles.
 - **Corridors are longer.**
@@ -28,12 +28,12 @@ Set while building the Roblox Studio prototype:
 - **Walls never intersect** each other.
 - **Walls vary in shape**, with pillars and trim, rather than being plain boxes.
 
-!!! success "Studio rework"
+!!! success "Big maps"
     Each round's map should feel big, with a lot to explore.
 
-### Studio prototype values
+### Prototype values
 
-These are the approved values in the Roblox Studio prototype.
+These are the approved values in the prototype.
 
 | Part | Value |
 |-|-|
@@ -45,7 +45,7 @@ These are the approved values in the Roblox Studio prototype.
 
 ## Building blocks <span class="tag draft">Draft</span>
 
-- Tile grid of 4 studs per tile, 12-stud walls, 8-stud-wide corridors. These are the original Blender blockout values; the Studio prototype above has bigger rooms, taller ceilings and longer corridors.
+- Tile grid of 4 studs per tile, 12-stud walls, 8-stud-wide corridors. These were the first blockout values; the prototype above has bigger rooms, taller ceilings and longer corridors.
 - Rooms sit in a slot grid joined by a random tree; deeper floors add extra loops.
 - Enemy tier rises from 1 to 3 with depth, and chest rarity odds improve.
 - If a floor's nearest stairs is more than 75 s of walking away, extra stairs are added (`MULTI_EXIT`). At the current sizes it never triggers.
@@ -108,9 +108,17 @@ These are the approved values in the Roblox Studio prototype.
 | The Lost Caravan | A caravan that sells Legendary gear |
 | The Dragon's Egg | Defend the egg until it hatches into a pet |
 
+## Rounds 4 to 6: twists <span class="tag draft">In development</span> { #twists }
+
+Rounds 4, 5 and 6 each get one twist, in a random order every match, so the late floors stop being a single route to the stairs. Each twist brings its own creature.
+
+- **Looking-Glass Halls.** Mirrors swap you into the Reflection: the same rooms joined by different corridors, and the stairs are only there. Glass-Kin copy your swings 0.7 s later; crack one three times to shatter it.
+- **The Delver.** A burrower you can't fight. Three times a round it breaks through the walls between rooms that are close on the map but far on foot, hitting for 45 with the red flush first, and leaves new tunnels behind.
+- **The Snuffer.** It can't be killed and puts out braziers. It only grabs you in the dark (mash Q to break free). Relighting a brazier (hold E) burns it and drives it off.
+
 ## Pacing <span class="tag draft">Draft</span>
 
-In the Studio prototype, the fastest route to the stairs on the biggest floor takes about 70 s of the 3:00. In the earlier Blender blockout, a rush took about 13 s on depth 1 and about 1:30 on depth 6. A full clear (walk the whole tree, every fight, 2 s per chest) is what the timer squeezes.
+In the prototype, the fastest route to the stairs on the biggest floor takes about 70 s of the 3:00. In the first blockout, a rush took about 13 s on depth 1 and about 1:30 on depth 6. A full clear (walk the whole tree, every fight, 2 s per chest) is what the timer squeezes.
 
 In the trail-map test walk on a 21-room floor, a player reached the stairs at 2:15 having lit 26% of the floor.
 

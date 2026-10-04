@@ -41,7 +41,7 @@ Fliers take no limb injuries.
 
 ## Spiders and mounted enemies <span class="tag draft">Draft</span> { #spiders }
 
-Built in Studio 2026-10-02. Q to break free is decided and in the prototype (see [Controls](controls.md#fighting)); the rest is draft. The round gates are defaults and untested in play.
+In the prototype. Q to break free is decided (see [Controls](controls.md#fighting)); the rest is draft. The round gates are defaults.
 
 | Enemy | From round | What it does |
 |-|-|-|

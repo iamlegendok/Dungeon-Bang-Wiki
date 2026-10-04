@@ -66,7 +66,7 @@ There are **two** active slots, **Active melee** and **Active ranged**, and **R*
 
 ### Weapon families <span class="tag draft">Draft</span> { #weapon-families }
 
-Weapons share animations by family, so a new weapon only needs a family to swing. Built in Studio; untested in play.
+Weapons share animations by family, so a new weapon only needs a family to swing. 
 
 | Family | Weapons | Notes |
 |-|-|-|
