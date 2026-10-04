@@ -1,0 +1,144 @@
+/* Wiki widgets: item cards and the parry trainer. Shared palette roles only. */
+:root {
+  --db-rarity-common: #c9bfa8;
+  --db-rarity-uncommon: #7fb08a;
+  --db-rarity-rare: #6fb3d2;
+  --db-rarity-epic: #b98cff;
+  --db-rarity-legendary: #f3c66b;
+  --db-rarity-cursed: #b8c94a;
+  --db-danger: #e0503c;
+}
+.db-widget { margin: 1rem 0 1.4rem; }
+.db-widget button { font: inherit; cursor: pointer; }
+
+/* filter chips and segmented buttons */
+.db-chips, .db-seg { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 .6rem; }
+.db-chip, .db-seg button {
+  border: 1px solid var(--db-line-frame); background: var(--db-bg-panel); color: var(--db-text-muted);
+  border-radius: 999px; padding: .2rem .7rem; font-size: .68rem;
+}
+.db-seg button { border-radius: 6px; }
+.db-chip.on, .db-seg button.on { border-color: var(--db-earth-gold); color: var(--db-text-title); background: var(--db-bg-raised); }
+.db-seg--rarity button:nth-child(1).on { border-color: var(--db-rarity-common); color: var(--db-rarity-common); }
+.db-seg--rarity button:nth-child(2).on { border-color: var(--db-rarity-uncommon); color: var(--db-rarity-uncommon); }
+.db-seg--rarity button:nth-child(3).on { border-color: var(--db-rarity-rare); color: var(--db-rarity-rare); }
+.db-seg--rarity button:nth-child(4).on { border-color: var(--db-rarity-epic); color: var(--db-rarity-epic); }
+.db-seg--rarity button:nth-child(5).on { border-color: var(--db-rarity-legendary); color: var(--db-rarity-legendary); }
+
+/* card grid */
+.db-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(6.4rem, 1fr)); gap: .45rem; }
+.db-card {
+  display: flex; flex-direction: column; align-items: center; gap: .25rem; text-align: center;
+  padding: .55rem .35rem .5rem; border: 1px solid var(--db-line-grid); border-radius: 8px;
+  background: var(--db-bg-panel); color: var(--db-text-primary); transition: border-color .15s, background .15s, transform .15s;
+}
+.db-card:hover { border-color: var(--db-line-frame); background: var(--db-bg-raised); }
+.db-card.on { border-color: var(--db-earth-gold); background: var(--db-bg-raised); }
+.db-card[hidden] { display: none; }
+.db-card__name { font-size: .66rem; line-height: 1.2; font-weight: 700; }
+.db-card__sub { font-size: .58rem; color: var(--db-text-muted); }
+.md-typeset .db-widget img, .md-typeset .db-status img { border: 0 !important; background: none !important; box-shadow: none !important; border-radius: 0 !important; margin: 0 !important; }
+.md-typeset .db-icon { width: 3.4rem; height: 3.4rem; object-fit: contain; max-width: none; }
+.db-icon--none {
+  display: grid; width: 3.4rem; height: 3.4rem; place-items: center; border-radius: 8px; background: var(--db-bg-raised);
+  color: var(--db-text-muted); font-family: "Lilita One", sans-serif; font-size: 1.3rem;
+}
+.db-iconbox { display: flex; align-items: center; justify-content: center; width: 3.4rem; height: 3.4rem; flex: none; overflow: hidden; }
+.md-typeset .db-iconbox .db-icon { width: 3.4rem; height: 3.4rem; }
+.md-typeset .db-iconbox--big .db-icon { width: 6rem; height: 6rem; }
+.md-typeset .db-icon--big, .db-iconbox--big { width: 6rem; height: 6rem; flex: none; }
+
+/* detail panel */
+.db-detail {
+  position: relative; margin-top: .6rem; padding: .8rem .9rem; border: 1px solid var(--db-earth-gold);
+  border-radius: 10px; background: var(--db-bg-panel);
+}
+.db-detail[hidden] { display: none; }
+.db-detail.db-rarity--common { border-color: var(--db-rarity-common); }
+.db-detail.db-rarity--uncommon { border-color: var(--db-rarity-uncommon); }
+.db-detail.db-rarity--rare { border-color: var(--db-rarity-rare); }
+.db-detail.db-rarity--epic { border-color: var(--db-rarity-epic); box-shadow: 0 0 18px #9650e633; }
+.db-detail.db-rarity--legendary { border-color: var(--db-rarity-legendary); box-shadow: 0 0 18px #f3c66b33; }
+.db-detail__head { display: flex; gap: .9rem; align-items: center; margin-bottom: .6rem; }
+.md-typeset .db-detail h4 { margin: 0; font-family: "Lilita One", sans-serif; font-weight: 400; font-size: 1rem; color: var(--db-text-title); }
+.md-typeset .db-detail__sub { margin: .1rem 0 .3rem; font-size: .68rem; color: var(--db-text-muted); }
+.db-detail__close {
+  position: absolute; top: .5rem; right: .5rem; border: 1px solid var(--db-line-frame); background: var(--db-bg-raised);
+  color: var(--db-text-muted); border-radius: 6px; padding: .1rem .5rem; font-size: .62rem;
+}
+.md-typeset .db-value { margin: .3rem 0 .5rem; font-weight: 700; color: var(--db-text-title); }
+.md-typeset .db-facts { display: grid; grid-template-columns: max-content 1fr; gap: .2rem .8rem; margin: 0; font-size: .7rem; }
+.md-typeset .db-facts dt { color: var(--db-text-muted); }
+.md-typeset .db-facts dd { margin: 0; }
+.md-typeset .db-note { font-size: .62rem; color: var(--db-text-muted); margin: .5rem 0 0; }
+.db-meta { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; }
+.db-foot { display: inline-grid; gap: 2px; }
+.db-foot i { width: .6rem; height: .6rem; background: var(--db-arcane-dim); border: 1px solid var(--db-arcane-glow); border-radius: 2px; }
+.db-pips { display: inline-flex; gap: 2px; }
+.db-pips i {
+  width: 1rem; height: 1rem; display: grid; place-items: center; font-size: .55rem; font-style: normal;
+  border-radius: 3px; background: var(--db-bg-raised); color: var(--db-text-muted);
+}
+.db-pips i.on { background: var(--db-earth-gold); color: var(--db-text-inverse); font-weight: 700; }
+.db-range { display: flex; align-items: center; gap: .5rem; font-size: .7rem; margin: .2rem 0; }
+.db-range input { flex: 1; max-width: 14rem; accent-color: var(--db-earth-gold); }
+
+.db-tableview { margin: .4rem 0 1rem; }
+.db-tableview > summary { cursor: pointer; font-size: .68rem; color: var(--db-text-muted); }
+
+/* status icon chart */
+.db-status { display: grid; grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr)); gap: .45rem; margin: .8rem 0 1.2rem; }
+.db-status > div {
+  display: flex; gap: .55rem; align-items: center; padding: .4rem .5rem; border: 1px solid var(--db-line-grid);
+  border-radius: 8px; background: var(--db-bg-panel); font-size: .64rem; line-height: 1.3;
+}
+.db-status img { width: 2.4rem; height: 2.4rem; flex: none; }
+.db-status b { display: block; color: var(--db-text-title); font-size: .7rem; }
+.db-status p { margin: 0 !important; }
+
+/* parry trainer */
+.db-parry__top { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; justify-content: space-between; margin-bottom: .5rem; }
+.db-parry__top .db-seg { margin: 0; }
+.db-btn {
+  border: 1px solid var(--db-line-frame); background: var(--db-bg-raised); color: var(--db-text-primary);
+  border-radius: 8px; padding: .4rem .9rem; font-size: .72rem; touch-action: manipulation; user-select: none;
+}
+.db-btn:disabled { opacity: .4; cursor: default; }
+.db-btn--gold { border-color: var(--db-earth-gold); color: var(--db-text-title); }
+.db-parry__screen {
+  position: relative; aspect-ratio: 16 / 8; overflow: hidden; border-radius: 10px;
+  border: 1px solid var(--db-line-frame); outline: none; user-select: none; touch-action: none;
+  background: radial-gradient(ellipse at 50% 60%, #2a241c 0%, #16130f 75%);
+}
+.db-parry__screen:focus-visible { border-color: var(--db-earth-gold); }
+.db-parry__screen.hurt { box-shadow: inset 0 0 60px #e0503c88; }
+.db-flush { position: absolute; opacity: 0; pointer-events: none; transition: opacity .08s; }
+.db-flush--top { left: 0; right: 0; top: 0; height: 26%; background: linear-gradient(#e0503ccc, transparent); }
+.db-flush--bottom { left: 0; right: 0; bottom: 0; height: 26%; background: linear-gradient(transparent, #e0503ccc); }
+.db-flush--left { top: 0; bottom: 0; left: 0; width: 18%; background: linear-gradient(90deg, #e0503ccc, transparent); }
+.db-flush--right { top: 0; bottom: 0; right: 0; width: 18%; background: linear-gradient(270deg, #e0503ccc, transparent); }
+.db-flush.hot { filter: brightness(1.35) saturate(1.2); }
+.db-parry__cross { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px; border: 2px solid var(--db-text-primary); border-radius: 50%; opacity: .7; }
+.db-parry__stances { position: absolute; left: .6rem; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: .3rem; }
+.db-parry__stances span { font-size: .58rem; font-weight: 700; padding: .1rem .4rem; border-radius: 4px; color: var(--db-text-muted); background: #16130fcc; border: 1px solid var(--db-line-grid); }
+.db-parry__stances span.on { color: var(--db-text-inverse); background: var(--db-earth-gold); border-color: var(--db-earth-gold); }
+.db-parry__guard { position: absolute; right: .6rem; bottom: .6rem; font-size: .6rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; color: var(--db-text-muted); border: 1px solid var(--db-line-grid); background: #16130fcc; }
+.db-parry__guard.on { color: var(--db-text-inverse); background: var(--db-earth-steel); border-color: var(--db-earth-steel); }
+.db-parry__pop { position: absolute; left: 50%; top: 36%; transform: translate(-50%, -50%) scale(.8); font-family: "Lilita One", sans-serif; font-size: 1.6rem; opacity: 0; transition: opacity .1s, transform .1s; pointer-events: none; }
+.db-parry__pop.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.db-parry__pop.gold { color: var(--db-earth-gold); text-shadow: 0 0 14px #f3c66b88; }
+.db-parry__pop.steel { color: #c9d3dc; }
+.db-parry__pop.red { color: var(--db-danger); }
+.db-parry__hint { position: absolute; left: 50%; top: 62%; transform: translateX(-50%); font-size: .58rem; font-weight: 700; letter-spacing: .04em; padding: .15rem .6rem; border-radius: 999px; background: #16130fdd; border: 1px solid var(--db-earth-gold); color: var(--db-text-title); white-space: nowrap; }
+.db-parry__hint[hidden] { display: none; }
+.db-parry__help { position: absolute; inset: auto 1rem 1rem; text-align: center; font-size: .68rem; color: var(--db-text-muted); }
+.db-parry__help[hidden] { display: none; }
+.db-parry__hud { display: grid; grid-template-columns: auto 1fr auto 1fr; gap: .3rem .5rem; align-items: center; margin: .5rem 0; font-size: .62rem; }
+.db-parry__score { grid-column: 1 / -1; color: var(--db-text-muted); }
+.db-bar { height: .45rem; border-radius: 999px; background: var(--db-bg-raised); overflow: hidden; }
+.db-bar i { display: block; height: 100%; width: 0; transition: width .15s; }
+.db-bar--hp i { background: var(--db-vital-hp-text); }
+.db-bar--resolve i { background: var(--db-earth-gold); }
+.db-parry__pad { display: flex; flex-wrap: wrap; gap: .4rem; }
+.db-parry__pad .db-btn { flex: 1 1 4.5rem; padding: .6rem .4rem; }
+@media (max-width: 600px) { .db-parry__screen { aspect-ratio: 4 / 3; } }

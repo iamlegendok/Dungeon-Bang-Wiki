@@ -27,6 +27,12 @@ Each point of loot luck moves 30% of every tier's chance up one tier. Events kee
 
 **Comparing:** the green and red arrows and the better-drop gleam work as before: melee by damage, armour against your best piece of the same kind, ranged by rarity.
 
+## Browse the gear { #browse }
+
+Tap an item to see its size in the bag, the rounds it drops in, and its stats at any rarity and round. Items without their own icon yet show their size in cells instead.
+
+<div class="db-widget" data-widget="gear" data-until="Bonuses"></div>
+
 ## Weapons
 
 ![The new weapon and shield models](assets/img/gear/weapon_roster.jpg)
