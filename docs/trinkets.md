@@ -75,4 +75,4 @@ Tap a trinket to see what it does. The tier buttons switch every icon and value 
 
 ## Status
 
-Trinkets aren't in the prototype yet <span class="tag draft">Planned</span>.
+Trinkets are in the game <span class="tag decided">In prototype</span>.

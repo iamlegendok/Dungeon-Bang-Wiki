@@ -38,6 +38,7 @@
 - Every shop takes **silverlings, goldlings or Robux**. The Iron Tithe takes goldlings or Robux, never silverlings. Mother Marrow also takes max HP.
 - Silverlings are spent first; goldlings are broken with change (10 silverlings = 1 goldling).
 - <span class="tag draft">Draft</span> **Coin price** = base price x the keeper's multiplier x (1 + 15% for each round after round 1). The [Signet Ring](trinkets.md) lowers it.
+- <span class="tag open">Open</span> Rolled weapons and armour don't use the keeper's multiplier yet; how shops price them isn't settled.
 - <span class="tag draft">Draft</span> **Robux price** comes from a bucket by coin price: up to 10 silverlings = 5 R$, up to 30 = 15, up to 60 = 25, up to 120 = 49, up to 250 = 99, up to 500 = 199, more = 399.
 
 ## The shop screen <span class="tag decided">In prototype</span> { #shop-screen }
