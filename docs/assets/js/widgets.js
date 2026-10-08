@@ -529,7 +529,117 @@
     draw();
   }
 
-  var WIDGETS = { trinkets: trinkets, gear: gear, parry: parry };
+
+  /* Game loop: a replayable walk through one match, lobby to lobby. */
+  function loop(node) {
+    var STOPS = [
+      { id: "lobby", label: "Lobby" },
+      { id: "queue", label: "Queue" },
+      { id: "rounds", label: "Rounds 1-6" },
+      { id: "respite", label: "Respite" },
+      { id: "boss", label: "Boss" },
+      { id: "loot", label: "Loot" },
+      { id: "out", label: "Out" }
+    ];
+    var STEPS = [
+      { stop: "lobby", big: "Lobby", line: "Pick a class, sort your pack, shop.", ms: 1800 },
+      { stop: "queue", big: "4", line: "Parties of up to 4, matched by level.", ms: 1800 },
+      { stop: "rounds", round: true, ms: 6 * 950 },
+      { stop: "respite", count: 30, unit: "s", line: "Rearrange gear. The whole party sees every move.", ms: 2200 },
+      { stop: "boss", big: "Boss", line: "Scales with the number of players and the party's level.", ms: 2000 },
+      { stop: "loot", big: "Loot", line: "Every seat, and what each survivor carried out.", ms: 1800 },
+      { stop: "out", split: true, ms: 3400 },
+      { stop: "lobby", big: "Again", line: "Back to the lobby for the next match.", ms: 1600 }
+    ];
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    node.classList.add("dbw-loop");
+    var track = el("div", "dbw-loop__track");
+    var chips = {};
+    STOPS.forEach(function (s, i) {
+      var c = el("div", "dbw-loop__stop");
+      c.appendChild(el("span", "dbw-loop__label", s.label));
+      if (s.id === "rounds") {
+        var pips = el("span", "dbw-loop__pips");
+        for (var r = 0; r < 6; r++) pips.appendChild(el("i"));
+        c.appendChild(pips);
+      }
+      track.appendChild(c);
+      chips[s.id] = c;
+    });
+    var stage = el("div", "dbw-loop__stage");
+    var big = el("div", "dbw-loop__big");
+    var line = el("div", "dbw-loop__line");
+    var split = el("div", "dbw-loop__split");
+    var live = el("div", "dbw-loop__card dbw-loop__card--live");
+    live.appendChild(el("strong", null, "Survive"));
+    live.appendChild(el("span", null, "Keep everything. Level +1."));
+    var dead = el("div", "dbw-loop__card dbw-loop__card--dead");
+    dead.appendChild(el("strong", null, "Die anywhere"));
+    dead.appendChild(el("span", null, "Lose your loot. Back to level 0. Vault coins stay safe."));
+    split.appendChild(live); split.appendChild(dead);
+    stage.appendChild(big); stage.appendChild(line); stage.appendChild(split);
+    var bar = el("div", "dbw-loop__bar");
+    var fill = el("i"); bar.appendChild(fill);
+    var replay = el("button", "dbw-loop__replay", "Replay");
+    replay.type = "button";
+    node.appendChild(track); node.appendChild(stage); node.appendChild(bar); node.appendChild(replay);
+
+    var total = STEPS.reduce(function (a, s) { return a + s.ms; }, 0);
+    var raf = 0, t0 = 0;
+
+    function pipsUpTo(n) {
+      chips.rounds.querySelectorAll(".dbw-loop__pips i").forEach(function (p, i) { p.classList.toggle("on", i < n); });
+    }
+    function show(step, local) {
+      Object.keys(chips).forEach(function (k) { chips[k].classList.toggle("on", k === step.stop); });
+      split.classList.toggle("on", !!step.split);
+      big.classList.toggle("off", !!step.split);
+      if (step.round) {
+        var each = step.ms / 6, n = Math.min(5, Math.floor(local / each));
+        var left = Math.max(0, 180 - Math.floor((local - n * each) / each * 180));
+        big.textContent = Math.floor(left / 60) + ":" + ("0" + left % 60).slice(-2);
+        line.textContent = "Round " + (n + 1) + " of 6. One 3:00 clock; the stairs never add time.";
+        pipsUpTo(n + 1);
+      } else if (step.count) {
+        big.textContent = Math.max(0, Math.ceil(step.count * (1 - local / step.ms))) + step.unit;
+        line.textContent = step.line;
+      } else if (step.split) {
+        line.textContent = "";
+      } else {
+        big.textContent = step.big;
+        line.textContent = step.line;
+      }
+      if (!step.round) pipsUpTo(STEPS.indexOf(step) > 2 ? 6 : 0);
+    }
+    function frame(now) {
+      var t = now - t0, acc = 0;
+      fill.style.width = Math.min(100, t / total * 100) + "%";
+      for (var i = 0; i < STEPS.length; i++) {
+        if (t < acc + STEPS[i].ms) { show(STEPS[i], t - acc); raf = requestAnimationFrame(frame); return; }
+        acc += STEPS[i].ms;
+      }
+      show(STEPS[STEPS.length - 1], STEPS[STEPS.length - 1].ms);
+      node.classList.add("done");
+    }
+    function play() {
+      cancelAnimationFrame(raf);
+      node.classList.remove("done");
+      t0 = performance.now();
+      raf = requestAnimationFrame(frame);
+    }
+    replay.onclick = play;
+    if (reduce) { show(STEPS[6], 0); fill.style.width = "100%"; node.classList.add("done"); return; }
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (es) {
+        if (es[0].isIntersecting) { io.disconnect(); play(); }
+      }, { threshold: 0.4 });
+      io.observe(node);
+    } else play();
+    show(STEPS[0], 0);
+  }
+
+  var WIDGETS = { trinkets: trinkets, gear: gear, parry: parry, loop: loop };
   function init() {
     document.querySelectorAll(".db-widget[data-widget]").forEach(function (node) {
       if (node.dataset.ready) return;

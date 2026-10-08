@@ -1,18 +1,20 @@
 # Game loop
 
-![Match overview: six floors then the boss](assets/img/loop/match_overview.jpg)
+<div class="db-widget" data-widget="loop"></div>
 
 ## A match
 
-| Step | What happens | Status |
-|-|-|-|
-| Lobby | Pick a class, rearrange your pack, move gear and coin between pack and vault, shop. | <span class="tag decided">Decided</span> |
-| Queue | Auto queue near your level, or launch your own party with a 5-character invite code. Parties of up to 4. | <span class="tag decided">Decided</span> |
-| Depths 1 to 6 | Freshly generated floors, one per depth. A round is one 3:00 clock shared by every depth you reach; the stairs never reset or add time. | <span class="tag decided">Decided</span> |
-| Moment of respite | 30 s to rearrange gear before the boss. | <span class="tag decided">In prototype</span> |
-| Boss | A boss scaled to player count and the party's total level. No clock: it ends on a win or a wipe. | <span class="tag decided">In prototype</span>; formula is <span class="tag draft">Draft</span> |
-| Loot screen | All four seats and what each survivor carried out, then back to the lobby. | <span class="tag decided">In prototype</span> |
-| Out | Survivors keep everything and gain a level. There's no PvP after the boss for now. | <span class="tag decided">Decided</span> |
+??? info "Step by step"
+
+    | Step | What happens | Status |
+    |-|-|-|
+    | Lobby | Pick a class, rearrange your pack, move gear and coin between pack and vault, shop. | <span class="tag decided">Decided</span> |
+    | Queue | Auto queue near your level, or launch your own party with a 5-character invite code. Parties of up to 4. | <span class="tag decided">Decided</span> |
+    | Depths 1 to 6 | Freshly generated floors, one per depth. A round is one 3:00 clock shared by every depth you reach; the stairs never reset or add time. | <span class="tag decided">Decided</span> |
+    | Moment of respite | 30 s to rearrange gear before the boss. | <span class="tag decided">In prototype</span> |
+    | Boss | A boss scaled to player count and the party's total level. No clock: it ends on a win or a wipe. | <span class="tag decided">In prototype</span>; formula is <span class="tag draft">Draft</span> |
+    | Loot screen | All four seats and what each survivor carried out, then back to the lobby. | <span class="tag decided">In prototype</span> |
+    | Out | Survivors keep everything and gain a level. There's no PvP after the boss for now. | <span class="tag decided">Decided</span> |
 
 ### Moving between floors
 
