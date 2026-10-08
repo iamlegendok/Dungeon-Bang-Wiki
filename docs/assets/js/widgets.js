@@ -531,6 +531,70 @@
 
 
   /* Game loop: a replayable walk through one match, lobby to lobby. */
+  /* Game loop: a short replayable scene with the cast, built from layered renders
+     (arms, legs, torso, head and face swaps) so they walk, blink and react. */
+  var CAST = {"Knight":{"w":234,"f":["blink","happy","angry","hurt","shock","smile"],"p":[[30.7,45.2],[44.9,69.4],[60.6,69.4],[52.8,69.4],[52.8,41.7],[74.9,45.2]]},"Ranger":{"w":181,"f":["blink","happy","angry","hurt","shock","smile"],"p":[[30.7,37.3],[43.3,59.7],[59.2,59.7],[51.3,59.7],[51.3,34.3],[71.8,37.3]]},"Arcanist":{"w":158,"f":["blink","happy","angry","hurt","shock","smile"],"p":[[35.7,48.2],[45.8,68.3],[62.7,68.3],[54.2,68.3],[54.2,45.8],[72.7,48.2]]},"Witcher":{"w":209,"f":["blink","happy","angry","hurt","shock","smile"],"p":[[25.7,37.4],[45.2,62.8],[62.6,62.8],[53.9,62.8],[50.2,33.5],[76.1,37.4]]},"Nobleman":{"w":197,"f":["blink","happy","angry","hurt","shock","smile"],"p":[[38.2,38.9],[53.6,62.5],[68.0,62.5],[60.8,62.5],[60.8,35.7],[83.4,38.9]]},"Morrakhet":{"w":190,"f":["blink","rage","laugh","hurt"],"p":[[37.7,46.0],[51.9,66.6],[67.7,66.6],[59.8,66.6],[59.8,43.2],[81.9,46.0]]},"Sabeth":{"w":217,"f":["blink","wrath","scorn","sorrow"],"p":[[38.9,43.6],[51.9,65.1],[66.4,65.1],[59.2,65.1],[59.2,40.6],[79.5,43.6]]},"BonePawn":{"w":181,"f":["blink","shout"],"p":[[31.6,47.9],[46.8,68.9],[63.7,68.9],[55.3,68.9],[55.3,45.0],[78.9,47.9]]},"TowerWarden":{"w":190,"f":["blink","shout"],"p":[[45.7,47.9],[58.8,66.9],[73.4,66.9],[66.1,66.9],[66.1,45.3],[86.6,47.9]]},"MourningBishop":{"w":159,"f":["blink","shout"],"p":[[35.9,51.6],[51.4,70.5],[68.7,70.5],[60.1,70.5],[60.1,49.0],[84.3,51.6]]},"GravehorseRider":{"w":175,"f":["blink","shout"],"p":[[35.2,47.4],[51.0,68.6],[68.7,68.6],[59.8,68.6],[59.8,44.5],[84.5,47.4]]}};
+  var PARTS = ["right_arm", "right_leg", "left_leg", "torso", "head", "left_arm"];
+  var CAST_DIR = (function () {
+    var s = document.querySelector('script[src*="assets/js/widgets.js"]');
+    try { return new URL("../img/loop/cast/", s.src).href; } catch (e) { return BASE + "assets/img/loop/cast/"; }
+  })();
+
+  function rig(name, height) {
+    var c = CAST[name], n = PARTS.length + c.f.length;
+    var root = el("div", "dbw-rig");
+    var body = el("div", "dbw-rig__body");
+    root.appendChild(body);
+    root.style.setProperty("--rh", height);
+    root.style.aspectRatio = c.w + " / 360";
+    var parts = {};
+    PARTS.forEach(function (p, i) {
+      var d = el("i", "dbw-rig__part");
+      d.style.backgroundImage = "url(" + CAST_DIR + name.toLowerCase() + ".webp)";
+      d.style.backgroundSize = n * 100 + "% 100%";
+      d.style.backgroundPositionX = i / (n - 1) * 100 + "%";
+      d.style.transformOrigin = c.p[i][0] + "% " + c.p[i][1] + "%";
+      body.appendChild(d);
+      parts[p] = d;
+    });
+    var seed = name.length * 977 % 2300, face = "", tint = "";
+    var r = {
+      el: root,
+      x: 0, y: 0, s: 1, o: 1,
+      face: function (k, t) {
+        // blink now and then unless a face is held
+        if (!k && ((t + seed) % 2600) < 130 && c.f.indexOf("blink") >= 0) k = "blink";
+        if (k === face) return;
+        face = k || "";
+        var i = face && c.f.indexOf(face) >= 0 ? PARTS.length + c.f.indexOf(face) : PARTS.indexOf("head");
+        parts.head.style.backgroundPositionX = i / (n - 1) * 100 + "%";
+      },
+      tint: function (k) {
+        if (k === tint) return;
+        tint = k || "";
+        root.classList.toggle("hit", tint === "hit");
+        root.classList.toggle("fallen", tint === "fallen");
+      },
+      // walk: phase in cycles (0 = stand), swing: 0..1 weapon arm raised
+      pose: function (walk, swing, t) {
+        var a = walk ? Math.sin(walk * Math.PI * 2) : 0;
+        var breathe = Math.sin((t + seed) / 520) * 1.5;
+        parts.left_leg.style.transform = "rotate(" + (a * 20) + "deg)";
+        parts.right_leg.style.transform = "rotate(" + (-a * 20) + "deg)";
+        parts.left_arm.style.transform = "rotate(" + (-a * 14 - breathe) + "deg)";
+        parts.right_arm.style.transform = "rotate(" + (a * 14 + breathe + (swing || 0) * 70) + "deg)";
+        var bob = walk ? Math.abs(Math.cos(walk * Math.PI * 2)) * -2.5 : breathe * .4;
+        body.style.transform = "translateY(" + bob + "%)";
+      },
+      place: function () {
+        root.style.left = r.x + "%";
+        root.style.transform = "translate(-50%, " + r.y + "%) scale(" + r.s + ")";
+        root.style.opacity = r.o;
+      }
+    };
+    return r;
+  }
+
   function loop(node) {
     var STOPS = [
       { id: "lobby", label: "Lobby" },
@@ -541,22 +605,23 @@
       { id: "loot", label: "Loot" },
       { id: "out", label: "Out" }
     ];
+    var ROUND = 1500;
     var STEPS = [
-      { stop: "lobby", big: "Lobby", line: "Pick a class, sort your pack, shop.", ms: 1800 },
-      { stop: "queue", big: "4", line: "Parties of up to 4, matched by level.", ms: 1800 },
-      { stop: "rounds", round: true, ms: 6 * 950 },
-      { stop: "respite", count: 30, unit: "s", line: "Rearrange gear. The whole party sees every move.", ms: 2200 },
-      { stop: "boss", big: "Boss", line: "Scales with the number of players and the party's level.", ms: 2000 },
-      { stop: "loot", big: "Loot", line: "Every seat, and what each survivor carried out.", ms: 1800 },
-      { stop: "out", split: true, ms: 3400 },
-      { stop: "lobby", big: "Again", line: "Back to the lobby for the next match.", ms: 1600 }
+      { stop: "lobby", bg: "lobby", big: "Lobby", line: "Pick a class, sort your pack, shop.", ms: 2800 },
+      { stop: "queue", bg: "lobby", big: "Party of 4", line: "Parties of up to 4, matched by level.", ms: 2400 },
+      { stop: "rounds", bg: "depths", round: true, ms: 6 * ROUND },
+      { stop: "respite", bg: "respite", count: 30, line: "30s to rearrange gear. The whole party sees every move.", ms: 2800 },
+      { stop: "boss", bg: "boss", big: "Boss", line: "Scales with the number of players and the party's level.", ms: 4200 },
+      { stop: "loot", bg: "loot", big: "Loot", line: "Every seat, and what each survivor carried out.", ms: 2200 },
+      { stop: "out", bg: "out", split: true, line: "", ms: 4200 },
+      { stop: "lobby", bg: "lobby", big: "Again", line: "Back to the lobby for the next match.", ms: 2000 }
     ];
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     node.classList.add("dbw-loop");
     var track = el("div", "dbw-loop__track");
     var chips = {};
-    STOPS.forEach(function (s, i) {
+    STOPS.forEach(function (s) {
       var c = el("div", "dbw-loop__stop");
       c.appendChild(el("span", "dbw-loop__label", s.label));
       if (s.id === "rounds") {
@@ -567,8 +632,12 @@
       track.appendChild(c);
       chips[s.id] = c;
     });
+
     var stage = el("div", "dbw-loop__stage");
+    var floor = el("div", "dbw-loop__floor");
     var big = el("div", "dbw-loop__big");
+    var divide = el("div", "dbw-loop__divide");
+    stage.appendChild(floor); stage.appendChild(divide); stage.appendChild(big);
     var line = el("div", "dbw-loop__line");
     var split = el("div", "dbw-loop__split");
     var live = el("div", "dbw-loop__card dbw-loop__card--live");
@@ -578,49 +647,195 @@
     dead.appendChild(el("strong", null, "Die anywhere"));
     dead.appendChild(el("span", null, "Lose your loot. Back to level 0. Vault coins stay safe."));
     split.appendChild(live); split.appendChild(dead);
-    stage.appendChild(big); stage.appendChild(line); stage.appendChild(split);
     var bar = el("div", "dbw-loop__bar");
     var fill = el("i"); bar.appendChild(fill);
     var replay = el("button", "dbw-loop__replay", "Replay");
     replay.type = "button";
-    node.appendChild(track); node.appendChild(stage); node.appendChild(bar); node.appendChild(replay);
+    node.appendChild(track); node.appendChild(stage); node.appendChild(line); node.appendChild(split);
+    node.appendChild(bar); node.appendChild(replay);
+
+    // cast
+    var CLASSES = ["Ranger", "Arcanist", "Knight", "Witcher", "Nobleman"];
+    var A = {};
+    CLASSES.forEach(function (n) { A[n] = rig(n, 24); });
+    ["BonePawn", "TowerWarden", "MourningBishop", "GravehorseRider"].forEach(function (n) { A[n] = rig(n, 25); });
+    A.Morrakhet = rig("Morrakhet", 36);
+    A.Sabeth = rig("Sabeth", 29);
+    Object.keys(A).forEach(function (k) { A[k].el.classList.add("dbw-rig--" + k.toLowerCase()); stage.appendChild(A[k].el); });
+    var PARTY = ["Ranger", "Arcanist", "Knight", "Witcher"];
+    var FOES = ["BonePawn", "TowerWarden", "MourningBishop", "BonePawn", "GravehorseRider", "TowerWarden"];
+    var levels = {};
+    PARTY.forEach(function (n, i) {
+      var b = el("span", "dbw-rig__tag");
+      A[n].el.appendChild(b);
+      levels[n] = b;
+      var g = el("span", "dbw-rig__grid");
+      for (var k = 0; k < 6; k++) g.appendChild(el("i"));
+      A[n].el.appendChild(g);
+      A[n].grid = g;
+    });
 
     var total = STEPS.reduce(function (a, s) { return a + s.ms; }, 0);
     var raf = 0, t0 = 0;
 
+    function ease(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
+    function mix(a, b, k) { return a + (b - a) * ease(k); }
     function pipsUpTo(n) {
       chips.rounds.querySelectorAll(".dbw-loop__pips i").forEach(function (p, i) { p.classList.toggle("on", i < n); });
     }
-    function show(step, local) {
-      Object.keys(chips).forEach(function (k) { chips[k].classList.toggle("on", k === step.stop); });
+    function hideAll() {
+      Object.keys(A).forEach(function (k) { var a = A[k]; a.o = 0; a.s = 1; a.y = 0; a.x = 50; a.walk = 0; a.swing = 0; a.mood = ""; a.fx = ""; });
+    }
+    function show(k, x, mood) { var a = A[k]; a.o = 1; a.x = x; a.mood = mood || ""; return a; }
+    function partyAt(xs, mood) { PARTY.forEach(function (n, i) { show(n, xs[i], mood); }); }
+    function grids(on, t) {
+      PARTY.forEach(function (n, i) {
+        var g = A[n].grid;
+        g.classList.toggle("on", on);
+        if (!on) return;
+        var hop = Math.floor((t + i * 370) / 420) % 6;
+        g.querySelectorAll("i").forEach(function (c, j) { c.classList.toggle("gem", j === hop); });
+      });
+    }
+    function tags(text, on) {
+      PARTY.forEach(function (n, i) {
+        levels[n].classList.toggle("on", !!on);
+        levels[n].textContent = typeof text === "function" ? text(i) : text;
+      });
+    }
+
+    function render(step, local, t) {
+      var k = local / step.ms;
+      Object.keys(chips).forEach(function (c) { chips[c].classList.toggle("on", c === step.stop); });
+      stage.setAttribute("data-bg", step.bg);
       split.classList.toggle("on", !!step.split);
+      line.textContent = step.line || "";
       big.classList.toggle("off", !!step.split);
+      hideAll(); grids(false, t); tags("", false);
+      divide.classList.toggle("on", !!step.split);
+      floor.style.backgroundPositionX = "0px";
+
+      if (step === STEPS[0] || step === STEPS[7]) {
+        // lobby: the five classes, the pick light moves and lands on the Knight
+        big.textContent = step.big;
+        var pick = step === STEPS[7] ? 2 : (k < .6 ? Math.floor(k / .6 * 5) % 5 : 2);
+        CLASSES.forEach(function (n, i) {
+          var a = show(n, 12 + i * 19, i === pick ? "smile" : "");
+          if (i === pick) a.s = 1.08;
+        });
+        stage.style.setProperty("--pick", (12 + pick * 19) + "%");
+        stage.classList.add("picking");
+        if (step === STEPS[7]) CLASSES.forEach(function (n) { A[n].o = ease(k * 2.5); });
+      } else stage.classList.remove("picking");
+
+      if (step === STEPS[1]) {
+        // queue: the Nobleman steps out, the other four close up as a party
+        big.textContent = step.big;
+        var from = [12, 31, 50, 69], to = [26, 42, 58, 74];
+        PARTY.forEach(function (n, i) {
+          var a = show(n, mix(from[i], to[i], k * 1.6), k > .55 ? "happy" : "");
+          if (k < .62 && Math.abs(from[i] - to[i]) > .5) a.walk = local / 520;
+        });
+        var nob = show("Nobleman", mix(88, 112, k * 1.4));
+        nob.walk = local / 520; nob.o = 1 - ease(k * 1.6);
+        tags(function (i) { return "Lv " + [6, 4, 5, 5][i]; }, k > .55);
+      }
+
       if (step.round) {
-        var each = step.ms / 6, n = Math.min(5, Math.floor(local / each));
-        var left = Math.max(0, 180 - Math.floor((local - n * each) / each * 180));
+        var n = Math.min(5, Math.floor(local / ROUND)), rk = (local - n * ROUND) / ROUND;
+        var left = Math.max(0, 180 - Math.floor(rk * 180));
         big.textContent = Math.floor(left / 60) + ":" + ("0" + left % 60).slice(-2);
         line.textContent = "Round " + (n + 1) + " of 6. One 3:00 clock; the stairs never add time.";
         pipsUpTo(n + 1);
-      } else if (step.count) {
-        big.textContent = Math.max(0, Math.ceil(step.count * (1 - local / step.ms))) + step.unit;
-        line.textContent = step.line;
-      } else if (step.split) {
-        line.textContent = "";
-      } else {
-        big.textContent = step.big;
-        line.textContent = step.line;
+        var marching = rk < .32 || rk > .78;
+        floor.style.backgroundPositionX = -(local * .12) + "px";
+        PARTY.forEach(function (p, i) {
+          var a = show(p, 10 + i * 12, rk > .3 && rk < .7 ? "angry" : (rk >= .7 ? "smile" : ""));
+          if (marching) a.walk = (local + i * 130) / 560;
+          if (rk > .34 && rk < .66) {
+            var hitPhase = ((rk - .34) / .32 * 3 + i * .25) % 1;
+            a.swing = Math.sin(hitPhase * Math.PI);
+            if (i === 3) a.x += a.swing * 4;
+          }
+        });
+        var foe = show(FOES[n], 0, "");
+        foe.x = mix(112, 74, rk / .3);
+        if (rk < .3) foe.walk = local / 480;
+        if (rk > .3 && rk < .66) { foe.mood = "shout"; foe.fx = (Math.floor(rk * 40) % 3 === 0) ? "hit" : ""; foe.swing = Math.max(0, Math.sin(rk * 18)); }
+        if (rk >= .66) { foe.y = mix(0, 40, (rk - .66) / .3); foe.o = 1 - ease((rk - .7) / .26); foe.mood = "blink"; }
+      } else if (STEPS.indexOf(step) > 2) pipsUpTo(6); else pipsUpTo(0);
+
+      if (step === STEPS[3]) {
+        big.textContent = Math.max(0, Math.ceil(30 * (1 - k))) + "s";
+        partyAt([26, 42, 58, 74], "");
+        grids(true, local);
       }
-      if (!step.round) pipsUpTo(STEPS.indexOf(step) > 2 ? 6 : 0);
+
+      if (step === STEPS[4]) {
+        big.textContent = step.big;
+        var bx = [10, 22, 34, 46];
+        PARTY.forEach(function (p, i) {
+          var a = show(p, bx[i], k < .3 ? "shock" : (k < .75 ? "angry" : "happy"));
+          if (k > .3 && k < .75) { a.swing = Math.max(0, Math.sin(local / 160 + i)); if (i === 3) a.x += a.swing * 5; }
+        });
+        var m = show("Morrakhet", 72, k < .3 ? "rage" : (k < .5 ? "laugh" : (k < .75 ? "hurt" : "hurt")));
+        m.y = mix(60, 0, k / .22);
+        m.o = ease(k / .12);
+        if (k > .3 && k < .5) m.swing = Math.max(0, Math.sin(local / 140));
+        if (k > .5 && k < .75) m.fx = (Math.floor(local / 90) % 3 === 0) ? "hit" : "";
+        if (k >= .75) { m.y = mix(0, 45, (k - .75) / .22); m.o = 1 - ease((k - .82) / .16); }
+        var s = show("Sabeth", 89, k < .75 ? "scorn" : "sorrow");
+        s.o = ease((k - .08) / .15);
+      }
+
+      if (step === STEPS[5]) {
+        big.textContent = step.big;
+        PARTY.forEach(function (p, i) {
+          var a = show(p, [26, 42, 58, 74][i], "happy");
+          a.y = -Math.abs(Math.sin(local / 300 + i * .8)) * 8;
+        });
+      }
+
+      if (step.split) {
+        // three walk out and level up; the fallen one greys out and sinks
+        [0, 1, 2].forEach(function (i) {
+          var a = show(PARTY[i], 10 + i * 13, "happy");
+          a.y = -Math.abs(Math.sin(local / 320 + i)) * 5;
+        });
+        tags("", false);
+        [0, 1, 2].forEach(function (i) { levels[PARTY[i]].classList.toggle("on", k > .25); levels[PARTY[i]].textContent = "Lv " + ([6, 4, 5][i] + 1); });
+        var f = show("Witcher", 78, "hurt");
+        f.fx = k > .2 ? "fallen" : "";
+        f.y = mix(0, 18, (k - .25) / .4);
+        levels.Witcher.classList.toggle("on", k > .45);
+        levels.Witcher.classList.add("lost");
+        levels.Witcher.textContent = "Lv 0";
+      } else levels.Witcher.classList.remove("lost");
+
+      Object.keys(A).forEach(function (key) {
+        var a = A[key];
+        if (a.o <= 0) { a.el.style.opacity = 0; return; }
+        a.face(a.mood, t);
+        a.tint(a.fx);
+        a.pose(a.walk, a.swing, t);
+        a.place();
+      });
     }
-    function frame(now) {
-      var t = now - t0, acc = 0;
-      fill.style.width = Math.min(100, t / total * 100) + "%";
+
+    function at(t) {
+      var acc = 0;
       for (var i = 0; i < STEPS.length; i++) {
-        if (t < acc + STEPS[i].ms) { show(STEPS[i], t - acc); raf = requestAnimationFrame(frame); return; }
+        if (t < acc + STEPS[i].ms) return render(STEPS[i], t - acc, t);
         acc += STEPS[i].ms;
       }
-      show(STEPS[STEPS.length - 1], STEPS[STEPS.length - 1].ms);
+      render(STEPS[STEPS.length - 1], STEPS[STEPS.length - 1].ms - 1, t);
       node.classList.add("done");
+      return true;
+    }
+    function frame(now) {
+      var t = now - t0;
+      fill.style.width = Math.min(100, t / total * 100) + "%";
+      if (at(t) !== true) raf = requestAnimationFrame(frame);
     }
     function play() {
       cancelAnimationFrame(raf);
@@ -629,14 +844,18 @@
       raf = requestAnimationFrame(frame);
     }
     replay.onclick = play;
-    if (reduce) { show(STEPS[6], 0); fill.style.width = "100%"; node.classList.add("done"); return; }
+    if (reduce) {
+      var acc = 0; for (var i = 0; i < 6; i++) acc += STEPS[i].ms;
+      render(STEPS[6], STEPS[6].ms * .8, 0);
+      fill.style.width = "100%"; node.classList.add("done"); return;
+    }
+    render(STEPS[0], 0, 0);
     if ("IntersectionObserver" in window) {
       var io = new IntersectionObserver(function (es) {
         if (es[0].isIntersecting) { io.disconnect(); play(); }
       }, { threshold: 0.4 });
       io.observe(node);
     } else play();
-    show(STEPS[0], 0);
   }
 
   var WIDGETS = { trinkets: trinkets, gear: gear, parry: parry, loop: loop };
