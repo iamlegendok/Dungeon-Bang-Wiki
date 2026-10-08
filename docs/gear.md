@@ -23,7 +23,7 @@
 | 5 | 18% | 32% | 30% | 16% | 4% |
 | 6 | 10% | 28% | 34% | 21% | 7% |
 
-Each point of loot luck moves 30% of every tier's chance up one tier. Events keep their rules: the Cursed Altar gives Epic or better, the Collapsing Vault one rarity better, the Lost Caravan Legendaries. Shops stock rolled items too, priced by rarity and round.
+Each point of loot luck moves 30% of every tier's chance up one tier. Events keep their rules: the Cursed Altar gives Epic or better, the Collapsing Vault one rarity better, the Lost Caravan Legendaries. Shops stock rolled items too. <span class="tag decided">Decided</span> A rolled item's shop price is its worth times the shopkeeper's own price multiplier, so the same item costs more at grislier keepers. Named bows keep their fixed prices. See [Shopkeepers](shopkeepers.md#paying).
 
 **Comparing:** the green and red arrows and the better-drop gleam work as before: melee by damage, armour against your best piece of the same kind, ranged by rarity.
 
@@ -120,6 +120,8 @@ Armour is the round-1 Common midpoint. Shields ride the left arm with a blade or
 
 ## Bonuses
 
+Every bonus below works in the game, on every kind of enemy, except where its effect says otherwise. Ranged weapons use their own bonuses while they are out.
+
 Values are the Uncommon range. Each rarity above that adds 25%. Weapon bonuses work while the weapon is in an active slot; armour and shield bonuses work while the piece is in your grid.
 
 | Bonus | Name | Effect | Uncommon range | On |
@@ -128,7 +130,7 @@ Values are the Uncommon range. Each rarity above that adds 25%. Weapon bonuses w
 | Brutal | Brutal … of Ruin | More heavy-attack damage | +10–22% | Melee |
 | Swift | Swift … of Haste | Faster attacks | +5–10% | Melee, ranged |
 | Light | Balanced … of Ease | Less stamina per swing | −10–20% | Melee |
-| Bonebreaker | Crushing … of Breaking | More injury dealt | +15–30% | Melee |
+| Bonebreaker | Crushing … of Breaking | More injury dealt. Fliers, spiders and shopkeepers take no injuries, so it does nothing to them yet | +15–30% | Melee |
 | Serrated | Serrated … of Bleeding | Hits bleed over 4 s | 6–12 damage | Melee, ranged |
 | Searing | Searing … of Embers | Hits burn over 3 s | 5–10 damage | Melee, ranged |
 | Hexing | Hexed … of Binding | Hits slow the target for 2 s | 12–22% | Melee, ranged |
@@ -140,7 +142,7 @@ Values are the Uncommon range. Each rarity above that adds 25%. Weapon bonuses w
 | Fleet | Fleet … of the Hare | Faster movement | +3–6% | Boots |
 | Thorned | Thorned … of Thorns | Melee attackers take part of their hit back | 8–15% | Chest, shields, helmets |
 | Tireless | Tireless … of Wind | Faster stamina regen | +8–15% | Chest, boots |
-| Warded | Warded … of Warding | Less poison, bleed and burn damage | −12–25% | Helmet, chest, shields |
+| Warded | Warded … of Warding | Less poison damage. Nothing makes players bleed or burn yet, so poison is all it reduces for now | −12–25% | Helmet, chest, shields |
 | Mending | Mending … of Mending | Hurt body parts heal sooner | 10–20% | Helmet, chest, boots |
 | Vital | Hale … of Vigour | More max HP | +4–10 | Armour, shields |
 

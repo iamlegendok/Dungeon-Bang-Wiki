@@ -11,6 +11,12 @@ Everything confirmed, newest first. Drafts and assumptions are not here until th
 ### Controls
 - **Gamepad support** is in the prototype: RT attacks (tap light, hold heavy), LT guards and parries, the D-pad sets the stance, B dodges, A jumps, Y is the ability, X interacts, RB swaps melee and ranged, LB opens the bag. The bag and the respite use a gold ring cursor. See [Controls](controls.md#gamepad).
 
+### Items
+- **The Lantern is cut.** It had no effect, so it no longer drops or takes up inventory space.
+
+### Shops
+- **Rolled gear prices** follow the item's worth times the keeper's own price multiplier, so grislier keepers charge more for the same piece. Named bows keep their fixed prices. See [Shopkeepers](shopkeepers.md#paying).
+
 ## 2026-10-03
 
 ### Boss and finale
