@@ -2,6 +2,11 @@
 
 Everything confirmed, newest first. Drafts and assumptions are not here until they are confirmed.
 
+## 2026-10-08
+
+### Controls
+- **Mobile has no stance buttons:** the stance is picked automatically on touch. Desktop and gamepad keep choosing it by hand. See [Controls](controls.md#mobile).
+
 ## 2026-10-04
 
 ### Combat

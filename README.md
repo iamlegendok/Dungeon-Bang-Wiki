@@ -2,7 +2,7 @@
 
 How Dungeon Bang works, system by system: decided rules, drafts and open questions.
 
-**Read it:** https://theverycob.github.io/Dungeon-Bang-Wiki/
+**Read it:** https://iamlegendok.github.io/Dungeon-Bang-Wiki/
 
 ## Editing
 

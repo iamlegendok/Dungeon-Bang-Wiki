@@ -26,7 +26,7 @@ What each input does. The **In prototype** tag means it already works in the pro
 | Mash Q | Throw off a latched spider, or tear free of a boss's hook: 6 presses every 2 s. Tap on touch, mash X on a gamepad. Space, attacks and dodge do nothing while latched. See [Enemies](enemies.md#spiders) |
 
 - A **failed parry** (block pressed outside the parry window) still takes half damage, knocks you back and locks your swings for 0.6 s.
-- **Gamepad:** see [Gamepad](#gamepad). **Touch:** three stance buttons on the right edge.
+- **Gamepad:** see [Gamepad](#gamepad). **Touch:** no stance buttons; your stance is picked for you automatically.
 - **Q high guard is removed**; Q now throws off a latched spider.
 - **Cursor**: a custom gold arrow in the project colours wherever the mouse is free, the shop included. It's hidden in first person and in cutscenes, except at the hostage choice and once you skip a scene.
 - **Enemy guard:** when an enemy raises its weapon across its body with a steel-white outline and a soft clink, a light swing gets you parried (pushed back, no swings for 0.8 s, free counter for the enemy). A **heavy** (hold, then release) breaks the guard: the enemy reels and takes 1.5x damage for a moment. Prototype values, see [Combat](combat.md#enemy-guard).
@@ -180,11 +180,11 @@ Shops, the loot screen and cutscene choices use Roblox's controller cursor: the 
 
 ## Mobile <span class="tag draft">Planned</span>
 
-The stance buttons are in the prototype; the rest is planned, from the combat and HUD designs.
+Everything here is planned, from the combat and HUD designs. Picking a stance by hand would be too fiddly on a phone, so mobile players never choose one.
 
 | Input | Action |
 |-|-|
-| Three stance buttons on the right edge | High, middle and low stance <span class="tag decided">In prototype</span> |
+| No stance buttons | Your stance is picked automatically |
 | Guard button | Guard your stance, and parry when timed |
 | Dodge button | Dodge |
 | Tap the minimap | Full map (clicking it already works on desktop) |

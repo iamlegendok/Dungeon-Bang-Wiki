@@ -195,7 +195,29 @@ body { background: var(--db-bg-base); }
 html { font-size: 112.5%; }
 @media screen and (min-width: 100em) { html { font-size: 112.5%; } }
 @media screen and (min-width: 125em) { html { font-size: 118.75%; } }
-/* Contents sit in the left sidebar (toc.integrate), so one narrower column is enough. */
-.md-grid { max-width: 64rem; }
+/* Use the screen: a wide page with a roomier sidebar, so nav labels don't wrap
+   and the text column isn't boxed in by empty margins. */
+.md-grid { max-width: 92rem; }
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary { width: 17rem; }
+  .md-sidebar--primary .md-sidebar__scrollwrap { width: 17rem; }
+}
+.md-main__inner { margin-top: .8rem; }
+.md-content__inner { margin-left: 1.2rem; margin-right: 1.2rem; }
+
+/* Dungeon Bang scrollbars: a gold thumb on a soot track, in the page and the sidebar. */
+html, .md-sidebar__scrollwrap, .md-typeset__scrollwrap, .md-search__scrollwrap, pre, code {
+  scrollbar-color: var(--db-earth-gold) var(--db-bg-base);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--db-bg-base); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--db-earth-gold), var(--db-earth-amber));
+  border: 3px solid var(--db-bg-base);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--db-earth-gold); }
+::-webkit-scrollbar-corner { background: var(--db-bg-base); }
 .hero img { max-width: min(300px, 80%); }
 .hero { padding: 1rem 1rem .8rem; }
